@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=3789;
+		nextID=3799;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=280;
+		nextID=290;
 	};
 	class Camera
 	{
-		pos[]={14213.297,215.74712,8052.5898};
-		dir[]={0.4588483,-0.88852334,-0.0097702509};
-		up[]={0.88834012,0.45878142,-0.018914772};
-		aside[]={-0.021288531,-3.6353413e-007,-0.99982965};
+		pos[]={850.68561,85.65033,4697.0396};
+		dir[]={-0.6533767,-0.75058979,0.098589838};
+		up[]={-0.74219036,0.66076493,0.11199095};
+		aside[]={0.14920349,-7.8405719e-008,0.98880935};
 	};
 };
 binarizationWanted=0;
@@ -3626,7 +3626,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1215;
+		items=1225;
 		class Item0
 		{
 			dataType="Layer";
@@ -9961,7 +9961,62 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if !(_value isEqualTo '') then {_value=[_value,8,512,30,10] call tfar_fnc_parseFrequenciesInput;_this setVariable ['TFAR_freq_sr',_value,true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="groupID";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Delta-3";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="TFAR_freq_lr";
+							expression="if !(_value isEqualTo '') then {_value=[_value,9,87,30,10] call tfar_fnc_parseFrequenciesInput;_this setVariable ['TFAR_freq_lr',_value,true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 				class Item25
@@ -11237,20 +11292,18 @@ class Mission
 							dataType="Comment";
 							class PositionInfo
 							{
-								position[]={15273.451,30.528,7584.915};
-								angles[]={6.2606182,0,0.009461863};
+								position[]={15279.622,30.905592,7574.8145};
 							};
 							title="Konvoi";
 							id=3159;
-							atlOffset=0.00010681152;
 						};
 					};
 					id=949;
-					atlOffset=-9.3474846;
+					atlOffset=-9.1263542;
 				};
 			};
 			id=731;
-			atlOffset=-19.909748;
+			atlOffset=-19.821178;
 		};
 		class Item4
 		{
@@ -83777,6 +83830,106 @@ class Mission
 			id=3778;
 			type="rhsgref_cdf_reg_uaz";
 			atlOffset=1.7166138e-005;
+		};
+		class Item1215
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={791.57599,15.13,4697.5718};
+			};
+			title="Delta 3 Mörser";
+			id=3789;
+		};
+		class Item1216
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={786.62299,15.13,4689.7041};
+			};
+			title="Delta 4 Repair";
+			id=3790;
+		};
+		class Item1217
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={780.10797,15.13,4706.7212};
+			};
+			title="Bravo 3";
+			id=3791;
+		};
+		class Item1218
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={774.25702,15.13,4694.7212};
+			};
+			title="Alpha 3";
+			id=3792;
+		};
+		class Item1219
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={768.76703,15.13,4703.1958};
+			};
+			title="Delta 1 BAT";
+			id=3793;
+		};
+		class Item1220
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={759.86401,15.13,4699.5449};
+			};
+			title="Alpha 1";
+			id=3794;
+		};
+		class Item1221
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={752.80402,15.13,4716.6489};
+			};
+			title="Alpha 2";
+			id=3795;
+		};
+		class Item1222
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={765.40399,15.13,4725.144};
+			};
+			title="Bravo 1";
+			id=3796;
+		};
+		class Item1223
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={775.80902,15.13,4715.8789};
+			};
+			title="Delta 2 BAT";
+			id=3797;
+		};
+		class Item1224
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={767.56799,15.13,4712.6118};
+			};
+			title="Bravo 2";
+			id=3798;
 		};
 	};
 	class Connections
