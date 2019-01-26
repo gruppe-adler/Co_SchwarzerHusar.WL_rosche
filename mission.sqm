@@ -60340,7 +60340,7 @@ class Mission
 			fillName="Grid";
 			a=205.321;
 			b=410.64099;
-			angle=26.031998;
+			angle=26.031996;
 			id=3138;
 			atlOffset=5.4242077;
 		};
@@ -80565,7 +80565,7 @@ class Mission
 			position[]={14079.73,38.959999,8864.7285};
 			name="mrk_lz_north";
 			type="mil_arrow";
-			angle=30.301985;
+			angle=30.301983;
 			id=3875;
 		};
 		class Item1064
