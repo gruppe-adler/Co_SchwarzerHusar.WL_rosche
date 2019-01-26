@@ -66,6 +66,7 @@ class CfgFunctions
     #include "node_modules\grad-customGear\cfgFunctions.hpp"
 	#include "node_modules\grad-civs\cfgFunctions.hpp"
 	#include "node_modules\grad-fortifications\cfgFunctions.hpp"
+    #include "node_modules\grad-drop\cfgFunctions.hpp"
 
 	#include "USER\userFunctions.hpp"
 };
@@ -113,6 +114,7 @@ class Params {
 //SOUNDS =======================================================================
 class CfgSounds {
 	#include "USER\userSounds.hpp"
+    #include "node_modules\grad-drop\cfgSounds.hpp"
 };
 
 
