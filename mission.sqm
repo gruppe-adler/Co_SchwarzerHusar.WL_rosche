@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=3877;
+		nextID=3878;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={742.99146,41.369331,4701.2144};
-		dir[]={0.10672815,-0.88295555,0.45717987};
-		up[]={0.20072772,0.46946076,0.85983509};
-		aside[]={0.97382283,-4.8184302e-007,-0.22733712};
+		pos[]={926.32428,33.64933,4504.9946};
+		dir[]={-0.10862985,-0.42813143,0.89722395};
+		up[]={-0.05146097,0.90371597,0.42503449};
+		aside[]={0.99280906,-3.4843106e-007,0.12020481};
 	};
 };
 binarizationWanted=0;
@@ -3626,7 +3626,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1065;
+		items=1066;
 		class Item0
 		{
 			dataType="Layer";
@@ -4894,12 +4894,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={745.81641,15.131439,4731.9551};
+								position[]={745.81598,15.131439,4731.9546};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								init="call{{_x setVariable [""SH_LZ"", ""command""]; } forEach units group this;}";
 								description="Leader@Company";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -7203,12 +7204,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={767.97583,15.131439,4702.3901};
+								position[]={767.97601,15.131439,4702.3896};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
 								description="Medic@Delta1";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -7397,19 +7399,20 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={757.06451,15.180437,4732.5244};
+								position[]={757.065,15.180439,4732.5249};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
 								description="PlatoonLead@Bravo";
 								isPlayable=1;
 								aiRadarUsage=544042752;
 							};
 							id=2919;
 							type="B_officer_F";
-							atlOffset=0.048997879;
+							atlOffset=0.048999786;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -7634,7 +7637,7 @@ class Mission
 					{
 					};
 					id=2918;
-					atlOffset=0.048997879;
+					atlOffset=0.048999786;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7671,12 +7674,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={760.40277,15.131439,4724.3696};
+								position[]={760.40302,15.131439,4724.3696};
 							};
 							side="West";
 							flags=7;
 							class Attributes
 							{
+								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
 								description="Gruppenführer@Bravo1";
 								isPlayable=1;
 							};
@@ -8334,18 +8338,19 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={769.9975,15.744438,4714.5264};
+								position[]={769.99701,15.744439,4714.5269};
 							};
 							side="West";
 							flags=3;
 							class Attributes
 							{
+								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
 								description="Gruppenführer@Bravo2";
 								isPlayable=1;
 							};
 							id=2933;
 							type="B_Soldier_SL_F";
-							atlOffset=0.61299896;
+							atlOffset=0.61299992;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -8962,7 +8967,7 @@ class Mission
 					{
 					};
 					id=2932;
-					atlOffset=0.61299896;
+					atlOffset=0.61299992;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8999,12 +9004,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={778.81409,15.131439,4706.3496};
+								position[]={778.81403,15.131439,4706.3496};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
 								description="Commander@Bravo3";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -9429,12 +9435,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={775.15051,15.131439,4714.4517};
+								position[]={775.151,15.131439,4714.4517};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
 								description="Medic@Delta2";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -9623,12 +9630,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={785.98682,15.131439,4697.1372};
+								position[]={785.987,15.131439,4697.1367};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								init="call{{_x setVariable [""SH_LZ"", ""command""]; } forEach units group this;}";
 								description="FTL@Delta3";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -10030,12 +10038,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={777.43597,15.131439,4687.9531};
+								position[]={777.43597,15.131439,4687.9526};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								init="call{{_x setVariable [""SH_LZ"", ""command""]; } forEach units group this;}";
 								description="FTL@Delta4";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -60340,7 +60349,7 @@ class Mission
 			fillName="Grid";
 			a=205.321;
 			b=410.64099;
-			angle=26.031996;
+			angle=26.031988;
 			id=3138;
 			atlOffset=5.4242077;
 		};
@@ -80577,6 +80586,16 @@ class Mission
 			angle=30.302;
 			id=3876;
 			atlOffset=0.00010871887;
+		};
+		class Item1065
+		{
+			dataType="Marker";
+			position[]={11099.355,25.211,3868.7019};
+			name="mrk_lz_command";
+			type="mil_arrow";
+			angle=30.302;
+			id=3877;
+			atlOffset=0.00015258789;
 		};
 	};
 	class Connections

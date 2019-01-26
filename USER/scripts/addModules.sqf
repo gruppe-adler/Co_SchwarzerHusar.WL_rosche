@@ -7,7 +7,6 @@ waitUntil {  time > 3 };
   
     _x addEventHandler ["CuratorGroupPlaced", {
         params ["", "_group"];
-        ["GRAD_missionControl_setServerAsOwner", [_group]] call CBA_fnc_serverEvent;
 
         { 
             _x setSkill ["aimingShake", 0.2]; 
@@ -50,29 +49,7 @@ if (
   // TODO check if below is necessary to uncomment
   waitUntil {not isNil "ares_category_list"};
 
-
-
-  ["ML MISSION", "Briefing Done",
-  {
-    // Get all the passed parameters
-    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
-    BRIEFING_DONE = true; publicVariable "BRIEFING_DONE";
-
-  }] call Ares_fnc_RegisterCustomModule;
-
-  ["ML MUSIC", "Intro Fly Music",
-  {
-    // Get all the passed parameters
-    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
-    [5, 1] remoteExec ["fadeMusic"];
-    ["openingbook"] remoteExec ["playMusic"];
-
-  }] call Ares_fnc_RegisterCustomModule;
-  
-
-  ["SCHWARZER HUSAR", "Unit Counts",
+  ["SCHWARZER HUSAR", "Show Unit Count",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -101,15 +78,43 @@ if (
   }] call Ares_fnc_RegisterCustomModule;
 
 
+  ["SCHWARZER HUSAR", "Init Halo Jump",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    [[],"USER\scripts\initHaloJump.sqf"] remoteExec ["BIS_fnc_execVM",0,false];
+
+    systemChat "halo jump sequence started";
+
+  }] call Ares_fnc_RegisterCustomModule; 
+
+
+  ["SCHWARZER HUSAR", "Time Jump to Morning",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    [[],"USER\scripts\timeJump.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
+
+    systemChat "Time Jump to morning started";
+
+  }] call Ares_fnc_RegisterCustomModule;
+
+
   ["SCHWARZER HUSAR", "Spawn Convoy",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-    [] execVM "USER\scripts\convoy.sqf";
+    [[],"USER\scripts\convoy.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
 
-    hint "convoy spawned";
+    systemChat "Convoy spawned";
 
-  }] call Ares_fnc_RegisterCustomModule;  
+  }] call Ares_fnc_RegisterCustomModule;
+
+
+
+   
 
 };
