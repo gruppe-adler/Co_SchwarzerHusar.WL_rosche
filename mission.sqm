@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=320;
+		nextID=330;
 	};
 	class Camera
 	{
-		pos[]={12742.369,155.54646,6997.0166};
-		dir[]={0.3519077,-0.83196586,-0.42901775};
-		up[]={0.52764618,0.55480164,-0.64326441};
-		aside[]={-0.77319205,-1.1942466e-006,-0.63422501};
+		pos[]={759.13214,19.989393,4718.2427};
+		dir[]={-0.6113168,-0.57675529,-0.54196453};
+		up[]={-0.43159002,0.8169015,-0.38262483};
+		aside[]={-0.66341412,6.6397479e-007,0.7483058};
 	};
 };
 binarizationWanted=0;
@@ -1766,7 +1766,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -1777,7 +1777,7 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
 														value=1;
@@ -6045,10 +6045,10 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={752.29498,15.744439,4715.3447};
+								position[]={752.29498,15.131439,4715.3447};
 							};
 							side="West";
-							flags=3;
+							flags=7;
 							class Attributes
 							{
 								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
@@ -6057,7 +6057,6 @@ class Mission
 							};
 							id=2900;
 							type="B_Soldier_SL_F";
-							atlOffset=0.61299992;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -6676,7 +6675,6 @@ class Mission
 					{
 					};
 					id=2899;
-					atlOffset=0.61299992;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8437,7 +8435,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={770.3476,15.131439,4715.3027};
+								position[]={769.16559,15.131439,4715.8462};
 							};
 							side="West";
 							flags=4;
@@ -10261,7 +10259,7 @@ class Mission
 				};
 			};
 			id=729;
-			atlOffset=0.019442558;
+			atlOffset=0.018843651;
 		};
 		class Item2
 		{
@@ -12650,7 +12648,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={12688.039,22.820969,6844.894};
-						angles[]={-0,5.9740005,6.2778587};
+						angles[]={0,5.9740005,6.2778587};
 					};
 					side="Empty";
 					flags=4;
@@ -12812,7 +12810,7 @@ class Mission
 				};
 			};
 			id=1506;
-			atlOffset=-0.0044555664;
+			atlOffset=-0.089162827;
 		};
 		class Item15
 		{
@@ -12827,7 +12825,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={12692.437,22.716278,6846.4194};
-						angles[]={-0,2.7769678,6.2445393};
+						angles[]={0,2.7769678,6.2445393};
 					};
 					side="Empty";
 					flags=4;
@@ -12864,7 +12862,6 @@ class Mission
 				};
 			};
 			id=1551;
-			atlOffset=0.097881317;
 		};
 		class Item16
 		{
@@ -43678,7 +43675,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12685.188,23.693754,6784.0674};
-				angles[]={-0,2.0264819,0};
+				angles[]={0,2.0264819,0};
 			};
 			side="Empty";
 			flags=4;
@@ -45018,17 +45015,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14297.144,35.905281,9219.751};
-				angles[]={0.0039967569,4.0936522,6.2605233};
+				position[]={14297.144,35.90535,9219.751};
+				angles[]={0.0039968039,4.0936522,6.2605309};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{if (isServer) then { this disableTIEquipment true;};}";
 			};
 			id=2606;
 			type="Redd_Tank_Wiesel_1A4_MK20_Flecktarn";
-			atlOffset=-6.8664551e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45115,13 +45112,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14278.476,36.620815,9211.5742};
-				angles[]={0,4.0775781,6.2392149};
+				position[]={14278.475,36.620853,9211.5742};
+				angles[]={0,4.0775781,6.2392201};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{if (isServer) then { this disableTIEquipment true;};}";
 			};
 			id=2607;
 			type="Redd_Tank_Wiesel_1A2_TOW_Flecktarn";
@@ -51422,17 +51420,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11259.468,28.398718,4115.8818};
-				angles[]={0.030656165,4.0936522,0.0080009829};
+				position[]={11259.468,28.398802,4115.8813};
+				angles[]={0.030647982,4.0936522,0.0079936078};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{if (isServer) then { this disableTIEquipment true;};}";
 			};
 			id=3126;
 			type="Redd_Tank_Wiesel_1A4_MK20_Flecktarn";
-			atlOffset=-7.2479248e-005;
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51519,17 +51518,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11252.47,28.625719,4085.8762};
-				angles[]={0.018663859,4.0775781,0.0053377044};
+				position[]={11252.47,28.625765,4085.8762};
+				angles[]={0.018657569,4.0775781,0.0053407075};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{if (isServer) then { this disableTIEquipment true;};}";
 			};
 			id=3127;
 			type="Redd_Tank_Wiesel_1A2_TOW_Flecktarn";
-			atlOffset=-4.5776367e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -52560,6 +52559,7 @@ class Mission
 			};
 			id=3440;
 			type="Redd_Tank_Wiesel_1A4_MK20_Flecktarn";
+			atlOffset=-0.001159668;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -52647,7 +52647,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12988.734,31.887932,6759.5303};
-				angles[]={-0,2.5593679,0.042640556};
+				angles[]={0,2.5593679,0.042640556};
 			};
 			side="Empty";
 			flags=4;
@@ -52656,6 +52656,7 @@ class Mission
 			};
 			id=3441;
 			type="Redd_Tank_Wiesel_1A2_TOW_Flecktarn";
+			atlOffset=-0.0017871857;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -52753,6 +52754,7 @@ class Mission
 			};
 			id=3444;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=-0.0010242462;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -52783,7 +52785,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12981.072,35.0672,6774.9092};
-				angles[]={-0,2.7130682,0.039977662};
+				angles[]={0,2.7130682,0.039977662};
 			};
 			side="Empty";
 			flags=4;
@@ -52793,6 +52795,7 @@ class Mission
 			};
 			id=3447;
 			type="C130J_wreck_EP1";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -58459,7 +58462,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12727.147,21.469999,6683.8774};
-				angles[]={-0,0.17017612,0};
+				angles[]={0,0.17017612,0};
 			};
 			areaSize[]={5,0,20};
 			areaIsRectangle=1;
