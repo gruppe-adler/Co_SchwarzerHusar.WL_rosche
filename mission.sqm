@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12701.893,49.904129,6932.3638};
-		dir[]={0.51664221,-0.58399165,-0.62632316};
-		up[]={0.37176326,0.81155795,-0.45068583};
-		aside[]={-0.77149618,-1.9015861e-006,-0.63639432};
+		pos[]={12697.416,79.981834,6803.3691};
+		dir[]={-0.66511953,-0.71154857,-0.22707222};
+		up[]={-0.67354965,0.70241475,-0.22995014};
+		aside[]={-0.32311988,-1.8338978e-006,0.94645667};
 	};
 };
 binarizationWanted=0;
@@ -38293,13 +38293,14 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={12775.181,22.332607,6974.9604};
+				position[]={12776.637,22.536564,6975.6401};
+				angles[]={6.0126514,0,6.2432065};
 			};
-			areaSize[]={5,-1,5};
+			areaSize[]={10.549316,0,5};
 			flags=1;
 			id=2329;
 			type="ModuleHideTerrainObjects_F";
-			atlOffset=7.6293945e-005;
+			atlOffset=0.084447861;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -43772,8 +43773,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12678.243,23.693754,6779.9043};
-				angles[]={0,2.0264819,0};
+				position[]={12685.188,23.693754,6784.0674};
+				angles[]={-0,2.0264819,0};
 			};
 			side="Empty";
 			flags=4;
