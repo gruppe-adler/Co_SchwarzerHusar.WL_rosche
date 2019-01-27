@@ -26,7 +26,7 @@ if (isServer) then {
                     // cutText ["", "BLACK IN", 2];
 
                     // hint "moved into plane";
-                    [["17/04/1984 - 2:30", 2, 4, 2], ["After four hours flight", 3, 4, 2], ["somewhere over Germany...", 4, 4, 2]] spawn BIS_fnc_EXP_camp_SITREP;
+                    [["17/04/1984 - 2:30", 2, 4, 2], ["After four hours flight", 3, 4, 2], ["near the LZ...", 4, 4, 2]] spawn BIS_fnc_EXP_camp_SITREP;
                     
                     [{
                         params ["_args", "_handle"];

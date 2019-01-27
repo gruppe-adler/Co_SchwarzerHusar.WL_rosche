@@ -8,3 +8,5 @@
 "mrk_lz_north" setMarkerAlphaLocal 0;
 "mrk_lz_south" setMarkerAlphaLocal 0;
 "mrk_lz_command" setMarkerAlphaLocal 0;
+
+enableEnvironment [false, true];
