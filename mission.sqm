@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=3906;
+		nextID=3910;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={936.97968,26.61133,4517.8652};
-		dir[]={0.18954009,-0.29404202,0.93690073};
-		up[]={0.058327593,0.95574796,0.28831807};
-		aside[]={0.98022741,7.8827725e-008,-0.19831023};
+		pos[]={967.93811,20.893726,4538.3491};
+		dir[]={-0.3011823,-0.23202828,-0.92501587};
+		up[]={-0.07187631,0.97266859,-0.22075459};
+		aside[]={-0.95096648,1.5756086e-007,0.30963513};
 	};
 };
 binarizationWanted=0;
@@ -99,13 +99,17 @@ addons[]=
 	"rhs_sounds",
 	"rhsgref_c_a2port_armor",
 	"ace_compat_rhs_afrf3",
-	"A3_Structures_F_Civ_InfoBoards"
+	"A3_Structures_F_Civ_InfoBoards",
+	"grad_beret",
+	"po_factions_eu",
+	"ace_attach",
+	"ace_chemlights"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=56;
+		items=60;
 		class Item0
 		{
 			className="A3_Modules_F_Heli";
@@ -461,6 +465,32 @@ class AddonsMetaData
 		{
 			className="ace_compat_rhs_afrf3";
 			name="ACE3 - RHS AFRF Compatibility";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item56
+		{
+			className="grad_beret";
+			name="grad_beret";
+			author="Simmax [A] & DerZade [A]";
+		};
+		class Item57
+		{
+			className="po_factions_eu";
+			name="po_factions_eu";
+			author="Leight, Keeway";
+		};
+		class Item58
+		{
+			className="ace_attach";
+			name="ACE3 - Attach";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item59
+		{
+			className="ace_chemlights";
+			name="ace_chemlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
@@ -3559,7 +3589,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=909;
+		items=911;
 		class Item0
 		{
 			dataType="Layer";
@@ -4827,12 +4857,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={934.59906,15.131439,4549.3501};
+								position[]={934.599,15.131439,4549.3496};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								rank="CAPTAIN";
 								init="call{{_x setVariable [""SH_LZ"", ""command""]; } forEach units group this;}";
 								description="Leader@Company";
 								isPlayable=1;
@@ -4907,12 +4938,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={933.27289,15.131439,4547.9932};
+								position[]={933.27301,15.131439,4547.9927};
 							};
 							side="West";
 							flags=4;
 							class Attributes
 							{
+								skill=0.8931762;
+								rank="LIEUTENANT";
 								description="CL Assistant";
 								isPlayable=1;
 							};
@@ -5100,12 +5133,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={935.86609,15.131439,4537.2041};
+								position[]={935.86603,15.131439,4537.2036};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								rank="LIEUTENANT";
 								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
 								description="PlatoonLead@Alpha";
 								isPlayable=1;
@@ -5180,12 +5214,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={937.10968,15.131439,4536.4819};
+								position[]={937.10999,15.131439,4536.4819};
 							};
 							side="West";
 							flags=4;
 							class Attributes
 							{
+								rank="SERGEANT";
 								description="PL Assistant";
 								isPlayable=1;
 							};
@@ -5373,12 +5408,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={951.3161,15.131439,4518.1553};
+								position[]={951.31598,15.131439,4518.1548};
 							};
 							side="West";
 							flags=7;
 							class Attributes
 							{
+								rank="SERGEANT";
 								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
 								description="Gruppenführer@Alpha1";
 								isPlayable=1;
@@ -5689,12 +5725,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={952.56812,15.131439,4515.9897};
+								position[]={952.56799,15.131439,4515.9897};
 							};
 							side="West";
 							flags=5;
 							class Attributes
 							{
+								rank="CORPORAL";
 								description="Truppführer";
 								isPlayable=1;
 							};
@@ -6037,12 +6074,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={941.07806,15.131439,4532.7402};
+								position[]={941.078,15.131439,4532.7397};
 							};
 							side="West";
 							flags=7;
 							class Attributes
 							{
+								rank="SERGEANT";
 								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
 								description="Gruppenführer@Alpha2";
 								isPlayable=1;
@@ -6353,12 +6391,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={942.49091,15.131439,4527.9277};
+								position[]={942.49103,15.131439,4527.9277};
 							};
 							side="West";
 							flags=5;
 							class Attributes
 							{
+								rank="CORPORAL";
 								description="Truppführer";
 								isPlayable=1;
 							};
@@ -6704,12 +6743,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={958.78107,15.131439,4511.8643};
+								position[]={958.78101,15.131439,4511.8638};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								rank="SERGEANT";
 								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
 								description="Commander@Alpha3";
 								isPlayable=1;
@@ -7135,12 +7175,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={956.75909,15.131439,4519.7852};
+								position[]={956.75897,15.131439,4519.7847};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								rank="SERGEANT";
 								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
 								description="Medic@Delta1";
 								isPlayable=1;
@@ -7330,12 +7371,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={945.84808,15.180439,4549.9204};
+								position[]={945.84802,15.180439,4549.9209};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								rank="LIEUTENANT";
 								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
 								description="PlatoonLead@Bravo";
 								isPlayable=1;
@@ -7411,12 +7453,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={943.99567,15.131439,4551.2993};
+								position[]={943.99597,15.131439,4551.2998};
 							};
 							side="West";
 							flags=4;
 							class Attributes
 							{
+								rank="SERGEANT";
 								description="PL Assistant";
 								isPlayable=1;
 							};
@@ -7495,7 +7538,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								rank="SERGEANT";
+								rank="LIEUTENANT";
 								description="Driver/Bodyguard";
 								isPlayable=1;
 							};
@@ -7605,12 +7648,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={949.1861,15.131439,4541.7651};
+								position[]={949.18597,15.131439,4541.7646};
 							};
 							side="West";
 							flags=7;
 							class Attributes
 							{
+								rank="SERGEANT";
 								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
 								description="Gruppenführer@Bravo1";
 								isPlayable=1;
@@ -7921,12 +7965,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={949.836,15.131439,4540.4282};
+								position[]={949.836,15.131439,4540.4277};
 							};
 							side="West";
 							flags=5;
 							class Attributes
 							{
+								rank="CORPORAL";
 								description="Truppführer";
 								isPlayable=1;
 							};
@@ -8269,19 +8314,19 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={958.78009,15.744439,4531.9224};
+								position[]={958.94501,15.131439,4532.5859};
 							};
 							side="West";
-							flags=3;
+							flags=7;
 							class Attributes
 							{
+								rank="SERGEANT";
 								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
 								description="Gruppenführer@Bravo2";
 								isPlayable=1;
 							};
 							id=2933;
 							type="B_Soldier_SL_F";
-							atlOffset=0.61299992;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -8586,12 +8631,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={960.22217,15.131439,4531.1689};
+								position[]={960.22198,15.131439,4531.1689};
 							};
 							side="West";
 							flags=5;
 							class Attributes
 							{
+								rank="CORPORAL";
 								description="Truppführer";
 								isPlayable=1;
 							};
@@ -8898,7 +8944,6 @@ class Mission
 					{
 					};
 					id=2932;
-					atlOffset=0.61299992;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8935,12 +8980,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={967.59711,15.131439,4523.7451};
+								position[]={967.59698,15.131439,4523.7446};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								rank="SERGEANT";
 								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
 								description="Commander@Bravo3";
 								isPlayable=1;
@@ -9366,12 +9412,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={963.93408,15.131439,4531.8472};
+								position[]={963.93402,15.131439,4531.8467};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								rank="SERGEANT";
 								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
 								description="Medic@Delta2";
 								isPlayable=1;
@@ -9561,12 +9608,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={974.77008,15.131439,4514.5322};
+								position[]={974.77002,15.131439,4514.5317};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								rank="SERGEANT";
 								init="call{{_x setVariable [""SH_LZ"", ""command""]; } forEach units group this;}";
 								description="FTL@Delta3";
 								isPlayable=1;
@@ -9969,12 +10017,13 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={966.21906,15.131439,4505.3481};
+								position[]={966.21899,15.131439,4505.3477};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
+								rank="SERGEANT";
 								init="call{{_x setVariable [""SH_LZ"", ""command""]; } forEach units group this;}";
 								description="FTL@Delta4";
 								isPlayable=1;
@@ -10252,7 +10301,7 @@ class Mission
 				};
 			};
 			id=729;
-			atlOffset=0.018843651;
+			atlOffset=-0.0003118515;
 		};
 		class Item2
 		{
@@ -66625,6 +66674,298 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item909
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={994.53198,15.131439,4555.146};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="COLONEL";
+						class Inventory
+						{
+							class handgun
+							{
+								name="rhs_weap_pya";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_9x19_17";
+									ammoLeft=17;
+								};
+							};
+							class uniform
+							{
+								typeName="LOP_U_US_Fatigue_03";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="Chemlight_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_9x19_17";
+										count=1;
+										ammoLeft=17;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhs_vest_pistol_holster";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="Chemlight_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_9x19_17";
+										count=1;
+										ammoLeft=17;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							gps="ItemGPS";
+							headgear="grad_beret_black";
+						};
+					};
+					id=3907;
+					type="B_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=3906;
+		};
+		class Item910
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={995.67236,15.131439,4553.3203};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="COLONEL";
+						class Inventory
+						{
+							class handgun
+							{
+								name="rhs_weap_pya";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_9x19_17";
+									ammoLeft=17;
+								};
+							};
+							class uniform
+							{
+								typeName="LOP_U_US_Fatigue_03";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="Chemlight_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_9x19_17";
+										count=1;
+										ammoLeft=17;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhs_vest_pistol_holster";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="Chemlight_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_9x19_17";
+										count=1;
+										ammoLeft=17;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							gps="ItemGPS";
+							headgear="grad_beret_black";
+						};
+					};
+					id=3909;
+					type="B_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=3908;
 		};
 	};
 	class Connections
