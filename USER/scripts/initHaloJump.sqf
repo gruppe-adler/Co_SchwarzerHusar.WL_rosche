@@ -1,12 +1,8 @@
-2 fadeSound 0;
-cutText ["", "BLACK OUT", 2];
-sleep 2;
+3 fadeSound 0;
+sleep 3;
 
 
 if (isServer) then {
-
-        setDate [1989, 7, 8, 1, 0];
-
 
         {
                 _x params ["_marker", "_identifier"];
@@ -22,7 +18,7 @@ if (isServer) then {
                 private _height = 160;
 
                 [_units, _marker, _dir, _height, 5, false, {
-                    2 fadeSound 1;
+                    3 fadeSound 1;
                     // cutText ["", "BLACK IN", 2];
 
                     // hint "moved into plane";
@@ -46,6 +42,9 @@ if (isServer) then {
             ["mrk_lz_south", "south"],
             ["mrk_lz_command", "command"]
         ];
+
+        sleep 3;
+        setDate [1989, 7, 8, 1, 0];
 
         private _vector = [0,2];
         [ _vector, markerDir "mrk_lz_north"] call BIS_fnc_rotateVector2D;
