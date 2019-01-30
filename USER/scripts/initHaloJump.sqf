@@ -46,7 +46,7 @@ if (isServer) then {
         sleep 3;
         setDate [1989, 7, 8, 1, 0];
 
-        private _vector = [0,10];
+        private _vector = [0,8];
         [ _vector, markerDir "mrk_lz_north"] call BIS_fnc_rotateVector2D;
         _vector params ["_windX", "_windY"];
         setWind [_windX, _windY, true];
