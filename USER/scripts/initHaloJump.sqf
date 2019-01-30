@@ -34,7 +34,8 @@ if (isServer) then {
                     }, 0, []] call CBA_fnc_addPerFrameHandler;
 
                 }, {
-                    // hint "landed";
+                    enableCamShake false;
+                    resetCamShake;
                 }] call GRAD_drop_fnc_initHaloJump;
 
         } forEach [
