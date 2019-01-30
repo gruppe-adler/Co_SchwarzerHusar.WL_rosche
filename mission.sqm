@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14317.496,90.876053,9139.4189};
-		dir[]={-0.21450338,-0.61140555,0.76169324};
-		up[]={-0.16573431,0.79131365,0.58851683};
-		aside[]={0.96256059,6.4945198e-008,0.27106979};
+		pos[]={11335.291,58.236935,3983.5239};
+		dir[]={-0.2632733,-0.34994245,0.89901757};
+		up[]={-0.098348938,0.93677086,0.335839};
+		aside[]={0.95969784,3.4291588e-008,0.28104347};
 	};
 };
 binarizationWanted=0;
@@ -27116,7 +27116,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14245.133,41.727039,9166.6787};
-				angles[]={6.250391,1.0494136,6.24301};
+				angles[]={0.015998369,3.0985119,6.2378831};
 			};
 			side="Empty";
 			flags=4;
@@ -27126,7 +27126,7 @@ class Mission
 			};
 			id=1958;
 			type="C130J_wreck_EP1";
-			atlOffset=0.068660736;
+			atlOffset=0.052089691;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27156,18 +27156,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14255.819,37.753448,9172.6787};
-				angles[]={6.233285,4.2709074,6.2348447};
+				position[]={14245.541,38.885082,9154.4297};
+				angles[]={0,0.036819935,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				disableSimulation=1;
 			};
 			id=1959;
 			type="Redd_Wiesel_MK20_Wreck";
-			atlOffset=0.099868774;
+			atlOffset=0.27323914;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27216,8 +27215,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14235.896,37.149586,9159.5625};
-				angles[]={0.059790965,1.0494136,6.1816745};
+				position[]={14243.066,36.001408,9178.1543};
+				angles[]={0.037114717,3.0985119,6.1805425};
 			};
 			id=1960;
 			type="ModulePersistentSmokePillar_F";
@@ -27251,8 +27250,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14234.431,37.154724,9163.9883};
-				angles[]={0.059790965,1.0494136,6.2392135};
+				position[]={14247.67,35.928467,9177.418};
+				angles[]={0.023356508,3.0985119,6.2577238};
 			};
 			id=1961;
 			type="ModulePersistentSmokePillar_F";
@@ -27286,8 +27285,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14254.711,35.895676,9171.916};
-				angles[]={0.025327841,1.0494136,0};
+				position[]={14245.374,36.830498,9155.7646};
+				angles[]={0.1408367,3.0985119,6.2271066};
 			};
 			id=1962;
 			type="ModulePersistentSmokePillar_F";
@@ -27321,8 +27320,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14232.774,37.071358,9163.6055};
-				angles[]={0.059790965,1.0494136,6.2392135};
+				position[]={14248.093,35.701534,9179.0645};
+				angles[]={0.015998369,3.0985119,6.2325621};
 			};
 			id=1963;
 			type="ModuleEffectsFire_F";
@@ -27545,8 +27544,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14255.09,35.931702,9173.1045};
-				angles[]={0.015994642,1.0494136,0};
+				position[]={14246.255,36.966663,9154.8818};
+				angles[]={0.1408367,3.0985119,6.2271066};
 			};
 			id=1964;
 			type="ModuleEffectsFire_F";
@@ -27770,11 +27769,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14236.453,37.136948,9158.4004};
-				angles[]={0.059790965,1.0494136,6.1816745};
+				position[]={14241.778,36.070469,9178.1943};
+				angles[]={6.2339163,3.0985119,0.78078723};
 			};
 			id=1965;
 			type="ModuleEffectsFire_F";
+			atlOffset=-3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27994,8 +27994,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14244.113,37.724895,9167.3096};
-				angles[]={0.015998369,1.0494136,6.2378831};
+				position[]={14246.16,37.629761,9167.458};
+				angles[]={6.2703595,3.0985119,6.1597977};
 			};
 			side="Empty";
 			flags=4;
@@ -28056,7 +28056,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11316.742,33.127426,4070.5259};
-				angles[]={6.2457447,0.56019324,6.2567677};
+				angles[]={0.0080009829,4.008945,6.2751846};
 			};
 			side="Empty";
 			flags=4;
@@ -28066,7 +28066,7 @@ class Mission
 			};
 			id=1967;
 			type="C130J_wreck_EP1";
-			atlOffset=0.071393967;
+			atlOffset=0.055908203;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28096,8 +28096,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11321.841,29.587849,4081.189};
-				angles[]={6.0666018,3.7816873,6.0233707};
+				position[]={11308.658,29.636913,4061.9036};
+				angles[]={0.24584745,0.94725347,0.16103353};
 			};
 			side="Empty";
 			flags=4;
@@ -28107,7 +28107,7 @@ class Mission
 			};
 			id=1968;
 			type="Redd_Wiesel_MK20_Wreck";
-			atlOffset=7.6293945e-006;
+			atlOffset=0.1055088;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28156,12 +28156,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11311.934,27.659008,4059.9038};
-				angles[]={0.023205442,0.56019324,0.051108576};
+				position[]={11324.537,27.611952,4079.197};
+				angles[]={6.2587929,4.008945,6.2234426};
 			};
 			id=1969;
 			type="ModulePersistentSmokePillar_F";
-			atlOffset=0.0050354004;
+			atlOffset=0.005033493;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28191,12 +28191,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11308.562,27.850704,4063.1216};
-				angles[]={0.21164118,0.56019324,0.35388812};
+				position[]={11326.778,27.867344,4075.1101};
+				angles[]={5.9883475,4.008945,5.9865994};
 			};
 			id=1970;
 			type="ModulePersistentSmokePillar_F";
-			atlOffset=0.0591259;
+			atlOffset=0.21736145;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28226,12 +28226,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11322.6,27.900322,4080.2307};
-				angles[]={0.017329043,0.56019324,0.0066592805};
+				position[]={11308.225,27.912569,4063.0464};
+				angles[]={6.23733,4.008945,6.1351719};
 			};
 			id=1971;
 			type="ModulePersistentSmokePillar_F";
-			atlOffset=0.17440605;
+			atlOffset=0.2809639;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28261,8 +28261,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11307.278,27.729671,4062.0054};
-				angles[]={6.2738695,0.56019324,6.26302};
+				position[]={11328.339,27.773592,4075.7861};
+				angles[]={-0,4.008945,0.0079935296};
 			};
 			id=1972;
 			type="ModuleEffectsFire_F";
@@ -28486,12 +28486,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11321.877,27.708677,4080.7505};
-				angles[]={0.017329043,0.56019324,0.0066592805};
+				position[]={11308.756,27.748739,4062.3323};
+				angles[]={0.24584745,4.008945,0.16103353};
 			};
 			id=1973;
 			type="ModuleEffectsFire_F";
-			atlOffset=3.8146973e-006;
+			atlOffset=0.082126617;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28711,8 +28711,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11312.972,27.659073,4059.1396};
-				angles[]={0.0066592805,0.56019324,0};
+				position[]={11323.779,27.597717,4080.2393};
+				angles[]={0.017329043,4.008945,0.0066592805};
 			};
 			id=1974;
 			type="ModuleEffectsFire_F";
@@ -28936,8 +28936,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11316.613,29.287809,4070.2446};
-				angles[]={6.2002716,0.56019324,6.2382345};
+				position[]={11317.054,29.282532,4070.4641};
+				angles[]={0.056870945,4.008945,6.2789993};
 			};
 			side="Empty";
 			flags=4;
@@ -28948,7 +28948,7 @@ class Mission
 			};
 			id=1975;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
-			atlOffset=0.013906479;
+			atlOffset=0.048212051;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45065,8 +45065,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14297.144,35.90535,9219.751};
-				angles[]={0.0039968039,4.0936522,6.2605309};
+				position[]={14301.486,36.062389,9184.7246};
+				angles[]={0.0053265258,4.0936522,6.2778587};
 			};
 			side="Empty";
 			flags=4;
@@ -45181,8 +45181,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14278.475,36.620853,9211.5742};
-				angles[]={0,4.0775781,6.2392201};
+				position[]={14282.817,36.490009,9176.5479};
+				angles[]={0.0026744273,4.0775781,6.2578578};
 			};
 			side="Empty";
 			flags=4;
@@ -45297,8 +45297,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14259.963,37.045021,9204.3047};
-				angles[]={0.012007865,4.024642,6.2392201};
+				position[]={14264.306,37.107281,9169.2783};
+				angles[]={0.023993526,4.024642,6.2325635};
 			};
 			side="Empty";
 			flags=4;
@@ -45308,7 +45308,7 @@ class Mission
 			};
 			id=2608;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
-			atlOffset=-0.069000244;
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45338,8 +45338,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14257.434,35.730091,9202.6943};
-				angles[]={0.012007865,0,6.2299004};
+				position[]={14261.992,35.771065,9166.7461};
+				angles[]={0.025327841,0,6.2312322};
 			};
 			side="Empty";
 			flags=4;
@@ -45377,8 +45377,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14270.07,35.05558,9226.6729};
-				angles[]={0,0,6.2631841};
+				position[]={14274.413,34.932808,9191.6465};
+				angles[]={-0,0,6.2392149};
 			};
 			side="Empty";
 			flags=4;
@@ -45417,8 +45417,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14272.317,36.58989,9228.5459};
-				angles[]={0,4.024642,6.2631893};
+				position[]={14276.66,36.42038,9193.5195};
+				angles[]={-0,4.024642,6.2392149};
 			};
 			side="Empty";
 			flags=4;
@@ -45428,7 +45428,7 @@ class Mission
 			};
 			id=2611;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
-			atlOffset=-0.0064277649;
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
