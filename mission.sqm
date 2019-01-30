@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=3923;
+		nextID=3930;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={988.95306,37.69875,4496.0835};
-		dir[]={-0.57399523,-0.40935391,0.70921552};
-		up[]={-0.25752985,0.91237736,0.31820014};
-		aside[]={0.77732956,-8.3970372e-007,0.62912107};
+		pos[]={14317.496,90.876053,9139.4189};
+		dir[]={-0.21450338,-0.61140555,0.76169324};
+		up[]={-0.16573431,0.79131365,0.58851683};
+		aside[]={0.96256059,6.4945198e-008,0.27106979};
 	};
 };
 binarizationWanted=0;
@@ -3589,7 +3589,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=911;
+		items=918;
 		class Item0
 		{
 			dataType="Layer";
@@ -6466,7 +6466,6 @@ class Mission
 							class Attributes
 							{
 								description="Grenadier";
-								isPlayer=1;
 								isPlayable=1;
 							};
 							id=2905;
@@ -8033,13 +8032,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={953.40491,15.131439,4539.1436};
+								position[]={953.40503,15.131439,4539.144};
 							};
 							side="West";
 							flags=5;
 							class Attributes
 							{
 								description="Grenadier";
+								isPlayer=1;
 								isPlayable=1;
 							};
 							id=2928;
@@ -29608,8 +29608,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={783.61462,15.899796,4899.5264};
-				angles[]={0.010956503,2.2960038,0.011278194};
+				position[]={783.61426,15.899998,4899.5259};
+				angles[]={0.010960668,2.2959979,0.011274828};
 			};
 			side="Empty";
 			flags=4;
@@ -29620,7 +29620,6 @@ class Mission
 			};
 			id=1998;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
-			atlOffset=-0.00020122528;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29657,7 +29656,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=4;
+							value=1;
 						};
 					};
 				};
@@ -29676,7 +29675,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""ACE_VMM3""],[1]],[[""rhsusf_m112x4_mag"",""ATMine_Range_Mag"",""SatchelCharge_Remote_Mag"",""hlc_20rnd_762x51_T_G3""],[8,15,2,10]],[[""grad_axe"",""ACE_EntrenchingTool"",""ACE_Fortify"",""ACE_wirecutter""],[2,2,2,2]],[[],[]]],false]";
+							value="[[[[""ACE_VMM3""],[1]],[[""rhsusf_m112x4_mag"",""ATMine_Range_Mag"",""SatchelCharge_Remote_Mag"",""hlc_20rnd_762x51_T_G3""],[8,15,2,10]],[[""grad_axe"",""ACE_EntrenchingTool"",""ACE_wirecutter""],[2,2,2]],[[],[]]],false]";
 						};
 					};
 				};
@@ -29745,8 +29744,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={786.35858,15.865078,4903.2627};
-				angles[]={0.016359426,2.2960038,0.0058695469};
+				position[]={786.35822,15.865083,4903.2622};
+				angles[]={0.016353734,2.2959979,0.0058643064};
 			};
 			side="Empty";
 			flags=4;
@@ -29786,8 +29785,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={788.88672,16.172787,4886.5391};
-				angles[]={0.017679788,2.2960038,0.011580671};
+				position[]={789.26105,16.175858,4886.6313};
+				angles[]={0.017679788,2.2959979,0.011580671};
 			};
 			side="Empty";
 			flags=4;
@@ -29798,7 +29797,6 @@ class Mission
 			};
 			id=2000;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
-			atlOffset=-0.00037002563;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44510,7 +44508,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={791.40509,14.722284,4884.6191};
+				position[]={791.94598,14.717341,4885.2549};
 				angles[]={0.017679788,2.2579956,0.011580671};
 			};
 			side="Empty";
@@ -44521,7 +44519,6 @@ class Mission
 			};
 			id=2588;
 			type="rhs_7ya37_1_single";
-			atlOffset=-2.6702881e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44907,8 +44904,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={787.39075,14.468489,4896.4873};
-				angles[]={0.017291164,2.4204483,0.011278194};
+				position[]={785.26373,14.417877,4898.332};
+				angles[]={0.010956503,2.42044,0.011278194};
 			};
 			side="Empty";
 			flags=4;
@@ -44918,7 +44915,6 @@ class Mission
 			};
 			id=2600;
 			type="rhs_7ya37_1_single";
-			atlOffset=-2.7656555e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45029,8 +45025,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11281.15,27.084751,4080.9866};
-				angles[]={0.0053377044,0,0.019996032};
+				position[]={11281.15,27.084749,4080.9871};
+				angles[]={0.0053407075,0,0.020001473};
 			};
 			side="Empty";
 			flags=4;
@@ -45040,6 +45036,29 @@ class Mission
 			id=2605;
 			type="ACE_medicalSupplyCrate_advanced";
 			atlOffset=0.066999435;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_tourniquet"",""ACE_morphine"",""ACE_adenosine"",""ACE_atropine"",""ACE_epinephrine"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACE_plasmaIV_250"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_salineIV_250"",""ACE_bloodIV"",""ACE_bloodIV_500"",""ACE_bloodIV_250"",""ACE_quikclot"",""ACE_surgicalKit"",""ACE_bodyBag"",""GRAD_ALK""],[25,25,25,15,15,15,15,15,7,7,7,7,7,7,7,7,7,20,2,5,2]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item746
 		{
@@ -45099,6 +45118,25 @@ class Mission
 				};
 				class Attribute2
 				{
+					property="ace_repair_editorLoadedTracks";
+					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute3
+				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -45116,7 +45154,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute4
 				{
 					property="Redd_Tank_Wiesel_1A4_MK_Kompanie_Attribute";
 					expression="_this setVariable ['Redd_Tank_Wiesel_1A4_MK_Kompanie', _value];";
@@ -45135,7 +45173,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=5;
 			};
 		};
 		class Item747
@@ -45158,6 +45196,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ace_repair_editorLoadedTracks";
+					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="Redd_Tank_Wiesel_1A2_TOW_Kompanie_Attribute";
 					expression="_this setVariable ['Redd_Tank_Wiesel_1A2_TOW_Kompanie', _value];";
 					class Value
@@ -45175,7 +45232,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -45194,7 +45251,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute3
 				{
 					property="Redd_Tank_Wiesel_1A2_TOW_Waffengattung_Attribute";
 					expression="_this setVariable ['Redd_Tank_Wiesel_1A2_TOW_Waffengattung', _value];";
@@ -45213,7 +45270,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute4
 				{
 					property="Redd_Tank_Wiesel_1A2_TOW_Bataillon_Attribute";
 					expression="_this setVariable ['Redd_Tank_Wiesel_1A2_TOW_Bataillon', _value];";
@@ -45232,7 +45289,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=5;
 			};
 		};
 		class Item748
@@ -45321,7 +45378,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14270.07,35.05558,9226.6729};
-				angles[]={0,0,6.2631893};
+				angles[]={0,0,6.2631841};
 			};
 			side="Empty";
 			flags=4;
@@ -45348,7 +45405,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_tourniquet"",""ACE_morphine"",""ACE_adenosine"",""ACE_atropine"",""ACE_epinephrine"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACE_plasmaIV_250"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_salineIV_250"",""ACE_bloodIV"",""ACE_bloodIV_500"",""ACE_bloodIV_250"",""ACE_quikclot"",""ACE_personalAidKit"",""ACE_surgicalKit"",""ACE_bodyBag"",""GRAD_ALK""],[25,25,25,15,15,15,15,15,7,7,7,7,7,7,10,10,10,20,3,2,5,2]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_tourniquet"",""ACE_morphine"",""ACE_adenosine"",""ACE_atropine"",""ACE_epinephrine"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACE_plasmaIV_250"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_salineIV_250"",""ACE_bloodIV"",""ACE_bloodIV_500"",""ACE_bloodIV_250"",""ACE_quikclot"",""ACE_surgicalKit"",""ACE_bodyBag"",""GRAD_ALK""],[25,25,25,15,15,15,15,15,7,7,7,7,7,7,10,10,10,20,2,5,2]],[[],[]]],false]";
 						};
 					};
 				};
@@ -46992,7 +47049,6 @@ class Mission
 			};
 			id=2690;
 			type="ModuleTracers_F";
-			atlOffset=0.036323547;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -47590,8 +47646,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={781.16553,15.926208,4895.6479};
-				angles[]={0.017002631,2.2960038,0.01156522};
+				position[]={781.16577,15.926555,4895.6484};
+				angles[]={0.016999505,2.2959979,0.011571533};
 			};
 			side="Empty";
 			flags=4;
@@ -47602,7 +47658,6 @@ class Mission
 			};
 			id=2975;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
-			atlOffset=-0.00035190582;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -51507,6 +51562,25 @@ class Mission
 				};
 				class Attribute2
 				{
+					property="ace_repair_editorLoadedTracks";
+					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute3
+				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -51524,7 +51598,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute4
 				{
 					property="Redd_Tank_Wiesel_1A4_MK_Kompanie_Attribute";
 					expression="_this setVariable ['Redd_Tank_Wiesel_1A4_MK_Kompanie', _value];";
@@ -51543,7 +51617,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=5;
 			};
 		};
 		class Item815
@@ -51566,6 +51640,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ace_repair_editorLoadedTracks";
+					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="Redd_Tank_Wiesel_1A2_TOW_Kompanie_Attribute";
 					expression="_this setVariable ['Redd_Tank_Wiesel_1A2_TOW_Kompanie', _value];";
 					class Value
@@ -51583,7 +51676,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -51602,7 +51695,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute3
 				{
 					property="Redd_Tank_Wiesel_1A2_TOW_Waffengattung_Attribute";
 					expression="_this setVariable ['Redd_Tank_Wiesel_1A2_TOW_Waffengattung', _value];";
@@ -51621,7 +51714,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute4
 				{
 					property="Redd_Tank_Wiesel_1A2_TOW_Bataillon_Attribute";
 					expression="_this setVariable ['Redd_Tank_Wiesel_1A2_TOW_Bataillon', _value];";
@@ -51640,7 +51733,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=5;
 			};
 		};
 		class Item816
@@ -67114,16 +67207,396 @@ class Mission
 			id=3777;
 			atlOffset=-2.2888184e-005;
 		};
+		class Item911
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={788.61243,14.506445,4895.123};
+				angles[]={0.017291164,2.42044,0.011779695};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=3923;
+			type="rhs_7ya37_1_single";
+			atlOffset=-9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""ATMine_Range_Mag"",""ClaymoreDirectionalMine_Remote_Mag""],[15,6]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item912
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11310.903,28.466957,4014.5227};
+				angles[]={0.0066671576,3.5764239,0.023998277};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=3924;
+			type="rhs_7ya37_1_single";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""ATMine_Range_Mag"",""ClaymoreDirectionalMine_Remote_Mag""],[15,6]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item913
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11312.736,30.007141,4017.2009};
+				angles[]={0.0066682254,3.4519744,0.02399601};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="Fleck";
+				dynamicSimulation=1;
+			};
+			id=3925;
+			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_refuel_fuelCargo";
+					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1000;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""ACE_VMM3""],[1]],[[""rhsusf_m112x4_mag"",""ATMine_Range_Mag"",""SatchelCharge_Remote_Mag"",""hlc_20rnd_762x51_T_G3""],[8,15,2,10]],[[""grad_axe"",""ACE_EntrenchingTool"",""ACE_wirecutter""],[2,4,2]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_isRepairVehicle";
+					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ace_cargo_space";
+					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=18;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ace_rearm_rearmCargo";
+					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_rearm_defaultSupply"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_rearm_defaultSupply"")} else {-1})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1000;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+		class Item914
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={801.68652,16.605526,4898.1494};
+				angles[]={6.2364783,2.2959979,0.077480085};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="Fleck";
+				dynamicSimulation=1;
+			};
+			id=3926;
+			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""hlc_20rnd_762x51_T_G3""],[5]],[[""ACE_RangeTable_82mm""],[4]],[[""Redd_Tank_M120_Tampella_Barrel"",""Redd_Tank_M120_Tampella_Tripod""],[4,2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item915
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11303.255,29.916348,4002.4944};
+				angles[]={0.0039967569,3.418623,0.042640556};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="Fleck";
+				dynamicSimulation=1;
+			};
+			id=3927;
+			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhsgref_30rnd_1143x23_M1T_2mag_SMG"",""hlc_20rnd_762x51_T_G3"",""hlc_100Rnd_762x51_T_M60E4"",""hlc_200Rnd_792x57_T_MG42"",""rhs_mag_an_m8hc"",""rhs_mag_f1"",""rhs_mag_M433_HEDP"",""MRAWS_HE_F"",""MRAWS_HEAT_F""],[9,10,10,5,5,5,10,2,2]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item916
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11302.853,28.41646,3999.3342};
+				angles[]={0.0039967569,2.2579956,0.042640556};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=3928;
+			type="rhs_7ya37_1_single";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhsgref_30rnd_1143x23_M1911B_2mag_SMG"",""hlc_20rnd_762x51_T_G3"",""hlc_250Rnd_762x51_T_MG3"",""rhs_mag_an_m8hc"",""rhs_mag_f1"",""rhs_mag_M433_HEDP"",""MRAWS_HE_F"",""MRAWS_HEAT_F"",""hlc_100Rnd_762x51_T_MG3""],[20,40,10,5,10,20,3,3,14]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item917
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11316.042,30.228165,4000.9666};
+				angles[]={0.0079936078,3.3998141,0.013334315};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="Fleck";
+				dynamicSimulation=1;
+			};
+			id=3929;
+			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""hlc_20rnd_762x51_T_G3""],[5]],[[""ACE_RangeTable_82mm""],[4]],[[""Redd_Tank_M120_Tampella_Barrel"",""Redd_Tank_M120_Tampella_Tripod""],[4,2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=25;
+			nextID=26;
 		};
 		class Links
 		{
-			items=25;
+			items=26;
 			class Item0
 			{
 				linkID=0;
@@ -67369,6 +67842,16 @@ class Mission
 				linkID=24;
 				item0=3897;
 				item1=2905;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item25
+			{
+				linkID=25;
+				item0=3897;
+				item1=2928;
 				class CustomData
 				{
 					type="Sync";
