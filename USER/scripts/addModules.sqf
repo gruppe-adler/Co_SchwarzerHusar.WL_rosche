@@ -85,7 +85,7 @@ if (
 
     [[],"USER\scripts\initHaloJump.sqf"] remoteExec ["BIS_fnc_execVM",0,false];
 
-    systemChat "halo jump sequence started";
+    systemChat "ZEUS debug: halo jump sequence started";
 
   }] call Ares_fnc_RegisterCustomModule; 
 
@@ -97,7 +97,7 @@ if (
 
     [[],"USER\scripts\timeJump.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
 
-    systemChat "Time Jump to morning started";
+    systemChat "ZEUS debug: Time Jump to morning started";
 
   }] call Ares_fnc_RegisterCustomModule;
 
@@ -109,7 +109,7 @@ if (
 
     [[],"USER\scripts\convoy.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
 
-    systemChat "Convoy spawned";
+    systemChat "ZEUS debug: Convoy spawned";
 
   }] call Ares_fnc_RegisterCustomModule;
 

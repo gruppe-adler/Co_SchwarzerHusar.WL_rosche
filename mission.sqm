@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=350;
+		nextID=360;
 	};
 	class Camera
 	{
-		pos[]={790.06763,39.36496,4870.6689};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={985.08325,48.280312,4470.6597};
+		dir[]={-0.18979569,-0.53795975,0.82133186};
+		up[]={-0.12112226,0.84297007,0.52414989};
+		aside[]={0.97433007,-3.8184226e-008,0.22515151};
 	};
 };
 binarizationWanted=0;
@@ -28158,7 +28158,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11333.065,27.607895,4077.7212};
-				angles[]={-0,6.0307312,6.1650715};
+				angles[]={0,6.0307312,6.1650715};
 			};
 			id=1969;
 			type="ModulePersistentSmokePillar_F";
@@ -44694,6 +44694,7 @@ class Mission
 			};
 			id=2605;
 			type="ACE_medicalSupplyCrate_advanced";
+			atlOffset=-1.9073486e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44724,7 +44725,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14316.518,36.082378,9162.9551};
-				angles[]={-0,4.0936522,0};
+				angles[]={0,4.0936522,0};
 			};
 			side="Empty";
 			flags=4;
@@ -44734,6 +44735,7 @@ class Mission
 			};
 			id=2606;
 			type="Redd_Tank_Wiesel_1A4_MK20_Flecktarn";
+			atlOffset=-5.7220459e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44850,6 +44852,7 @@ class Mission
 			};
 			id=2607;
 			type="Redd_Tank_Wiesel_1A2_TOW_Flecktarn";
+			atlOffset=-0.0001449585;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44966,7 +44969,7 @@ class Mission
 			};
 			id=2608;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
-			atlOffset=3.8146973e-006;
+			atlOffset=-0.00078201294;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45006,7 +45009,7 @@ class Mission
 			};
 			id=2609;
 			type="rhs_7ya37_1_single";
-			atlOffset=3.8146973e-006;
+			atlOffset=-3.4332275e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45086,6 +45089,7 @@ class Mission
 			};
 			id=2611;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=-0.00044631958;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -67138,6 +67142,7 @@ class Mission
 			};
 			id=3928;
 			type="rhs_7ya37_1_single";
+			atlOffset=-1.9073486e-005;
 			class CustomAttributes
 			{
 				class Attribute0
