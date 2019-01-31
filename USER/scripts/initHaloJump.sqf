@@ -1,7 +1,3 @@
-3 fadeSound 0;
-sleep 3;
-
-
 if (isServer) then {
 
         {
@@ -14,10 +10,11 @@ if (isServer) then {
                    };
                 } forEach allUnits;
 
+                private _pos = getMarkerPos _marker;
                 private _dir = markerDir _marker;
                 private _height = 160;
 
-                [_units, _marker, _dir, _height, 5, false, {
+                [_units, _pos, _dir, _height, 5, false, {
                     3 fadeSound 1;
                     // cutText ["", "BLACK IN", 2];
 
