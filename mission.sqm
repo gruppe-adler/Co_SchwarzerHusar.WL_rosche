@@ -45099,7 +45099,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=2698;
 					type="rhsgref_cdf_ngd_machinegunner";
@@ -45215,7 +45215,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						stance="Middle";
 					};
 					id=2701;
@@ -45332,7 +45332,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						stance="Middle";
 					};
 					id=2703;
@@ -49382,7 +49382,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=3164;
 					type="rhsgref_cdf_ngd_rifleman_ak74";
@@ -49519,7 +49519,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=3166;
 					type="rhsgref_cdf_ngd_rifleman_ak74";
@@ -50329,7 +50329,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						stance="Middle";
 						class Inventory
 						{
@@ -50473,7 +50473,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						stance="Middle";
 						class Inventory
 						{
@@ -50616,7 +50616,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -50759,7 +50759,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -50902,7 +50902,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51045,7 +51045,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51188,7 +51188,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51330,7 +51330,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51472,7 +51472,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51623,7 +51623,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51765,7 +51765,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51908,7 +51908,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52051,7 +52051,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52194,7 +52194,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52336,7 +52336,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52478,7 +52478,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52621,7 +52621,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52764,7 +52764,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52907,7 +52907,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -53049,7 +53049,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -53191,7 +53191,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -54283,7 +54283,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -54439,7 +54439,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -54594,7 +54594,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -54774,7 +54774,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -54917,7 +54917,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						stance="Middle";
 						class Inventory
 						{
@@ -55061,7 +55061,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						stance="Middle";
 						class Inventory
 						{
@@ -55204,7 +55204,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -55346,7 +55346,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -55489,7 +55489,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -55631,7 +55631,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -55774,7 +55774,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -55917,7 +55917,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						stance="Down";
 						class Inventory
 						{
@@ -56062,7 +56062,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -56205,7 +56205,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -56348,7 +56348,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -56491,7 +56491,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -56632,7 +56632,7 @@ class Mission
 					side="Independent";
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=3399;
 					type="rhsgref_cdf_ngd_medic";
@@ -56692,7 +56692,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -56835,7 +56835,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -56977,7 +56977,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -57120,7 +57120,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -57263,7 +57263,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -57406,7 +57406,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -57549,7 +57549,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -57691,7 +57691,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -57834,7 +57834,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=3198;
 					type="rhsgref_cdf_ngd_machinegunner";
@@ -57893,7 +57893,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=3256;
 					type="rhsgref_cdf_ngd_machinegunner";
@@ -57952,7 +57952,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -58062,7 +58062,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=3380;
 					type="rhsgref_cdf_ngd_medic";
@@ -58122,7 +58122,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=3389;
 					type="rhsgref_cdf_ngd_officer";
@@ -58182,7 +58182,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=3392;
 					type="rhsgref_cdf_ngd_medic";
@@ -58241,7 +58241,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=3405;
 					type="rhsgref_cdf_ngd_medic";
@@ -58300,7 +58300,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -58443,7 +58443,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -58587,7 +58587,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -58743,7 +58743,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -58920,7 +58920,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -59530,7 +59530,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -59685,7 +59685,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -59840,7 +59840,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -59962,7 +59962,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -60117,7 +60117,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -60272,7 +60272,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						stance="Middle";
 						class Inventory
 						{
@@ -60428,7 +60428,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -60584,7 +60584,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						stance="Middle";
 						class Inventory
 						{
@@ -60740,7 +60740,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -60978,7 +60978,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -61215,7 +61215,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -61368,7 +61368,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -65063,7 +65063,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -65215,7 +65215,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -65359,7 +65359,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -65469,7 +65469,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -65626,7 +65626,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -65769,7 +65769,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=4028;
 					type="rhsgref_cdf_ngd_medic";
@@ -65828,7 +65828,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -66326,7 +66326,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -66478,7 +66478,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -66588,7 +66588,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -66763,7 +66763,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -66906,7 +66906,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -67058,7 +67058,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -67184,7 +67184,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -67327,7 +67327,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -67479,7 +67479,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -67605,7 +67605,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -67748,7 +67748,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -67900,7 +67900,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -70602,7 +70602,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -70753,7 +70753,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -70896,7 +70896,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -71005,7 +71005,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -71162,7 +71162,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -71305,7 +71305,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=4205;
 					type="rhsgref_cdf_ngd_medic";
@@ -71363,7 +71363,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -71659,7 +71659,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -71810,7 +71810,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -71953,7 +71953,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -72062,7 +72062,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -72219,7 +72219,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -72362,7 +72362,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=4214;
 					type="rhsgref_cdf_ngd_medic";
@@ -72420,7 +72420,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -72716,7 +72716,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -72868,7 +72868,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -73012,7 +73012,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -73122,7 +73122,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -73281,7 +73281,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -73425,7 +73425,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=4223;
 					type="rhsgref_cdf_ngd_medic";
@@ -73484,7 +73484,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -73782,7 +73782,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -73934,7 +73934,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -74078,7 +74078,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -74188,7 +74188,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -74347,7 +74347,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -74491,7 +74491,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 					};
 					id=4232;
 					type="rhsgref_cdf_ngd_medic";
@@ -74550,7 +74550,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -74849,7 +74849,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -74992,7 +74992,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -75135,7 +75135,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -75511,7 +75511,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -75654,7 +75654,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -76041,7 +76041,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this disableAI ""MOVE"";}";
+						init="call{this forceSpeed 0;}";
 						class Inventory
 						{
 							class primaryWeapon
