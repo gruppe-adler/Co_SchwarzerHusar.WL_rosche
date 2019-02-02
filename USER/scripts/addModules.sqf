@@ -114,6 +114,18 @@ if (
   }] call Ares_fnc_RegisterCustomModule;
 
 
+   ["SCHWARZER HUSAR", "Spawn Enemy Group",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    [[_position],"USER\scripts\spawnGroup.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
+
+    systemChat "ZEUS debug: Group spawned";
+
+  }] call Ares_fnc_RegisterCustomModule;
+
+
 
    
 
