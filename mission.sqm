@@ -20,7 +20,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={992.99731,25.264318,4546.5195};
+		pos[]={966.45502,25.264318,4517.0747};
 		dir[]={0.61452132,-0.39704394,0.68170434};
 		up[]={0.26584467,0.9177987,0.29490849};
 		aside[]={0.74275905,-5.9604645e-008,-0.669559};
@@ -497,7 +497,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -61703,6 +61703,7 @@ class Mission
 			};
 			id=3899;
 			type="Land_Billboard_F";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -61743,6 +61744,7 @@ class Mission
 			};
 			id=3900;
 			type="Land_Billboard_F";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -61783,6 +61785,7 @@ class Mission
 			};
 			id=3901;
 			type="Land_Billboard_F";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
