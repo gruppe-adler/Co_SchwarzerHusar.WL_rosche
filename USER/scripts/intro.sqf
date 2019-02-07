@@ -6,8 +6,7 @@ userTexture3 setObjectTexture [0, "data\intro3.paa"];
 
 playMusic "LeadTrack02_F_Tank";
 
-cutText ["", "BLACK IN", 10];
-["Default", 60, false] call BIS_fnc_setPPeffectTemplate;
+cutText ["", "BLACK IN", 8];
 
 [player, "amovpercmstpslowwrfldnon"] remoteExec ["switchMove", 0];
 
@@ -35,6 +34,7 @@ sleep 10;
 _camera camSetPos (position camPos3);
 _camera camSetTarget camTarget3;
 _camera camCommit 10;
+["Default", 18, false] call BIS_fnc_setPPeffectTemplate;
 sleep 15;
 _camera camCommand "inertia on";
 _camera camSetTarget player;
