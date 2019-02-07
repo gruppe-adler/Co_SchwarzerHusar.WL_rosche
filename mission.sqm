@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4426;
+		nextID=4439;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=430;
+		nextID=450;
 	};
 	class Camera
 	{
-		pos[]={7377.0498,80.317825,5687.4458};
-		dir[]={0.94250315,-0.29122773,0.16400321};
-		up[]={0.2869164,0.95665121,0.049925987};
-		aside[]={0.1714322,4.3335604e-008,-0.98520607};
+		pos[]={5254.877,91.890892,5496.9385};
+		dir[]={0.88651603,-0.40571716,-0.22245522};
+		up[]={0.39352441,0.91399544,-0.098748043};
+		aside[]={-0.24338679,-4.1828025e-007,-0.96993053};
 	};
 };
 binarizationWanted=0;
@@ -100,13 +100,14 @@ addons[]=
 	"ace_realisticnames",
 	"ace_attach",
 	"ace_chemlights",
-	"A3_Structures_F_System"
+	"A3_Structures_F_System",
+	"HAG_Signs"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=57;
+		items=58;
 		class Item0
 		{
 			className="A3_Modules_F_Heli";
@@ -474,6 +475,11 @@ class AddonsMetaData
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
+		};
+		class Item57
+		{
+			className="HAG_Signs";
+			name="HAG_Signs";
 		};
 	};
 };
@@ -3570,7 +3576,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1058;
+		items=1068;
 		class Item0
 		{
 			dataType="Layer";
@@ -34765,7 +34771,7 @@ class Mission
 					};
 					id=2273;
 					type="rhsusf_airforce_jetpilot";
-					atlOffset=68.624756;
+					atlOffset=68.624771;
 				};
 				class Item1
 				{
@@ -34781,7 +34787,7 @@ class Mission
 					};
 					id=2274;
 					type="rhsusf_airforce_jetpilot";
-					atlOffset=68.6213;
+					atlOffset=68.621323;
 				};
 				class Item2
 				{
@@ -34797,19 +34803,21 @@ class Mission
 					};
 					id=2275;
 					type="rhsusf_airforce_jetpilot";
-					atlOffset=68.6297;
+					atlOffset=68.629715;
 				};
 				class Item3
 				{
 					dataType="Waypoint";
-					position[]={5085.3765,177.19156,-8512.4941};
+					position[]={5085.376,177.19185,-8512.4941};
+					expCond="call{true}";
+					expActiv="call{{private _vehicle = _x; {_vehicle deleteVehicleCrew _x} forEach crew _x; deleteVehicle _vehicle; } forEach thisList;}";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=2276;
 					type="Move";
-					atlOffset=152.06071;
+					atlOffset=152.061;
 				};
 			};
 			class Attributes
@@ -34857,7 +34865,7 @@ class Mission
 				};
 			};
 			id=2272;
-			atlOffset=68.624756;
+			atlOffset=68.624557;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34897,7 +34905,7 @@ class Mission
 			};
 			id=2277;
 			type="RHS_A10";
-			atlOffset=68.624756;
+			atlOffset=68.624557;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34936,7 +34944,7 @@ class Mission
 			};
 			id=2278;
 			type="RHS_A10";
-			atlOffset=68.6213;
+			atlOffset=68.620979;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34975,7 +34983,7 @@ class Mission
 			};
 			id=2279;
 			type="RHS_A10";
-			atlOffset=68.6297;
+			atlOffset=68.630196;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -44857,7 +44865,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=2698;
 					type="rhsgref_cdf_ngd_machinegunner";
@@ -44973,7 +44981,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then {this forceSpeed 0; [this,""REPAIR_VEH_KNEEL""] call BIS_fnc_ambientAnim;};}";
 						stance="Middle";
 					};
 					id=2701;
@@ -45090,7 +45098,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0; if (local this) then {[this,""REPAIR_VEH_KNEEL""] call BIS_fnc_ambientAnim;};}";
+						init="call{ if (local this) then {this forceSpeed 0; [this,""REPAIR_VEH_KNEEL""] call BIS_fnc_ambientAnim;};}";
 						stance="Middle";
 					};
 					id=2703;
@@ -49159,7 +49167,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=3164;
 					type="rhsgref_cdf_ngd_rifleman_ak74";
@@ -49295,7 +49303,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=3166;
 					type="rhsgref_cdf_ngd_rifleman_ak74";
@@ -50106,7 +50114,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						stance="Middle";
 						class Inventory
 						{
@@ -50250,7 +50258,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						stance="Middle";
 						class Inventory
 						{
@@ -50393,7 +50401,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -50536,7 +50544,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -50679,7 +50687,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -50822,7 +50830,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -50965,7 +50973,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51107,7 +51115,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51250,7 +51258,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51401,7 +51409,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51543,7 +51551,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51686,7 +51694,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51829,7 +51837,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -51972,7 +51980,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52114,7 +52122,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52257,7 +52265,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52400,7 +52408,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52542,7 +52550,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52685,7 +52693,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52827,7 +52835,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -52969,7 +52977,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -54061,7 +54069,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -54217,7 +54225,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -54373,7 +54381,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -54551,7 +54559,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -54694,7 +54702,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						stance="Middle";
 						class Inventory
 						{
@@ -54838,7 +54846,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						stance="Middle";
 						class Inventory
 						{
@@ -54981,7 +54989,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -55123,7 +55131,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -55266,7 +55274,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -55408,7 +55416,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -55551,7 +55559,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -55694,7 +55702,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						stance="Down";
 						class Inventory
 						{
@@ -55839,7 +55847,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -55982,7 +55990,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -56125,7 +56133,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -56268,7 +56276,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -56409,7 +56417,7 @@ class Mission
 					side="Independent";
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=3399;
 					type="rhsgref_cdf_ngd_medic";
@@ -56469,7 +56477,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -56612,7 +56620,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -56754,7 +56762,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -56898,7 +56906,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -57041,7 +57049,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -57184,7 +57192,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -57327,7 +57335,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -57469,7 +57477,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -57612,7 +57620,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=3198;
 					type="rhsgref_cdf_ngd_machinegunner";
@@ -57670,7 +57678,7 @@ class Mission
 					side="Independent";
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=3256;
 					type="rhsgref_cdf_ngd_machinegunner";
@@ -57729,7 +57737,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -57839,7 +57847,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=3380;
 					type="rhsgref_cdf_ngd_medic";
@@ -57899,7 +57907,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=3389;
 					type="rhsgref_cdf_ngd_officer";
@@ -57959,7 +57967,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=3392;
 					type="rhsgref_cdf_ngd_medic";
@@ -58018,7 +58026,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=3405;
 					type="rhsgref_cdf_ngd_medic";
@@ -58077,7 +58085,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -58220,7 +58228,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -58364,7 +58372,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -58521,7 +58529,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -58700,7 +58708,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -59309,7 +59317,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -59464,7 +59472,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -59619,7 +59627,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -59741,7 +59749,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -59896,7 +59904,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -60051,7 +60059,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						stance="Middle";
 						class Inventory
 						{
@@ -60207,7 +60215,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -60363,7 +60371,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						stance="Middle";
 						class Inventory
 						{
@@ -60519,7 +60527,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -60757,7 +60765,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -60994,7 +61002,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -61147,7 +61155,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -64592,7 +64600,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -64744,7 +64752,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -64888,7 +64896,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -64998,7 +65006,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -65155,7 +65163,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -65298,7 +65306,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=4028;
 					type="rhsgref_cdf_ngd_medic";
@@ -65357,7 +65365,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -65855,7 +65863,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -66007,7 +66015,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -66117,7 +66125,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -66292,7 +66300,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -66435,7 +66443,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -66587,7 +66595,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -66713,7 +66721,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -66856,7 +66864,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -67008,7 +67016,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -67134,7 +67142,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -67277,7 +67285,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -67429,7 +67437,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -70131,7 +70139,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -70282,7 +70290,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -70425,7 +70433,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -70534,7 +70542,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -70691,7 +70699,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -70834,7 +70842,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=4205;
 					type="rhsgref_cdf_ngd_medic";
@@ -70892,7 +70900,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -71188,7 +71196,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -71339,7 +71347,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -71482,7 +71490,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -71591,7 +71599,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -71748,7 +71756,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -71891,7 +71899,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=4214;
 					type="rhsgref_cdf_ngd_medic";
@@ -71949,7 +71957,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -72245,7 +72253,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -72397,7 +72405,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -72541,7 +72549,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -72651,7 +72659,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -72810,7 +72818,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -72954,7 +72962,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=4223;
 					type="rhsgref_cdf_ngd_medic";
@@ -73013,7 +73021,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -73311,7 +73319,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -73463,7 +73471,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -73607,7 +73615,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -73717,7 +73725,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -73876,7 +73884,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -74020,7 +74028,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 					};
 					id=4232;
 					type="rhsgref_cdf_ngd_medic";
@@ -74079,7 +74087,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this forceSpeed 0;}";
+						init="call{if (local this) then { this forceSpeed 0;};}";
 						class Inventory
 						{
 							class primaryWeapon
@@ -75322,8 +75330,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1725.6415,14.079223,14615.671};
-				angles[]={0.004771689,1.9374201,0.01359328};
+				position[]={5200.9331,28.674786,5485.062};
+				angles[]={6.2828403,1.5323451,0.006587286};
 			};
 			side="Empty";
 			flags=4;
@@ -75339,8 +75347,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1749.7579,14.610107,14606.296};
-				angles[]={0.013527345,1.9047263,0.038781617};
+				position[]={5226.2285,28.747225,5486.2271};
+				angles[]={0,1.5070854,0};
 			};
 			side="Empty";
 			flags=4;
@@ -75356,8 +75364,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1772.8323,14.868067,14597.459};
-				angles[]={0.00034526698,1.8541087,6.2822719};
+				position[]={5250.1504,28.731108,5488.0122};
+				angles[]={0,1.4494388,0};
 			};
 			side="Empty";
 			flags=4;
@@ -75373,8 +75381,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1792.9995,14.794684,14589.207};
-				angles[]={0,1.822235,6.2325621};
+				position[]={5275.5728,28.729546,5490.5693};
+				angles[]={0,1.5291233,0};
 			};
 			side="Empty";
 			flags=4;
@@ -75390,8 +75398,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1808.28,14.357706,14582.426};
-				angles[]={0.047963165,1.8663676,0.0053265258};
+				position[]={5294.6538,28.727135,5492.4678};
+				angles[]={0,1.4533623,0};
 			};
 			side="Empty";
 			flags=4;
@@ -75407,8 +75415,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1823.8527,14.246954,14574.639};
-				angles[]={0.047963165,1.8652308,6.2312322};
+				position[]={5311.5981,28.726061,5494.1455};
+				angles[]={0,1.4544464,0};
 			};
 			side="Empty";
 			flags=4;
@@ -75424,8 +75432,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1843.0894,12.806509,14567.406};
-				angles[]={0.025327841,1.8628356,6.1440892};
+				position[]={5329.6206,28.729063,5495.9521};
+				angles[]={0,1.4929401,0};
 			};
 			side="Empty";
 			flags=4;
@@ -75435,15 +75443,14 @@ class Mission
 			};
 			id=4374;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=9.5367432e-007;
 		};
 		class Item1013
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1860.7689,11.531733,14560.961};
-				angles[]={6.2694006,1.8597574,6.2537799};
+				position[]={5351.9678,28.709923,5497.8594};
+				angles[]={0,1.4912843,6.2813587};
 			};
 			side="Empty";
 			flags=4;
@@ -75459,8 +75466,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1885.0299,11.008799,14553.305};
-				angles[]={6.2796984,1.8385894,6.2733955};
+				position[]={5372.9531,28.628437,5499.8301};
+				angles[]={0.00048828125,1.4812337,6.278018};
 			};
 			side="Empty";
 			flags=4;
@@ -75476,8 +75483,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1902.6686,10.845459,14548.232};
-				angles[]={6.2811141,1.8851663,6.2758775};
+				position[]={5391.2935,28.534868,5501.8389};
+				angles[]={0.00034526698,1.4920862,6.2784767};
 			};
 			side="Empty";
 			flags=4;
@@ -75487,15 +75494,14 @@ class Mission
 			};
 			id=4377;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=9.5367432e-007;
 		};
 		class Item1016
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1920.7771,10.707966,14543.356};
-				angles[]={6.2812018,1.8523649,6.276866};
+				position[]={5411.0571,28.499069,5503.6655};
+				angles[]={6.2828403,1.4553328,0.0025135824};
 			};
 			side="Empty";
 			flags=4;
@@ -75511,8 +75517,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1937.6342,10.618588,14538.075};
-				angles[]={6.2821498,1.9081051,6.2814593};
+				position[]={5427.7983,28.625242,5504.9438};
+				angles[]={6.282495,1.4711542,0.010294561};
 			};
 			side="Empty";
 			flags=4;
@@ -75528,8 +75534,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1957.2616,10.666491,14532.502};
-				angles[]={0.0025837421,1.9006621,0.0057256129};
+				position[]={5449.563,28.66662,5507.1997};
+				angles[]={0.00034526698,1.4842902,6.2766161};
 			};
 			side="Empty";
 			flags=4;
@@ -75545,8 +75551,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1979.6017,11.03751,14526.731};
-				angles[]={0.0062148157,1.9007844,0.019765161};
+				position[]={5475.3857,28.439325,5509.0576};
+				angles[]={0.00048828125,1.4556597,6.2793875};
 			};
 			side="Empty";
 			flags=4;
@@ -75562,8 +75568,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1997.5244,11.553782,14520.929};
-				angles[]={0.0081559271,1.89046,0.031984717};
+				position[]={5501.2134,28.40831,5511.4878};
+				angles[]={0,1.4641223,0.00084572798};
 			};
 			side="Empty";
 			flags=4;
@@ -75573,15 +75579,14 @@ class Mission
 			};
 			id=4382;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=9.5367432e-007;
 		};
 		class Item1021
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2024.6542,12.837964,14513.431};
-				angles[]={0.018116074,1.7908483,0.056734458};
+				position[]={5524.1396,28.419619,5513.8242};
+				angles[]={0,1.5193772,0};
 			};
 			side="Empty";
 			flags=4;
@@ -75597,8 +75602,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2045.9722,14.234584,14506.571};
-				angles[]={0.012653071,1.8559675,0.052561536};
+				position[]={5548.7295,28.419703,5516.2964};
+				angles[]={-0,1.4435441,0};
 			};
 			side="Empty";
 			flags=4;
@@ -75614,8 +75619,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2075.499,14.836038,14497.941};
-				angles[]={0.0022640675,1.7402124,0.0026520467};
+				position[]={5571.0132,28.423441,5518.6978};
+				angles[]={-0,1.4251971,0.00048828125};
 			};
 			side="Empty";
 			flags=4;
@@ -75631,8 +75636,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2105.8125,14.297345,14488.82};
-				angles[]={6.26931,1.8385793,6.2486019};
+				position[]={5600.8359,28.436769,5522.4141};
+				angles[]={0,1.4588544,6.2826972};
 			};
 			side="Empty";
 			flags=4;
@@ -75648,8 +75653,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2134.6709,12.423412,14480.626};
-				angles[]={6.266645,1.8304367,6.2192397};
+				position[]={5628.2441,28.336374,5525.1299};
+				angles[]={0.00077204045,1.4717337,6.276885};
 			};
 			side="Empty";
 			flags=4;
@@ -75665,8 +75670,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2170.7231,11.169775,14470.969};
-				angles[]={6.2799282,1.8232458,6.2724047};
+				position[]={5664.7568,28.134621,5529.334};
+				angles[]={0.00034526698,1.3879566,6.2805562};
 			};
 			side="Empty";
 			flags=4;
@@ -75682,8 +75687,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2204.2468,11.023551,14462.313};
-				angles[]={0.00059801998,1.8361411,0.0014648439};
+				position[]={5695.3267,28.090446,5532.7339};
+				angles[]={0,1.5384208,0};
 			};
 			side="Empty";
 			flags=4;
@@ -75699,8 +75704,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2233.9209,11.069974,14452.834};
-				angles[]={0,1.9593979,0};
+				position[]={5726.9043,28.159634,5536.334};
+				angles[]={6.2826972,1.5153131,0.0049795164};
 			};
 			side="Empty";
 			flags=4;
@@ -75716,289 +75721,289 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2257.2219,13.083,14443.196};
-				angles[]={0,1.9593939,0};
+				position[]={6833.7939,22.184715,5682.792};
+				angles[]={0.0017940601,1.5184257,6.2682309};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_0";
 			};
 			id=4391;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=2.0130005;
 		};
 		class Item1030
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2278.0659,12.826925,14434.243};
-				angles[]={0,1.9593939,0};
+				position[]={6948.7632,22.265614,5697.1558};
+				angles[]={6.2824135,1.5196064,0.010830655};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_1";
 			};
 			id=4392;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=0.68087673;
 		};
 		class Item1031
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2293.9124,14.674154,14427.326};
-				angles[]={0,1.9593939,0};
+				position[]={7033.8892,21.998569,5705.229};
+				angles[]={0,1.5003375,0.0027186358};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_2";
 			};
 			id=4393;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.0010538;
 		};
 		class Item1032
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2313.2537,16.578827,14418.277};
-				angles[]={0,1.9593939,0};
+				position[]={7086.0752,22.049906,5702.8833};
+				angles[]={0.00034526698,1.4867353,0.0012448779};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_3";
 			};
 			id=4394;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.0010529;
 		};
 		class Item1033
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2337.0994,18.645142,14407.23};
-				angles[]={0,1.9593939,0};
+				position[]={7110.0376,22.313711,5699.7324};
+				angles[]={0.0019834081,1.5019141,0.023708608};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_4";
 			};
 			id=4395;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.0368271;
 		};
 		class Item1034
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2371.1309,18.867826,14391.27};
-				angles[]={0,1.9593939,0};
+				position[]={7138.1079,23.224012,5699.29};
+				angles[]={6.2748632,1.4790297,0.041469522};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_5";
 			};
 			id=4396;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.0368271;
 		};
 		class Item1035
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2413.2849,17.194086,14371.426};
-				angles[]={0,1.9593939,0};
+				position[]={7176.4429,25.368349,5712.5361};
+				angles[]={6.266892,1.3978082,0.04422744};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_6";
 			};
 			id=4397;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.0379772;
 		};
 		class Item1036
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2458.0061,12.789508,14351.43};
-				angles[]={0,1.9593939,0};
+				position[]={7219.187,26.472294,5724.3794};
+				angles[]={6.2818937,1.445063,0.012835478};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_7";
 			};
 			id=4398;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=0.95968151;
 		};
 		class Item1037
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2506.6917,12.241201,14328.442};
-				angles[]={0,1.9593939,0};
+				position[]={7252.4111,26.654722,5721.2827};
+				angles[]={0,1.3817073,0.0016914561};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_8";
 			};
 			id=4399;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.1712017;
 		};
 		class Item1038
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2519.6404,12.241289,14320.057};
-				angles[]={0,1.9593939,0};
+				position[]={7308.6064,26.53211,5707.0576};
+				angles[]={6.2820406,1.492257,6.2788591};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_9";
 			};
 			id=4400;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.1712017;
 		};
 		class Item1039
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2527.8877,12.243145,14311.215};
-				angles[]={0,1.9593939,0};
+				position[]={7360.6006,26.345501,5692.7021};
+				angles[]={6.2824135,1.492257,6.2809215};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_10";
 			};
 			id=4401;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.1712017;
 		};
 		class Item1040
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2535.1147,12.242622,14300.02};
-				angles[]={0,1.9593939,0};
+				position[]={7409.3218,26.415316,5686.0073};
+				angles[]={0,1.492257,6.2815661};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_11";
 			};
 			id=4402;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.1712017;
 		};
 		class Item1041
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2540.6379,12.239499,14284.44};
-				angles[]={0,1.9593939,0};
+				position[]={7474.9653,26.324455,5685.6006};
+				angles[]={0,1.492257,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_12";
 			};
 			id=4403;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.1712017;
 		};
 		class Item1042
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2543.7537,12.213543,14270.407};
-				angles[]={0,1.9593939,0};
+				position[]={7538.6455,26.314421,5692.5322};
+				angles[]={0.00034526698,1.492257,6.2810855};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_13";
 			};
 			id=4404;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.1712017;
 		};
 		class Item1043
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2546.3145,12.000256,14254.95};
-				angles[]={0,1.9593939,0};
+				position[]={7680.3115,29.438477,5717.4941};
+				angles[]={6.2795973,1.4442469,0.01915561};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_14";
 			};
 			id=4405;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.1712017;
 		};
 		class Item1044
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2550.7297,11.740749,14239.179};
-				angles[]={0,1.9593939,0};
+				position[]={7783.1113,32.245102,5736.7842};
+				angles[]={6.278194,1.4143387,0.026909495};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_15";
 			};
 			id=4406;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.1712017;
 		};
 		class Item1045
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2555.5344,11.408282,14217.875};
-				angles[]={0,1.9593939,0};
+				position[]={7921.7192,33.692528,5764.4316};
+				angles[]={0.0017263351,1.4206655,6.2741294};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="convoyMoveToPos_16";
 			};
 			id=4407;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.1712017;
 		};
 		class Item1046
 		{
@@ -76047,7 +76052,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11188.232,27.559425,4150.7363};
-				angles[]={-0,3.4111414,6.1571898};
+				angles[]={0,3.4111414,6.1571898};
 			};
 			side="Empty";
 			flags=4;
@@ -76088,7 +76093,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14301.426,35.790062,9166.4785};
-				angles[]={-0,4.024642,6.2578578};
+				angles[]={0,4.024642,6.2578578};
 			};
 			side="Empty";
 			flags=4;
@@ -76541,7 +76546,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14150.715,31.020691,7489.5996};
-						angles[]={-0,3.9715493,0};
+						angles[]={0,3.9715493,0};
 					};
 					side="Independent";
 					flags=6;
@@ -76675,7 +76680,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14150.715,31.020691,7489.5996};
-						angles[]={-0,3.9715493,0};
+						angles[]={0,3.9715493,0};
 					};
 					side="Independent";
 					flags=6;
@@ -76809,7 +76814,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14150.715,31.020691,7489.5996};
-						angles[]={-0,3.9715493,0};
+						angles[]={0,3.9715493,0};
 					};
 					side="Independent";
 					flags=6;
@@ -76949,6 +76954,7 @@ class Mission
 			};
 			id=4423;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -76990,6 +76996,7 @@ class Mission
 			};
 			id=4424;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -77031,6 +77038,7 @@ class Mission
 			};
 			id=4425;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -77055,16 +77063,183 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item1058
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5920.4893,28.422064,5570.6245};
+				angles[]={-0,1.4623417,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="camOutroPos0";
+			};
+			id=4426;
+			type="Land_InvisibleBarrier_F";
+		};
+		class Item1059
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5919.2134,28.945299,5567.3477};
+				angles[]={-0,1.4069532,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=4429;
+			type="Sign_FULL67";
+		};
+		class Item1060
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5917.2886,28.421843,5567.394};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=4430;
+			type="Land_ClutterCutter_large_F";
+		};
+		class Item1061
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5921.499,28.422066,5563.5669};
+				angles[]={-0,1.4623417,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="camOutroPos1";
+			};
+			id=4431;
+			type="Land_InvisibleBarrier_F";
+		};
+		class Item1062
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5862.5801,61.811844,5553.2026};
+				angles[]={0,1.4623417,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="camOutroPos2";
+			};
+			id=4432;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=33.391846;
+		};
+		class Item1063
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5787.6953,95.178055,5544.3867};
+				angles[]={0,1.4623417,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="camOutroPos3";
+			};
+			id=4433;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=66.736038;
+		};
+		class Item1064
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5902.7983,28.111704,5568.3853};
+				angles[]={0.090989411,1.4623417,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="camOutroTarget0";
+			};
+			id=4435;
+			type="Land_InvisibleBarrier_F";
+		};
+		class Item1065
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5904.2192,28.420679,5559.416};
+				angles[]={-0,1.4623417,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="camOutroTarget1";
+			};
+			id=4436;
+			type="Land_InvisibleBarrier_F";
+		};
+		class Item1066
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5854.2705,63.406845,5552.189};
+				angles[]={0,1.4623417,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="camOutroTarget2";
+			};
+			id=4437;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=34.986847;
+		};
+		class Item1067
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5607.4834,70.95549,5522.7349};
+				angles[]={0,1.4623417,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="camOutroTarget3";
+			};
+			id=4438;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=42.528053;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=1164;
+			nextID=1136;
 		};
 		class Links
 		{
-			items=1164;
+			items=1136;
 			class Item0
 			{
 				linkID=0;
@@ -88368,7 +88543,7 @@ class Mission
 			class Item1130
 			{
 				linkID=1130;
-				item0=4380;
+				item0=4408;
 				item1=178;
 				class CustomData
 				{
@@ -88378,7 +88553,7 @@ class Mission
 			class Item1131
 			{
 				linkID=1131;
-				item0=4381;
+				item0=4409;
 				item1=178;
 				class CustomData
 				{
@@ -88388,7 +88563,7 @@ class Mission
 			class Item1132
 			{
 				linkID=1132;
-				item0=4382;
+				item0=4410;
 				item1=178;
 				class CustomData
 				{
@@ -88398,7 +88573,7 @@ class Mission
 			class Item1133
 			{
 				linkID=1133;
-				item0=4383;
+				item0=4423;
 				item1=178;
 				class CustomData
 				{
@@ -88408,7 +88583,7 @@ class Mission
 			class Item1134
 			{
 				linkID=1134;
-				item0=4384;
+				item0=4424;
 				item1=178;
 				class CustomData
 				{
@@ -88418,286 +88593,6 @@ class Mission
 			class Item1135
 			{
 				linkID=1135;
-				item0=4385;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1136
-			{
-				linkID=1136;
-				item0=4386;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1137
-			{
-				linkID=1137;
-				item0=4387;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1138
-			{
-				linkID=1138;
-				item0=4388;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1139
-			{
-				linkID=1139;
-				item0=4389;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1140
-			{
-				linkID=1140;
-				item0=4390;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1141
-			{
-				linkID=1141;
-				item0=4391;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1142
-			{
-				linkID=1142;
-				item0=4392;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1143
-			{
-				linkID=1143;
-				item0=4393;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1144
-			{
-				linkID=1144;
-				item0=4394;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1145
-			{
-				linkID=1145;
-				item0=4395;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1146
-			{
-				linkID=1146;
-				item0=4396;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1147
-			{
-				linkID=1147;
-				item0=4397;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1148
-			{
-				linkID=1148;
-				item0=4398;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1149
-			{
-				linkID=1149;
-				item0=4399;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1150
-			{
-				linkID=1150;
-				item0=4400;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1151
-			{
-				linkID=1151;
-				item0=4401;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1152
-			{
-				linkID=1152;
-				item0=4402;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1153
-			{
-				linkID=1153;
-				item0=4403;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1154
-			{
-				linkID=1154;
-				item0=4404;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1155
-			{
-				linkID=1155;
-				item0=4405;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1156
-			{
-				linkID=1156;
-				item0=4406;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1157
-			{
-				linkID=1157;
-				item0=4407;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1158
-			{
-				linkID=1158;
-				item0=4408;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1159
-			{
-				linkID=1159;
-				item0=4409;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1160
-			{
-				linkID=1160;
-				item0=4410;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1161
-			{
-				linkID=1161;
-				item0=4423;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1162
-			{
-				linkID=1162;
-				item0=4424;
-				item1=178;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item1163
-			{
-				linkID=1163;
 				item0=4425;
 				item1=178;
 				class CustomData

@@ -77,6 +77,8 @@ private _convoy = [];
 
     private _veh = [_position,_dir,_x,west] call BIS_fnc_spawnVehicle;
 
+    _veh allowDamage false;
+
     _convoy pushBack (_veh select 0);
   
 } forEach _convoyVehicles;
@@ -117,3 +119,6 @@ for [{_i=0},{_i<count _convoy},{_i=_i+1}] do {
 
     },0.5,[_convoy param [_i-1,objNull],_convoy select _i,_convoy param [_i+1,objNull]],_convoy select 0] call CBA_fnc_addPerFrameHandler;
 };
+
+
+["USER\scripts\convoyOutro.sqf"] remoteExec ["BIS_fnc_execVM", [0, -2] select isDedicated];
