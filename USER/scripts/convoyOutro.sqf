@@ -77,7 +77,7 @@ private _convoy = [];
 
     private _veh = [_position,_dir,_x,west] call BIS_fnc_spawnVehicle;
 
-    _veh allowDamage false;
+    (_veh select 0) allowDamage false;
 
     _convoy pushBack (_veh select 0);
   
