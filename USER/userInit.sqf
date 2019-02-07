@@ -2,6 +2,8 @@
 *   Wird zum Missionsstart auf Server und Clients ausgeführt.
 *   Funktioniert wie die init.sqf.
 */
+cutText ["","BLACK FADED",999];
+STHud_UIMode = 0;
 
 [] execVM "USER\scripts\addModules.sqf";
 
@@ -10,3 +12,17 @@
 "mrk_lz_command" setMarkerAlphaLocal 0;
 
 enableEnvironment [false, true];
+
+
+
+// intro script
+["CBA_loadingScreenDone", {
+    STHud_UIMode = 0;
+    private _waitCondition = {time > (_this + 3)};
+
+    [_waitCondition,{
+        STHud_UIMode = 0;
+        [] execVM "USER\scripts\intro.sqf";
+    },time] call CBA_fnc_waitUntilAndExecute;
+
+}] call CBA_fnc_addEventHandler;
