@@ -95,7 +95,8 @@ if (
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-    [[],"USER\scripts\timeJump.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
+    // must be executed everywhere
+    [[],"USER\scripts\timeJump.sqf"] remoteExec ["BIS_fnc_execVM",0,false];
 
     systemChat "ZEUS debug: Time Jump to morning started";
 

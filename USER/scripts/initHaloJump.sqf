@@ -33,7 +33,7 @@ if (isServer) then {
                 }, {
                     enableCamShake false;
                     resetCamShake;
-                }] call GRAD_drop_fnc_initHaloJump;
+                }, _identifier] call GRAD_drop_fnc_initHaloJump;
 
         } forEach [
             ["mrk_lz_north", "north"],
