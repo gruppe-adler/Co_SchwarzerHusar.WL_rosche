@@ -18,8 +18,6 @@ private _group = createGroup east;
   _group createUnit [_x, _position, [], 10, "NONE"];
 } forEach _unitsToSpawn;
 
-_group deleteGroupWhenEmpty true;
-
 {
     _x addVest "rhs_6sh46";
     _x addBackpack "rhs_sidor";

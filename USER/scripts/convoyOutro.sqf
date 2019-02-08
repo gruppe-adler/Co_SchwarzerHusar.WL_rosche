@@ -91,40 +91,14 @@ private _convoy = [];
 
 sleep 3;
 
+/*
 (_convoy select 0) setDriveOnPath _convoyMoveToPoints;
 
-for [{_i=0},{_i<count _convoy},{_i=_i+1}] do {
-    [{
-        params ["_vehicles","_handle"];
-        _vehicles params ["_leader","_thisVeh","_follower","_vehicle1"];
-
-        if (isNull (driver _vehicle1) && {speed _thisVeh < 1}) exitWith {
-            [_handle] call CBA_fnc_removePerFrameHandler;
-        };
-
-        private _distFront = _thisVeh distance _leader;
-        private _distBack = _thisVeh distance _follower;
-
-        if (!isNull _leader) then {
-            if (_distFront < 5) then {
-                _thisVeh limitSpeed 0.5;
-            } else {
-                _thisVeh setDriveOnPath [getPos _thisVeh,_thisVeh getPos [0.8 * _distFront,_thisVeh getDir _leader]];
-                private _speedLimit = if (_distFront > 15) then {if (_distFront < 20) then {30} else {34}} else {26};
-                _thisVeh limitSpeed _speedLimit;
-            };
-        };
-
-        if (!isNull _follower && {_distBack > 50}) then {
-            _thisVeh limitSpeed 0.5;
-        } else {
-            if (isNull _leader) then {
-                _thisVeh limitSpeed 30;
-            };
-        };
-
-    },0.5,[_convoy param [_i-1,objNull],_convoy select _i,_convoy param [_i+1,objNull]],_convoy select 0] call CBA_fnc_addPerFrameHandler;
-};
+{
+    _x setDriveOnPath [(_convoyMoveToPoints select _forEachIndex)];
+    _x limitSpeed 30;
+} forEach _convoy;
+*/
 
 private _startHeli1 = getPos outroHeli1Start;
 _startHeli1 set [2,60];
@@ -137,5 +111,7 @@ private _heli2 = ([_startHeli2, getDir outroHeli2Start,"RHS_AH1Z",west] call BIS
 
 (group _heli1) addWaypoint [(getPos outroHeli1End), 0];
 (group _heli2) addWaypoint [(getPos outroHeli2End), 0];
+
+sleep 10;
 
 [[],"USER\scripts\outro.sqf"] remoteExec ["BIS_fnc_execVM", [0, -2] select isDedicated];
