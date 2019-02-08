@@ -17,7 +17,7 @@ _camera camSetPos (position camOutroPos1);
 _camera camSetTarget camOutroTarget1;
 _camera camCommit 10;
 sleep 10;
-["BlackAndWhite", 60, false] call BIS_fnc_setPPeffectTemplate;
+["BlackAndWhite", 30, false] call BIS_fnc_setPPeffectTemplate;
 _camera camSetTarget camOutroTarget2;
 _camera camCommit 2;
 _camera camSetPos (position camOutroPos2);
@@ -26,10 +26,9 @@ _camera camCommit 20;
 sleep 20;
 _camera camSetPos (position camOutroPos3);
 _camera camSetTarget camOutroTarget3;
+_camera camSetFov 0.7;
 _camera camCommit 10;
-sleep 15;
-
-
+sleep 10;
 cutText ["", "BLACK OUT", 10];
 sleep 13;
 ["END1", true, 0, false, true] spawn BIS_fnc_endMission;

@@ -138,4 +138,4 @@ private _heli2 = ([_startHeli2, getDir outroHeli2Start,"RHS_AH1Z",west] call BIS
 (group _heli1) addWaypoint [(getPos outroHeli1End), 0];
 (group _heli2) addWaypoint [(getPos outroHeli2End), 0];
 
-[[],"USER\scripts\convoyOutro.sqf"] remoteExec ["BIS_fnc_execVM", [0, -2] select isDedicated];
+[[],"USER\scripts\outro.sqf"] remoteExec ["BIS_fnc_execVM", [0, -2] select isDedicated];
