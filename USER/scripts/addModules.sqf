@@ -126,6 +126,18 @@ if (
   }] call Ares_fnc_RegisterCustomModule;
 
 
+  ["SCHWARZER HUSAR - END MISSION", "END MISSION W OUTRO",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    [] execVM "USER\scripts\convoyOutro.sqf";
+
+    systemChat "ZEUS debug: Outro started";
+
+  }] call Ares_fnc_RegisterCustomModule;
+
+
 
    
 

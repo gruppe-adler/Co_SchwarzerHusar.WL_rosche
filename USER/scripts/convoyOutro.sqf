@@ -1,5 +1,3 @@
-private _spawnVehicleLocal = compile preprocessFileLineNumbers "USER\scripts\spawnVehicleLocal.sqf";
-
 private _convoyStartPoints = [
     convoyOutroPos_0,
     convoyOutroPos_1,
@@ -49,23 +47,31 @@ private _convoyMoveToPoints = [
 reverse _convoyStartPoints;
 
 private _startedVarName = "SH_convoyOutroStarted";
+if (missionNamespace getVariable [_startedVarName,false]) exitWith { 
+    systemChat "was already started - exiting";
+};
 missionNamespace setVariable [_startedVarName,true,true];
 
+
+/*
+
+*/
+
 private _convoyVehicles = [
-    "rhsgref_hidf_m113a3_unarmed",
-    "rhsusf_m1045_w_s",
-    "rhsusf_m998_w_s_2dr_fulltop",
-    "rhsusf_m1043_w_s_m2", 
+    "rhsusf_m1a1hc_wd",
+    "rhsusf_m1a1hc_wd",
+    "rhsusf_m1a1hc_wd",
+    "rhsusf_m1a1hc_wd", 
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
-    "rhsgref_hidf_m113a3_unarmed",
-    "rhsusf_m1045_w_s",
-    "rhsusf_m998_w_s_2dr_fulltop",
-    "rhsusf_m1043_w_s_m2"
+    "rhsusf_m1a1hc_wd",
+    "rhsusf_m1a1hc_wd",
+    "rhsusf_m1a1hc_wd",
+    "rhsusf_m1a1hc_wd"
 ];
 
 private _convoy = [];
@@ -120,5 +126,16 @@ for [{_i=0},{_i<count _convoy},{_i=_i+1}] do {
     },0.5,[_convoy param [_i-1,objNull],_convoy select _i,_convoy param [_i+1,objNull]],_convoy select 0] call CBA_fnc_addPerFrameHandler;
 };
 
+private _startHeli1 = getPos outroHeli1Start;
+_startHeli1 set [2,60];
+private _startHeli2 = getPos outroHeli2Start;
+_startHeli2 set [2,60];
+private _heli1 = ([_startHeli1, getDir outroHeli1Start,"RHS_UH1Y_UNARMED",west] call BIS_fnc_spawnVehicle) select 0; 
+private _heli2 = ([_startHeli2, getDir outroHeli2Start,"RHS_AH1Z",west] call BIS_fnc_spawnVehicle) select 0; 
 
-["USER\scripts\convoyOutro.sqf"] remoteExec ["BIS_fnc_execVM", [0, -2] select isDedicated];
+
+
+(group _heli1) addWaypoint [(getPos outroHeli1End), 0];
+(group _heli2) addWaypoint [(getPos outroHeli2End), 0];
+
+[[],"USER\scripts\convoyOutro.sqf"] remoteExec ["BIS_fnc_execVM", [0, -2] select isDedicated];

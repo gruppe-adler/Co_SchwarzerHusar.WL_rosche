@@ -20,7 +20,6 @@ sleep 10;
 ["BlackAndWhite", 60, false] call BIS_fnc_setPPeffectTemplate;
 _camera camSetTarget camOutroTarget2;
 _camera camCommit 2;
-sleep 2;
 _camera camSetPos (position camOutroPos2);
 _camera camSetFov 0.15;
 _camera camCommit 20;
