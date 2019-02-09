@@ -2,10 +2,12 @@
 // disable all remaining ai to save resources
 
 {
-  _x disableAI "ALL";
+    if (side _x == independent) then {
+        deleteVehicle _x;
+    };
 } forEach allUnits;
 
-sleep 1;
+sleep 5;
 
 private _convoyStartPoints = [
     convoyOutroPos_0,
@@ -82,8 +84,6 @@ private _convoy = [];
   
 } forEach _convoyVehicles;
 
-sleep 3;
-
 {
     _x setDriveOnPath [(_x getPos [500, 90]), (_x getPos [5000, 90])];
 
@@ -98,8 +98,6 @@ sleep 3;
         _x setSpeedMode "FULL";
         _x limitSpeed 50;
     };
-
-
     
     (group _x) setBehaviour "AWARE";
     (group _x) setCombatMode "BLUE";
@@ -107,6 +105,7 @@ sleep 3;
     _x disableAI "TARGET";
 } forEach _convoy;
 
+sleep 3;
 
 private _startHeli1 = getPos outroHeli1Start;
 _startHeli1 set [2,60];

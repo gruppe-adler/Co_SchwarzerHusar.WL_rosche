@@ -18,7 +18,7 @@ _filmgrain ppEffectCommit 0;
 
 _camera = "camera" camCreate (position camPos0);
 _camera camSetPos (position camPos0);
-_camera camCommand "inertia off";
+_camera camCommand "inertia on";
 _camera camSetTarget camTarget0;
 _camera cameraEffect ["internal","back"];
 _camera camSetFov 0.15;
