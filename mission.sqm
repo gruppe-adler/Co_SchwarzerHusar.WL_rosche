@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=550;
+		nextID=570;
 	};
 	class Camera
 	{
-		pos[]={817.85291,36.724941,4681.2705};
-		dir[]={-0.90496224,-0.25082454,0.34375414};
-		up[]={-0.23448551,0.96803027,0.089069776};
-		aside[]={0.3551054,8.4284693e-008,0.93484545};
+		pos[]={939.07788,42.611954,4546.2456};
+		dir[]={0.52154636,-0.60675538,-0.59991425};
+		up[]={0.39809138,0.79488307,-0.457908};
+		aside[]={-0.75470126,-1.2145028e-007,-0.65611345};
 	};
 };
 binarizationWanted=0;
@@ -10393,7 +10393,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{this setVariable [""SH_LZ"", ""north""];}";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="Gruppenführer@Charlie1";
 								isPlayable=1;
 							};
@@ -10473,7 +10473,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""SH_LZ"", ""north""];}";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="Radio Operator";
 								isPlayable=1;
 							};
@@ -10553,7 +10553,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""SH_LZ"", ""north""];}";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="MG";
 								isPlayable=1;
 							};
@@ -10633,7 +10633,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""SH_LZ"", ""north""];}";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="MG Assistant";
 								isPlayable=1;
 							};
@@ -10713,7 +10713,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""SH_LZ"", ""north""];}";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="Truppführer";
 								isPlayable=1;
 							};
@@ -10792,7 +10792,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{this setVariable [""SH_LZ"", ""north""];}";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="Grenadier";
 								isPlayable=1;
 							};
@@ -10871,7 +10871,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{this setVariable [""SH_LZ"", ""north""];}";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="AT";
 								isPlayable=1;
 							};
@@ -10950,7 +10950,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
-								init="call{this setVariable [""SH_LZ"", ""north""];}";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="AT Assistant";
 								isPlayable=1;
 							};
@@ -27206,7 +27206,7 @@ class Mission
 			};
 			id=1941;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
-			atlOffset=0.65400028;
+			atlOffset=0.62264633;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -62307,7 +62307,7 @@ class Mission
 			};
 			id=3903;
 			type="Redd_Tank_Wiesel_1A4_MK20_Flecktarn";
-			atlOffset=0.9158144;
+			atlOffset=0.87842274;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -78824,7 +78824,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				dynamicSimulation=1;
+				disableSimulation=1;
 				reportOwnPosition=1;
 			};
 			id=4497;
@@ -78832,25 +78832,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="allowDamage";
 					expression="_this allowdamage _value;";
@@ -78869,7 +78850,64 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute1
+				{
+					property="hide_cargo";
+					expression="_this animate ['hide_cargo',_value,true];for '_i' from 1 to 24 do {_this lockCargo [_i,(_value == 1)]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Ramp";
+					expression="_this animateSource ['Ramp',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item1059
@@ -78884,7 +78922,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				dynamicSimulation=1;
+				disableSimulation=1;
 				reportOwnPosition=1;
 			};
 			id=4498;
@@ -78892,25 +78930,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="allowDamage";
 					expression="_this allowdamage _value;";
@@ -78929,7 +78948,64 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute1
+				{
+					property="hide_cargo";
+					expression="_this animate ['hide_cargo',_value,true];for '_i' from 1 to 24 do {_this lockCargo [_i,(_value == 1)]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Ramp";
+					expression="_this animateSource ['Ramp',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item1060
@@ -78944,7 +79020,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				dynamicSimulation=1;
+				disableSimulation=1;
 				reportOwnPosition=1;
 			};
 			id=4499;
@@ -78953,25 +79029,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="allowDamage";
 					expression="_this allowdamage _value;";
@@ -78990,7 +79047,64 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute1
+				{
+					property="hide_cargo";
+					expression="_this animate ['hide_cargo',_value,true];for '_i' from 1 to 24 do {_this lockCargo [_i,(_value == 1)]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Ramp";
+					expression="_this animateSource ['Ramp',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item1061
@@ -79005,7 +79119,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				dynamicSimulation=1;
+				disableSimulation=1;
 				reportOwnPosition=1;
 			};
 			id=4500;
@@ -79013,25 +79127,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="allowDamage";
 					expression="_this allowdamage _value;";
@@ -79050,7 +79145,64 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute1
+				{
+					property="hide_cargo";
+					expression="_this animate ['hide_cargo',_value,true];for '_i' from 1 to 24 do {_this lockCargo [_i,(_value == 1)]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Ramp";
+					expression="_this animateSource ['Ramp',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item1062
@@ -79065,7 +79217,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				dynamicSimulation=1;
+				disableSimulation=1;
 				reportOwnPosition=1;
 			};
 			id=4501;
@@ -79073,25 +79225,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="allowDamage";
 					expression="_this allowdamage _value;";
@@ -79110,7 +79243,64 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute1
+				{
+					property="hide_cargo";
+					expression="_this animate ['hide_cargo',_value,true];for '_i' from 1 to 24 do {_this lockCargo [_i,(_value == 1)]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Ramp";
+					expression="_this animateSource ['Ramp',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item1063
@@ -79125,7 +79315,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				dynamicSimulation=1;
+				disableSimulation=1;
 				reportOwnPosition=1;
 			};
 			id=4502;
@@ -79134,25 +79324,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="allowDamage";
 					expression="_this allowdamage _value;";
@@ -79171,7 +79342,64 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute1
+				{
+					property="hide_cargo";
+					expression="_this animate ['hide_cargo',_value,true];for '_i' from 1 to 24 do {_this lockCargo [_i,(_value == 1)]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Ramp";
+					expression="_this animateSource ['Ramp',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item1064
@@ -79186,7 +79414,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				dynamicSimulation=1;
+				disableSimulation=1;
 				reportOwnPosition=1;
 			};
 			id=4503;
@@ -79195,25 +79423,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="allowDamage";
 					expression="_this allowdamage _value;";
@@ -79232,7 +79441,64 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute1
+				{
+					property="hide_cargo";
+					expression="_this animate ['hide_cargo',_value,true];for '_i' from 1 to 24 do {_this lockCargo [_i,(_value == 1)]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Ramp";
+					expression="_this animateSource ['Ramp',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 	};

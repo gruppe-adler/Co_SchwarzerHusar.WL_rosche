@@ -84,8 +84,11 @@ private _convoy = [];
   
 } forEach _convoyVehicles;
 
-{
-    _x setDriveOnPath [(_x getPos [500, 90]), (_x getPos [5000, 90])];
+{    
+    (group _x) setBehaviour "AWARE";
+    (group _x) setCombatMode "BLUE";
+    _x disableAI "AUTOTARGET";
+    _x disableAI "TARGET";
 
     _x setSpeedMode "FULL";
     _x limitSpeed 50;
@@ -98,11 +101,8 @@ private _convoy = [];
         _x setSpeedMode "FULL";
         _x limitSpeed 50;
     };
-    
-    (group _x) setBehaviour "AWARE";
-    (group _x) setCombatMode "BLUE";
-    _x disableAI "AUTOTARGET";
-    _x disableAI "TARGET";
+
+    _x setDriveOnPath [(_x getPos [50, 90]), (_x getPos [150, 90]), (_x getPos [500, 90]), (_x getPos [1000, 90]), (_x getPos [5000, 90])];
 } forEach _convoy;
 
 sleep 3;
