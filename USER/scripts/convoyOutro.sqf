@@ -56,9 +56,9 @@ private _convoyVehicles = [
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
-    "Redd_Tank_Fuchs_1A4_Pi_Flecktarn",
-    "Redd_Tank_Fuchs_1A4_Pi_Flecktarn",
-    "Redd_Tank_Fuchs_1A4_Pi_Flecktarn",
+    "rnt_sppz_2a2_luchs_flecktarn",
+    "rnt_sppz_2a2_luchs_flecktarn",
+    "rnt_sppz_2a2_luchs_flecktarn",
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
@@ -89,11 +89,6 @@ sleep 3;
 
     _x setSpeedMode "FULL";
     _x limitSpeed 50;
-
-    if (typeOf _x == "Redd_Tank_Fuchs_1A4_Pi_Flecktarn") then {
-        _x setSpeedMode "FULL";
-        _x limitSpeed 20;
-    };
     if (typeOf _x == "rhsusf_m1a1hc_wd") then {
         _x setSpeedMode "FULL";
         _x limitSpeed 50;
@@ -101,7 +96,7 @@ sleep 3;
 
     if (typeOf _x == "rnt_sppz_2a2_luchs_flecktarn") then {
         _x setSpeedMode "FULL";
-        _x limitSpeed 60;
+        _x limitSpeed 50;
     };
 
 

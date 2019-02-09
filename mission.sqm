@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=520;
+		nextID=530;
 	};
 	class Camera
 	{
-		pos[]={5828.9839,188.21761,5561.0566};
-		dir[]={-0.8694579,-0.40917951,-0.27691522};
-		up[]={-0.38990569,0.91244429,-0.12418255};
-		aside[]={-0.30348277,1.5646219e-007,0.95287085};
+		pos[]={790.76416,28.051445,4669.54};
+		dir[]={-0.57813853,-0.59334868,0.56008667};
+		up[]={-0.42616221,0.80494392,0.4128556};
+		aside[]={0.69580567,-6.1176252e-008,0.71823186};
 	};
 };
 binarizationWanted=0;
@@ -4879,14 +4879,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={933.76257,15.131439,4551.3604};
+								position[]={933.763,15.131439,4551.3608};
 							};
 							side="West";
 							flags=6;
 							class Attributes
 							{
 								rank="CAPTAIN";
-								init="call{{_x setVariable [""SH_LZ"", ""command""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="Leader@Company";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -4968,6 +4968,7 @@ class Mission
 							{
 								skill=0.8931762;
 								rank="LIEUTENANT";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="CL Assistant";
 								isPlayable=1;
 							};
@@ -5047,6 +5048,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="Driver/Bodyguard";
 								isPlayable=1;
 							};
@@ -5162,7 +5164,7 @@ class Mission
 							class Attributes
 							{
 								rank="LIEUTENANT";
-								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="PlatoonLead@Alpha";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -5243,6 +5245,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="PL Assistant";
 								isPlayable=1;
 							};
@@ -5322,6 +5325,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Driver/Bodyguard";
 								isPlayable=1;
 							};
@@ -5437,7 +5441,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Gruppenführer@Alpha1";
 								isPlayable=1;
 							};
@@ -5517,6 +5521,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Radio Operator";
 								isPlayable=1;
 							};
@@ -5596,6 +5601,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="MG";
 								isPlayable=1;
 							};
@@ -5675,6 +5681,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="MG Assistant";
 								isPlayable=1;
 							};
@@ -5754,6 +5761,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Truppführer";
 								isPlayable=1;
 							};
@@ -5832,6 +5840,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Grenadier";
 								isPlayable=1;
 							};
@@ -5910,6 +5919,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="AT";
 								isPlayable=1;
 							};
@@ -5988,6 +5998,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="AT Assistant";
 								isPlayable=1;
 							};
@@ -6103,7 +6114,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Gruppenführer@Alpha2";
 								isPlayable=1;
 							};
@@ -6183,6 +6194,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Radio Operator";
 								isPlayable=1;
 							};
@@ -6262,6 +6274,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="MG";
 								isPlayable=1;
 							};
@@ -6341,6 +6354,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="MG Assistant";
 								isPlayable=1;
 							};
@@ -6420,6 +6434,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Truppführer";
 								isPlayable=1;
 							};
@@ -6498,6 +6513,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Grenadier";
 								isPlayable=1;
 							};
@@ -6576,6 +6592,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="AT";
 								isPlayable=1;
 							};
@@ -6654,6 +6671,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="AT Assistant";
 								isPlayable=1;
 							};
@@ -6769,7 +6787,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Commander@Alpha3";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -6850,6 +6868,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Driver";
 								isPlayable=1;
 							};
@@ -6928,6 +6947,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Loader/MGGunner";
 								isPlayable=1;
 							};
@@ -7006,6 +7026,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Commander@Alpha3";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -7086,6 +7107,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Driver";
 								isPlayable=1;
 							};
@@ -7201,7 +7223,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Medic@Delta1";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -7282,6 +7304,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Medic";
 								isPlayable=1;
 							};
@@ -7397,7 +7420,7 @@ class Mission
 							class Attributes
 							{
 								rank="LIEUTENANT";
-								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="PlatoonLead@Bravo";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -7478,6 +7501,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="PL Assistant";
 								isPlayable=1;
 							};
@@ -7557,6 +7581,7 @@ class Mission
 							class Attributes
 							{
 								rank="LIEUTENANT";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Driver/Bodyguard";
 								isPlayable=1;
 							};
@@ -7672,7 +7697,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Gruppenführer@Bravo1";
 								isPlayable=1;
 							};
@@ -7752,6 +7777,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Radio Operator";
 								isPlayable=1;
 							};
@@ -7831,6 +7857,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="MG";
 								isPlayable=1;
 							};
@@ -7910,6 +7937,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="MG Assistant";
 								isPlayable=1;
 							};
@@ -7989,6 +8017,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Truppführer";
 								isPlayable=1;
 							};
@@ -8067,6 +8096,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Grenadier";
 								isPlayer=1;
 								isPlayable=1;
@@ -8146,6 +8176,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="AT";
 								isPlayable=1;
 							};
@@ -8224,6 +8255,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="AT Assistant";
 								isPlayable=1;
 							};
@@ -8339,7 +8371,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Gruppenführer@Bravo2";
 								isPlayable=1;
 							};
@@ -8419,6 +8451,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Radio Operator";
 								isPlayable=1;
 							};
@@ -8498,6 +8531,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="MG";
 								isPlayable=1;
 							};
@@ -8577,6 +8611,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="MG Assistant";
 								isPlayable=1;
 							};
@@ -8656,6 +8691,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Truppführer";
 								isPlayable=1;
 							};
@@ -8734,6 +8770,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Grenadier";
 								isPlayable=1;
 							};
@@ -8812,6 +8849,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="AT Assistant";
 								isPlayable=1;
 							};
@@ -8890,6 +8928,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="AT";
 								isPlayable=1;
 							};
@@ -9005,7 +9044,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Commander@Bravo3";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -9086,6 +9125,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Driver";
 								isPlayable=1;
 							};
@@ -9164,6 +9204,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Loader/MGGunner";
 								isPlayable=1;
 							};
@@ -9242,6 +9283,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Commander@Alpha3";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -9322,6 +9364,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Driver";
 								isPlayable=1;
 							};
@@ -9437,7 +9480,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{{_x setVariable [""SH_LZ"", ""south""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Medic@Delta2";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -9518,6 +9561,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
+								init="call{this setVariable [""SH_LZ"", ""south""];}";
 								description="Medic";
 								isPlayable=1;
 							};
@@ -9633,7 +9677,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{{_x setVariable [""SH_LZ"", ""command""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="FTL@Delta3";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -9713,6 +9757,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="Mortar Gunner";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -9792,6 +9837,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="Mortar Gunner";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -9871,6 +9917,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="Mortar Gunner";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -10042,7 +10089,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{{_x setVariable [""SH_LZ"", ""command""]; } forEach units group this;}";
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="FTL@Delta4";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -10141,6 +10188,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="Repair Specialist";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -10220,6 +10268,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""command""];}";
 								description="Repair Specialist";
 								isPlayable=1;
 								aiRadarUsage=544042752;
@@ -10329,15 +10378,15 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={960.88733,15.131439,4522.46};
+								position[]={960.88702,15.131439,4522.46};
 							};
 							side="West";
 							flags=7;
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="call{{_x setVariable [""SH_LZ"", ""north""]; } forEach units group this;}";
-								description="Gruppenführer@Charly1";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
+								description="Gruppenführer@Charlie1";
 								isPlayable=1;
 							};
 							id=4452;
@@ -10416,6 +10465,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Radio Operator";
 								isPlayable=1;
 							};
@@ -10495,6 +10545,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="MG";
 								isPlayable=1;
 							};
@@ -10574,6 +10625,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="MG Assistant";
 								isPlayable=1;
 							};
@@ -10653,6 +10705,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Truppführer";
 								isPlayable=1;
 							};
@@ -10731,6 +10784,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="Grenadier";
 								isPlayable=1;
 							};
@@ -10809,6 +10863,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="AT";
 								isPlayable=1;
 							};
@@ -10887,6 +10942,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{this setVariable [""SH_LZ"", ""north""];}";
 								description="AT Assistant";
 								isPlayable=1;
 							};
@@ -10963,6 +11019,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="groupID";
+							expression="[_this, _value] call CBA_fnc_setCallsign";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Charlie1";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="acex_headless_blacklist";
 							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
 							class Value
@@ -10980,7 +11055,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -54893,7 +54968,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={956.41119,15.13,4526.2686};
+				position[]={956.41101,15.13,4526.269};
 			};
 			title="Alpha 3";
 			id=3792;
@@ -54913,7 +54988,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={950.28656,15.13,4533.2612};
+				position[]={950.28699,15.13,4533.2612};
 			};
 			title="Alpha 1";
 			id=3794;
@@ -76257,10 +76332,53 @@ class Mission
 			class Attributes
 			{
 				name="camTarget1";
+				disableSimulation=1;
 			};
 			id=4276;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=55.627716;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item998
 		{
@@ -76274,10 +76392,53 @@ class Mission
 			class Attributes
 			{
 				name="camPos1";
+				disableSimulation=1;
 			};
 			id=4277;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=62.115879;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item999
 		{
@@ -76554,10 +76715,53 @@ class Mission
 			class Attributes
 			{
 				name="camTarget2";
+				disableSimulation=1;
 			};
 			id=4283;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=27.171001;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1001
 		{
@@ -76571,10 +76775,53 @@ class Mission
 			class Attributes
 			{
 				name="camTarget3";
+				disableSimulation=1;
 			};
 			id=4284;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=3.0430002;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1002
 		{
@@ -76588,10 +76835,53 @@ class Mission
 			class Attributes
 			{
 				name="camPos0";
+				disableSimulation=1;
 			};
 			id=4286;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=99.999886;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1003
 		{
@@ -76605,10 +76895,53 @@ class Mission
 			class Attributes
 			{
 				name="camPos2";
+				disableSimulation=1;
 			};
 			id=4287;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=26.536007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1004
 		{
@@ -76622,10 +76955,53 @@ class Mission
 			class Attributes
 			{
 				name="camPos3";
+				disableSimulation=1;
 			};
 			id=4288;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=3.2546816;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1005
 		{
@@ -76639,10 +77015,53 @@ class Mission
 			class Attributes
 			{
 				name="camTarget0";
+				disableSimulation=1;
 			};
 			id=4289;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=100.00001;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1006
 		{
@@ -76650,7 +77069,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5574.4556,27.620001,5439.1787};
-				angles[]={-0,1.5323451,0};
+				angles[]={0,1.5323451,0};
 			};
 			side="Empty";
 			flags=4;
@@ -76667,7 +77086,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5606.498,27.290001,5409.5103};
-				angles[]={-0,1.5070854,0};
+				angles[]={0,1.5070854,0};
 			};
 			side="Empty";
 			flags=4;
@@ -76700,8 +77119,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5473.623,26.33,5655.7725};
-				angles[]={0,1.5291233,0};
+				position[]={5142.6064,26.642908,5635.1592};
+				angles[]={0.0026520467,1.5291233,0};
 			};
 			side="Empty";
 			flags=4;
@@ -76717,8 +77136,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5506.2588,26.65,5620.1704};
-				angles[]={0,1.4533623,0};
+				position[]={5175.2422,26.969999,5599.5571};
+				angles[]={-0,1.4533623,0};
 			};
 			side="Empty";
 			flags=4;
@@ -76734,8 +77153,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5541.2676,26.969999,5582.7871};
-				angles[]={0,1.4544464,0};
+				position[]={5210.251,26.969999,5562.1738};
+				angles[]={-0,1.4544464,0};
 			};
 			side="Empty";
 			flags=4;
@@ -76751,8 +77170,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5572.7168,26.969999,5555.4922};
-				angles[]={0,1.4929401,0};
+				position[]={5241.7002,27.290001,5534.8789};
+				angles[]={-0,1.4929401,0};
 			};
 			side="Empty";
 			flags=4;
@@ -76887,7 +77306,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5090.1475,27.290003,5434.4521};
+				position[]={5329.6768,26.65,5648.3003};
 				angles[]={-0,1.4641223,0};
 			};
 			side="Empty";
@@ -76898,14 +77317,13 @@ class Mission
 			};
 			id=4382;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.9073486e-006;
 		};
 		class Item1021
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5068.7861,27.290001,5393.5088};
+				position[]={5308.3154,26.969999,5607.3569};
 				angles[]={-0,1.5193772,0};
 			};
 			side="Empty";
@@ -76922,8 +77340,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5048.0176,27.290003,5353.1597};
-				angles[]={-0,1.4435441,0};
+				position[]={5287.5469,27.175026,5567.0078};
+				angles[]={0.037314966,1.4435441,0};
 			};
 			side="Empty";
 			flags=4;
@@ -76933,7 +77351,6 @@ class Mission
 			};
 			id=4384;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=1.9073486e-006;
 		};
 		class Item1023
 		{
@@ -78000,16 +78417,59 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5926.3989,28.422314,5567.4399};
-				angles[]={-0,1.4623417,0};
+				angles[]={0,1.4623417,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				name="camOutroPos0";
+				disableSimulation=1;
 			};
 			id=4426;
 			type="Land_InvisibleBarrier_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1036
 		{
@@ -78017,7 +78477,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5913.75,28.944736,5552.645};
-				angles[]={-0,1.4069532,0};
+				angles[]={0,1.4069532,0};
 			};
 			side="Empty";
 			flags=4;
@@ -78054,10 +78514,53 @@ class Mission
 			class Attributes
 			{
 				name="camOutroPos1";
+				disableSimulation=1;
 			};
 			id=4431;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=3.0371208;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1039
 		{
@@ -78071,10 +78574,53 @@ class Mission
 			class Attributes
 			{
 				name="camOutroPos2";
+				disableSimulation=1;
 			};
 			id=4432;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=62.258728;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1040
 		{
@@ -78088,10 +78634,53 @@ class Mission
 			class Attributes
 			{
 				name="camOutroPos3";
+				disableSimulation=1;
 			};
 			id=4433;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=115.25205;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1041
 		{
@@ -78099,17 +78688,60 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5905.4272,28.42083,5564.6431};
-				angles[]={-0,1.4623417,0};
+				angles[]={0,1.4623417,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				name="camOutroTarget0";
+				disableSimulation=1;
 			};
 			id=4435;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=-1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1042
 		{
@@ -78123,10 +78755,53 @@ class Mission
 			class Attributes
 			{
 				name="camOutroTarget1";
+				disableSimulation=1;
 			};
 			id=4436;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=1.9805813;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1043
 		{
@@ -78140,27 +78815,113 @@ class Mission
 			class Attributes
 			{
 				name="camOutroTarget2";
+				disableSimulation=1;
 			};
 			id=4437;
 			type="Land_InvisibleBarrier_F";
 			atlOffset=4.5971031;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1044
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5492.9424,113.09352,5403.1782};
+				position[]={5492.9419,113.094,5403.1782};
 				angles[]={0,1.4623417,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				name="camOutroTarget3";
+				disableSimulation=1;
 			};
 			id=4438;
 			type="Land_InvisibleBarrier_F";
-			atlOffset=85.473518;
+			atlOffset=85.473999;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="hideObject";
+					expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1045
 		{
@@ -78201,8 +78962,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12436.641,25.25573,6541.6709};
-				angles[]={6.2764993,0,0.00059801998};
+				position[]={10288.189,47.389999,5310.4312};
 			};
 			side="Empty";
 			flags=4;
@@ -78212,15 +78972,14 @@ class Mission
 			};
 			id=4445;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=0.061084747;
 		};
 		class Item1048
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12418.429,24.752945,6270.4131};
-				angles[]={6.2618566,0,6.2685208};
+				position[]={10269.978,44.820087,5039.1733};
+				angles[]={-0,0,6.2791886};
 			};
 			side="Empty";
 			flags=4;
@@ -78236,9 +78995,9 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={961.39636,15.13,4523.7642};
+				position[]={961.396,15.13,4523.7642};
 			};
-			title="Charly1";
+			title="Charlie1";
 			id=4460;
 		};
 		class Item1050
@@ -78653,8 +79412,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12553.633,22.639359,6383.7285};
-				angles[]={-0,0,6.2551923};
+				position[]={10168.494,46.112823,5675.8354};
+				angles[]={6.2802353,0,0.0029499636};
 			};
 			side="Empty";
 			flags=4;
@@ -78664,7 +79423,6 @@ class Mission
 			};
 			id=4471;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=0.061084747;
 		};
 		class Item1061
 		{
@@ -78672,7 +79430,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5155.6045,27.620001,5436.7227};
-				angles[]={-0,1.5291233,0};
+				angles[]={0,1.5291233,0};
 			};
 			side="Empty";
 			flags=4;
@@ -78689,7 +79447,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5188.2402,27.620001,5401.1206};
-				angles[]={-0,1.4533623,0};
+				angles[]={0,1.4533623,0};
 			};
 			side="Empty";
 			flags=4;
@@ -78706,7 +79464,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5223.249,27.620001,5363.7373};
-				angles[]={-0,1.4544464,0};
+				angles[]={0,1.4544464,0};
 			};
 			side="Empty";
 			flags=4;
