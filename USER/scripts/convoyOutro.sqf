@@ -86,19 +86,25 @@ sleep 3;
 
 {
     _x setDriveOnPath [(_x getPos [500, 90]), (_x getPos [5000, 90])];
+
+    _x setSpeedMode "FULL";
+    _x limitSpeed 50;
+
     if (typeOf _x == "Redd_Tank_Fuchs_1A4_Pi_Flecktarn") then {
-        _x setSpeedMode "LIMITED";
-        _x limitSpeed 10;
+        _x setSpeedMode "FULL";
+        _x limitSpeed 20;
     };
-    if (typeOf _x == "rhsusf_m1a1hc_wd") {
+    if (typeOf _x == "rhsusf_m1a1hc_wd") then {
         _x setSpeedMode "FULL";
         _x limitSpeed 50;
     };
 
-    if (typeOf _x == "rnt_sppz_2a2_luchs_flecktarn") {
+    if (typeOf _x == "rnt_sppz_2a2_luchs_flecktarn") then {
         _x setSpeedMode "FULL";
         _x limitSpeed 60;
     };
+
+
     
     (group _x) setBehaviour "AWARE";
     (group _x) setCombatMode "BLUE";
