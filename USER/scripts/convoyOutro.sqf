@@ -1,3 +1,12 @@
+
+// disable all remaining ai to save resources
+
+{
+  _x disableAI "ALL";
+} forEach allUnits;
+
+sleep 1;
+
 private _convoyStartPoints = [
     convoyOutroPos_0,
     convoyOutroPos_1,
@@ -19,29 +28,7 @@ private _convoyStartPoints = [
     convoyOutroPos_17,
     convoyOutroPos_18,
     convoyOutroPos_19,
-    convoyOutroPos_20,
-    convoyOutroPos_21,
-    convoyOutroPos_22
-];
-
-private _convoyMoveToPoints = [
-    getPos convoyMoveToPos_0,
-    getPos convoyMoveToPos_1,
-    getPos convoyMoveToPos_2,
-    getPos convoyMoveToPos_3,
-    getPos convoyMoveToPos_4,
-    getPos convoyMoveToPos_5,
-    getPos convoyMoveToPos_6,
-    getPos convoyMoveToPos_7,
-    getPos convoyMoveToPos_8,
-    getPos convoyMoveToPos_9,
-    getPos convoyMoveToPos_10,
-    getPos convoyMoveToPos_11,
-    getPos convoyMoveToPos_12,
-    getPos convoyMoveToPos_13,
-    getPos convoyMoveToPos_14,
-    getPos convoyMoveToPos_15,
-    getPos convoyMoveToPos_16
+    convoyOutroPos_20
 ];
 
 reverse _convoyStartPoints;
@@ -58,14 +45,20 @@ missionNamespace setVariable [_startedVarName,true,true];
 */
 
 private _convoyVehicles = [
-    "rhsusf_m1a1hc_wd",
-    "rhsusf_m1a1hc_wd",
-    "rhsusf_m1a1hc_wd",
+    "rnt_sppz_2a2_luchs_flecktarn",
+    "rnt_sppz_2a2_luchs_flecktarn",
+    "rnt_sppz_2a2_luchs_flecktarn",
     "rhsusf_m1a1hc_wd", 
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
+    "rhsusf_m1a1hc_wd",
+    "rhsusf_m1a1hc_wd",
+    "rhsusf_m1a1hc_wd",
+    "Redd_Tank_Fuchs_1A4_Pi_Flecktarn",
+    "Redd_Tank_Fuchs_1A4_Pi_Flecktarn",
+    "Redd_Tank_Fuchs_1A4_Pi_Flecktarn",
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
     "rhsusf_m1a1hc_wd",
@@ -91,27 +84,41 @@ private _convoy = [];
 
 sleep 3;
 
-/*
-(_convoy select 0) setDriveOnPath _convoyMoveToPoints;
-
 {
-    _x setDriveOnPath [(_convoyMoveToPoints select _forEachIndex)];
-    _x limitSpeed 30;
+    _x setDriveOnPath [(_x getPos [500, 90]), (_x getPos [5000, 90])];
+    if (typeOf _x == "Redd_Tank_Fuchs_1A4_Pi_Flecktarn") then {
+        _x setSpeedMode "FULL";
+        _x limitSpeed 20;
+    } else {
+        _x setSpeedMode "FULL";
+        _x limitSpeed 50;
+    };
+    
+    (group _x) setBehaviour "AWARE";
+    (group _x) setCombatMode "BLUE";
+    _x disableAI "AUTOTARGET";
+    _x disableAI "TARGET";
 } forEach _convoy;
-*/
+
 
 private _startHeli1 = getPos outroHeli1Start;
 _startHeli1 set [2,60];
 private _startHeli2 = getPos outroHeli2Start;
 _startHeli2 set [2,60];
-private _heli1 = ([_startHeli1, getDir outroHeli1Start,"RHS_UH1Y_UNARMED",west] call BIS_fnc_spawnVehicle) select 0; 
-private _heli2 = ([_startHeli2, getDir outroHeli2Start,"RHS_AH1Z",west] call BIS_fnc_spawnVehicle) select 0; 
+private _startHeli3 = getPos outroHeli3Start;
+_startHeli3 set [2,60];
 
+private _heli1 = ([_startHeli1, getDir outroHeli1Start,"RHS_UH1Y_UNARMED",west] call BIS_fnc_spawnVehicle) select 0;
+private _heli2 = ([_startHeli2, getDir outroHeli2Start,"RHS_AH1Z",west] call BIS_fnc_spawnVehicle) select 0;
+private _heli3 = ([_startHeli3, getDir outroHeli3Start,"RHS_UH1Y_UNARMED",west] call BIS_fnc_spawnVehicle) select 0;
 
-
+_heli1 flyInHeight 50;
+_heli2 flyInHeight 50;
+_heli3 flyInHeight 50;
 (group _heli1) addWaypoint [(getPos outroHeli1End), 0];
 (group _heli2) addWaypoint [(getPos outroHeli2End), 0];
+(group _heli3) addWaypoint [(getPos outroHeli3End), 0];
 
 sleep 10;
 
-[[],"USER\scripts\outro.sqf"] remoteExec ["BIS_fnc_execVM", [0, -2] select isDedicated];
+[[_heli3],"USER\scripts\outro.sqf"] remoteExec ["BIS_fnc_execVM", [0, -2] select isDedicated];

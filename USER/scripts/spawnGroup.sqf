@@ -12,11 +12,15 @@ private _unitsToSpawn = [
 ];
 
 
-private _group = createGroup east;
+private _group = (createGroup independent);
 
 {
   _group createUnit [_x, _position, [], 10, "NONE"];
 } forEach _unitsToSpawn;
+
+ // weird fuck
+(units _group) joinSilent _group;
+
 
 {
     _x addVest "rhs_6sh46";

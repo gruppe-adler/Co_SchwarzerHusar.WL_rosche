@@ -50,6 +50,17 @@ class missionSettings {
 	};
 };
 
+class CfgDebriefing
+{
+    class DefaultMissionEnd
+    {
+        title = "Mission completed";
+        subtitle = "Rosche is taken.";
+        description = "NATO Reinforcements have arrived.";
+        picture = "data\gruppe-adler.paa";
+    };
+};
+
 
 //FUNCTIONS ====================================================================
 class CfgFunctions
