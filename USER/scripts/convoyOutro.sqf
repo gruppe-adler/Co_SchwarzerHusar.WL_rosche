@@ -87,11 +87,17 @@ sleep 3;
 {
     _x setDriveOnPath [(_x getPos [500, 90]), (_x getPos [5000, 90])];
     if (typeOf _x == "Redd_Tank_Fuchs_1A4_Pi_Flecktarn") then {
-        _x setSpeedMode "FULL";
-        _x limitSpeed 20;
-    } else {
+        _x setSpeedMode "LIMITED";
+        _x limitSpeed 10;
+    };
+    if (typeOf _x == "rhsusf_m1a1hc_wd") {
         _x setSpeedMode "FULL";
         _x limitSpeed 50;
+    };
+
+    if (typeOf _x == "rnt_sppz_2a2_luchs_flecktarn") {
+        _x setSpeedMode "FULL";
+        _x limitSpeed 60;
     };
     
     (group _x) setBehaviour "AWARE";
@@ -112,9 +118,11 @@ private _heli1 = ([_startHeli1, getDir outroHeli1Start,"RHS_UH1Y_UNARMED",west] 
 private _heli2 = ([_startHeli2, getDir outroHeli2Start,"RHS_AH1Z",west] call BIS_fnc_spawnVehicle) select 0;
 private _heli3 = ([_startHeli3, getDir outroHeli3Start,"RHS_UH1Y_UNARMED",west] call BIS_fnc_spawnVehicle) select 0;
 
-_heli1 flyInHeight 50;
-_heli2 flyInHeight 50;
-_heli3 flyInHeight 50;
+{
+    _x flyInHeight 50;
+    _x setSpeedMode "FULL";
+} forEach [_heli1, _heli2, _heli3];
+
 (group _heli1) addWaypoint [(getPos outroHeli1End), 0];
 (group _heli2) addWaypoint [(getPos outroHeli2End), 0];
 (group _heli3) addWaypoint [(getPos outroHeli3End), 0];

@@ -2,6 +2,9 @@ params ["_lastHeli"];
 
 cutText ["", "BLACK OUT", 4];
 sleep 4;
+
+playMusic "LeadTrack04_F_Tacops";
+STHud_UIMode = 0;
 cutText ["", "BLACK IN", 8];
 
 private _filmgrain = ppEffectCreate ["FilmGrain",2000];  

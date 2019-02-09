@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4485;
+		nextID=4486;
 	};
 	class MarkerIDProvider
 	{
@@ -21,9 +21,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={5828.9839,188.21761,5561.0566};
-		dir[]={-0.72752523,-0.57045162,-0.38125786};
-		up[]={-0.50528806,0.82132256,-0.26479584};
-		aside[]={-0.46418804,-6.2282197e-009,0.88577271};
+		dir[]={-0.8694579,-0.40917951,-0.27691522};
+		up[]={-0.38990569,0.91244429,-0.12418255};
+		aside[]={-0.30348277,1.5646219e-007,0.95287085};
 	};
 };
 binarizationWanted=0;
@@ -78201,7 +78201,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8627.2656,41.880001,5579.2466};
+				position[]={12436.641,25.25573,6541.6709};
+				angles[]={6.2764993,0,0.00059801998};
 			};
 			side="Empty";
 			flags=4;
@@ -78211,14 +78212,15 @@ class Mission
 			};
 			id=4445;
 			type="Land_ClutterCutter_small_F";
+			atlOffset=0.061084747;
 		};
 		class Item1048
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8609.0537,40.254871,5307.9888};
-				angles[]={6.2723546,0,0.027507618};
+				position[]={12418.429,24.752945,6270.4131};
+				angles[]={6.2618566,0,6.2685208};
 			};
 			side="Empty";
 			flags=4;
@@ -78651,8 +78653,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8744.2578,42.856434,5421.3042};
-				angles[]={6.2818413,0,0.0026529003};
+				position[]={12553.633,22.639359,6383.7285};
+				angles[]={-0,0,6.2551923};
 			};
 			side="Empty";
 			flags=4;
@@ -78662,7 +78664,7 @@ class Mission
 			};
 			id=4471;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=3.8146973e-006;
+			atlOffset=0.061084747;
 		};
 		class Item1061
 		{

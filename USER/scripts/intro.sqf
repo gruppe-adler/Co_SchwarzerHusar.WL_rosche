@@ -51,7 +51,7 @@ _camera cameraEffect ["terminate","back"];
 camDestroy _camera;
 sleep 1;
 cutText ["", "BLACK IN", 1];
-STHud_UIMode = 1;
+
 
 cutText ["","BLACK FADED",999];
 sleep 3;
@@ -65,5 +65,5 @@ cutText ["", "BLACK IN", 10];
 sleep 5;
 
 7 fadeMusic 0.25;
-
+STHud_UIMode = 1;
 [player, "amovpercmstpslowwrfldnon"] remoteExec ["switchMove", 0];
