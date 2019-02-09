@@ -99,11 +99,24 @@ private _convoy = [];
 
     if (typeOf _x == "rnt_sppz_2a2_luchs_flecktarn") then {
         _x setSpeedMode "FULL";
-        _x limitSpeed 50;
+        _x limitSpeed 70;
     };
 
-    _x setDriveOnPath [(_x getPos [50, 90]), (_x getPos [150, 90]), (_x getPos [500, 90]), (_x getPos [1000, 90]), (_x getPos [5000, 90])];
+    (group _x) addWaypoint [(_x getPos [150, 90]), 0];
+
 } forEach _convoy;
+
+
+[{
+    params ["_args", "_handle"];
+    _args params ["_convoy"];
+
+    {
+        (group _x) addWaypoint [(_x getPos [150, 90]), 0];
+    } forEach _convoy;
+
+}, 3, [_convoy]] call CBA_fnc_addPerFrameHandler;
+
 
 sleep 3;
 

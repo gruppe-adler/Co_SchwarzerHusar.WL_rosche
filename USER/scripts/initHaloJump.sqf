@@ -14,7 +14,7 @@ if (isServer) then {
                 private _dir = markerDir _marker;
                 private _height = 160;
 
-                [_units, _pos, _dir, _height, 5, false, {
+                [_units, _pos, _dir, _height, 120, false, {
                     3 fadeSound 1;
                     // cutText ["", "BLACK IN", 2];
 
