@@ -33,6 +33,11 @@ if (isServer) then {
                 }, {
                     enableCamShake false;
                     resetCamShake;
+
+                    [{
+                        player allowdamage true;
+                    }, [], 15] call CBA_fnc_waitAndExecute;
+
                 }, _identifier] call GRAD_drop_fnc_initHaloJump;
 
         } forEach [
