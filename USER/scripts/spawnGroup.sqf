@@ -25,4 +25,4 @@ private _group = (createGroup independent);
 {
     _x addVest "rhs_6sh46";
     _x addBackpack "rhs_sidor";
-} units _group;
+} forEach units _group;
