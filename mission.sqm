@@ -55,8 +55,6 @@ addons[]=
 	"Redd_Tank_Gepard_1A2",
 	"CUP_Misc_e_Config",
 	"Redd_Vehicles_Main",
-	"AchillesEffects",
-	"achilles_modules_f_achilles",
 	"A3_Modules_F_Effects",
 	"Redd_Tank_Wiesel_1A4_MK20",
 	"CUP_Editor_A2_Roads_Config",
@@ -27968,13 +27966,13 @@ class Mission
 				angles[]={0,1.7588767,0};
 			};
 			id=1960;
-			type="ModulePersistentSmokePillar_F";
+			type="ModuleEffectsFire_F";
 			atlOffset=3.6749649;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ModulePersistentSmokePillar_F_Type";
+					property="ModuleEffectsFire_F_ColorBlue";
 					expression="_this setVariable ['Type',_value,true];";
 					class Value
 					{
@@ -28003,13 +28001,13 @@ class Mission
 				angles[]={0.40388098,1.7588767,6.2277083};
 			};
 			id=1961;
-			type="ModulePersistentSmokePillar_F";
+			type="ModuleEffectsFire_F";
 			atlOffset=1.0003986;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ModulePersistentSmokePillar_F_Type";
+					property="ModuleEffectsFire_F_ColorBlue";
 					expression="_this setVariable ['Type',_value,true];";
 					class Value
 					{
@@ -28038,13 +28036,13 @@ class Mission
 				angles[]={6.2719975,1.7588767,0.0046322467};
 			};
 			id=1962;
-			type="ModulePersistentSmokePillar_F";
+			type="ModuleEffectsFire_F";
 			atlOffset=0.14060974;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ModulePersistentSmokePillar_F_Type";
+					property="ModuleEffectsFire_F_ColorBlue";
 					expression="_this setVariable ['Type',_value,true];";
 					class Value
 					{
@@ -28907,13 +28905,13 @@ class Mission
 				angles[]={0,6.0307312,0};
 			};
 			id=1969;
-			type="ModulePersistentSmokePillar_F";
+			type="ModuleEffectsFire_F";
 			atlOffset=2.9006901;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ModulePersistentSmokePillar_F_Type";
+					property="ModuleEffectsFire_F_ColorBlue";
 					expression="_this setVariable ['Type',_value,true];";
 					class Value
 					{
@@ -28942,13 +28940,13 @@ class Mission
 				angles[]={6.1519337,6.0307312,0.38931322};
 			};
 			id=1970;
-			type="ModulePersistentSmokePillar_F";
+			type="ModuleEffectsFire_F";
 			atlOffset=0.058826447;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ModulePersistentSmokePillar_F_Type";
+					property="ModuleEffectsFire_F_Type";
 					expression="_this setVariable ['Type',_value,true];";
 					class Value
 					{
@@ -28977,13 +28975,13 @@ class Mission
 				angles[]={-0,6.0307312,0};
 			};
 			id=1971;
-			type="ModulePersistentSmokePillar_F";
+			type="ModuleEffectsFire_F";
 			atlOffset=0.19902611;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ModulePersistentSmokePillar_F_Type";
+					property="ModuleEffectsFire_F_Type";
 					expression="_this setVariable ['Type',_value,true];";
 					class Value
 					{
