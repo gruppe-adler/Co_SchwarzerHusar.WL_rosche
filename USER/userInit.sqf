@@ -4,6 +4,7 @@
 */
 cutText ["","BLACK FADED",999];
 STHud_UIMode = 0;
+diwako_dui_main_toggled_off = true;
 
 [] execVM "USER\scripts\addModules.sqf";
 
@@ -18,10 +19,12 @@ enableEnvironment [false, true];
 // intro script
 ["CBA_loadingScreenDone", {
     STHud_UIMode = 0;
+    diwako_dui_main_toggled_off = true;
     private _waitCondition = {time > (_this + 3)};
 
     [_waitCondition,{
         STHud_UIMode = 0;
+        diwako_dui_main_toggled_off = true;
         [] execVM "USER\scripts\intro.sqf";
     },time] call CBA_fnc_waitUntilAndExecute;
 

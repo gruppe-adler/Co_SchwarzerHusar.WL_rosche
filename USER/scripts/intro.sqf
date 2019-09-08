@@ -1,3 +1,5 @@
+diwako_dui_main_toggled_off = true;
+
 ["BlackAndWhite", 0, false] call BIS_fnc_setPPeffectTemplate;
 
 userTexture1 setObjectTexture [0, "data\intro1.paa"];
@@ -67,3 +69,4 @@ sleep 5;
 7 fadeMusic 0.25;
 STHud_UIMode = 1;
 [player, "amovpercmstpslowwrfldnon"] remoteExec ["switchMove", 0];
+diwako_dui_main_toggled_off = false;

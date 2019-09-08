@@ -41,14 +41,6 @@ waitUntil {  time > 3 };
 } forEach allCurators;
 
 
-if (  
-  isClass (configFile >> "CfgPatches" >> "achilles_modules_f_achilles")
-) then
-{
-  // Note that the line below has to be uncommented if your mission is a Zeus Game Master mission.
-  // TODO check if below is necessary to uncomment
-  waitUntil {not isNil "ares_category_list"};
-
   ["SCHWARZER HUSAR", "Show Unit Count",
   {
     // Get all the passed parameters
@@ -75,7 +67,7 @@ if (
       _west,_east,_civilian,_logic,_total]);
       [_string] remoteExec ["systemChat", _allCuratorUnits, true];
 
-  }] call Ares_fnc_RegisterCustomModule;
+  }] call zen_custom_modules_fnc_register;
 
 
   ["SCHWARZER HUSAR", "Init Halo Jump",
@@ -87,7 +79,7 @@ if (
 
     systemChat "ZEUS debug: halo jump sequence started";
 
-  }] call Ares_fnc_RegisterCustomModule; 
+  }] call zen_custom_modules_fnc_register; 
 
 
   ["SCHWARZER HUSAR", "Time Jump to Morning",
@@ -100,7 +92,7 @@ if (
 
     systemChat "ZEUS debug: Time Jump to morning started";
 
-  }] call Ares_fnc_RegisterCustomModule;
+  }] call zen_custom_modules_fnc_register;
 
 
   ["SCHWARZER HUSAR", "Spawn Convoy",
@@ -112,7 +104,7 @@ if (
 
     systemChat "ZEUS debug: Convoy spawned";
 
-  }] call Ares_fnc_RegisterCustomModule;
+  }] call zen_custom_modules_fnc_register;
 
 
    ["SCHWARZER HUSAR", "Spawn Enemy Group",
@@ -124,7 +116,7 @@ if (
 
     systemChat "ZEUS debug: Group spawned";
 
-  }] call Ares_fnc_RegisterCustomModule;
+  }] call zen_custom_modules_fnc_register;
 
 
   ["SCHWARZER HUSAR - END MISSION", "END MISSION W OUTRO",
@@ -136,10 +128,18 @@ if (
 
     systemChat "ZEUS debug: Outro started";
 
-  }] call Ares_fnc_RegisterCustomModule;
+  }] call zen_custom_modules_fnc_register;
 
 
+  ["SCHWARZER HUSAR - TRACERS", "Add Custom Tracers",
+  {
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+    systemChat str _position;
+    [[_position], "USER\scripts\addCustomTracers.sqf"] remoteExec ["BIS_fnc_execVM", 2, true];
+    
+    // systemChat "ZEUS debug: tracers spawned";
 
-   
+  }] call zen_custom_modules_fnc_register;
 
-};
+["Custom Modules", "Cool Hint", {hint str _this}] call zen_custom_modules_fnc_register;
+
