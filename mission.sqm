@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4685;
+		nextID=4692;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={957.69293,24.328226,4515.0493};
-		dir[]={0.24570653,-0.62828934,0.73816764};
-		up[]={0.19842879,0.77797711,0.59613264};
-		aside[]={0.94882119,-1.2770761e-007,-0.3158246};
+		pos[]={13320.345,47.910088,7723.002};
+		dir[]={-0.0032530036,-0.49718383,0.86764562};
+		up[]={-0.0018641561,0.86764318,0.49718165};
+		aside[]={0.99999642,-1.7542789e-008,0.0037492262};
 	};
 };
 binarizationWanted=0;
@@ -27909,7 +27909,7 @@ class Mission
 			};
 			id=1959;
 			type="Redd_Wiesel_MK20_Wreck";
-			atlOffset=0.10000229;
+			atlOffset=0.10000038;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29320,7 +29320,7 @@ class Mission
 			};
 			id=1966;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
-			atlOffset=0.10000229;
+			atlOffset=0.10000038;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -68784,8 +68784,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={13315.531,34.940285,7633.7637};
-				angles[]={6.1952753,0.37312457,6.2812634};
+				position[]={13313.875,35.009968,7634.5176};
+				angles[]={6.1952753,0.27798039,6.2812634};
 			};
 			side="Empty";
 			flags=4;

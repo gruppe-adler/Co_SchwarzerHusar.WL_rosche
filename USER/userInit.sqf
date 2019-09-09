@@ -15,7 +15,6 @@ diwako_dui_main_toggled_off = true;
 enableEnvironment [false, true];
 
 
-
 // intro script
 ["CBA_loadingScreenDone", {
     STHud_UIMode = 0;
@@ -25,7 +24,8 @@ enableEnvironment [false, true];
     [_waitCondition,{
         STHud_UIMode = 0;
         diwako_dui_main_toggled_off = true;
-        [] execVM "USER\scripts\intro.sqf";
+        // [] execVM "USER\scripts\intro.sqf";
+        cutText ["", "BLACK IN", 8];
     },time] call CBA_fnc_waitUntilAndExecute;
 
 }] call CBA_fnc_addEventHandler;
