@@ -134,8 +134,8 @@ waitUntil {  time > 3 };
   ["SCHWARZER HUSAR - TRACERS", "Add Custom Tracers",
   {
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-    systemChat str _position;
-    [[_position], "USER\scripts\addCustomTracers.sqf"] remoteExec ["BIS_fnc_execVM", 2, true];
+    // systemChat str _position;
+    [[_position], "USER\scripts\customTracers2.sqf"] remoteExec ["BIS_fnc_execVM", [0,2] select isDedicated, true];
     
     // systemChat "ZEUS debug: tracers spawned";
 
