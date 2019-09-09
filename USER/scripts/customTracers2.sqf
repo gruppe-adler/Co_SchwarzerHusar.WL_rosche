@@ -1,6 +1,12 @@
 params ["_position"];
 
+
+
 if (isserver) then {
+
+    if (typeName _position == "OBJECT") then {
+        _position = getPos _position;
+    };  
 
     private _dummy = "Land_HelipadEmpty_F" createVehicle _position;
 
@@ -122,4 +128,5 @@ if (isserver) then {
         sleep (_min + random _max);
     };
     deletevehicle _gunner;
+    diag_log format ["deleted tracers at %1", _dummyPos];
 };
