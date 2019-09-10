@@ -56,20 +56,21 @@ for [{_i=0},{_i<count _convoy},{_i=_i+1}] do {
         }, [_thisVeh, _waypoints], 5] call CBA_fnc_waitAndExecute;
     };
 
-    
+    private _driver = driver _thisVeh;
+    _driver setCaptive true;
+
     // only driver maybe
-    _thisVeh setBehaviour "SAFE"; // to force lights off
-    _thisVeh setCombatMode "BLUE";  // disable him attacking
-    _thisVeh disableAi "autoCombat";
-    _thisVeh disableAI "TARGET";
-    _thisVeh disableAI "AUTOTARGET";
+    _driver setBehaviour "SAFE"; // to force lights off
+    _driver setCombatMode "BLUE";  // disable him attacking
+    _driver disableAi "autoCombat";
+    _driver disableAI "TARGET";
+    _driver disableAI "AUTOTARGET";
     
     _thisVeh setSpeedMode "FULL";
     _thisVeh setVariable ["GRAD_convoy_path", _waypoints];
     
 
-    private _driver = driver _thisVeh;
-    _driver setCaptive true;
+    
 
     /*    
     {
@@ -101,15 +102,15 @@ for [{_i=0},{_i<count _convoy},{_i=_i+1}] do {
     }, [_thisVeh, _waypoints]] call CBA_fnc_waituntilAndExecute;
 
 
-    [{
+    private _handle = [{
         params ["_vehicles","_handle"];
         _vehicles params ["_convoyID", "_thisVeh", "_waypoints"];
 
-        private _vehicleListIdentifier = format ["GRAD_convoy_vehicleList_%1", _convoyID];
-		private _convoyVehicles = missionNamespace getVariable [_vehicleListIdentifier, _convoy];
+        // private _vehicleListIdentifier = format ["GRAD_convoy_vehicleList_%1", _convoyID];
+		private _convoyVehicles = units (group _thisVeh);
 
         // remove vehicle from convoy if necessary
-        [_convoyID, _convoyVehicles, _thisVeh, _waypoints, _handle] call GRAD_convoy_fnc_healthCheck;
+        [_thisVeh, _handle] call GRAD_convoy_fnc_healthCheck;
 
         private _firstVehicle = _convoyVehicles select 0;
         private _vehicleInFront = _thisVeh getVariable ["GRAD_convoy_vehicleInFront", objNull];
@@ -128,7 +129,9 @@ for [{_i=0},{_i<count _convoy},{_i=_i+1}] do {
 
         private _identifier = format ["GRAD_convoy_%1_pause", _convoyID];
         private _pause = missionNamespace getVariable [_identifier, false];
-        private _speedLimit = if (_pause) then { 0.001 } else { [_thisVeh, _distFront, _distBack] call GRAD_convoy_fnc_getSpeedLimit };
+        private _speedLimit = if (_pause) then { 0.001 } else { 
+            [_thisVeh, _distFront, _distBack] call GRAD_convoy_fnc_getSpeedLimit 
+        };
 
 
         // all fine, go rollin on path travelled from veh in front
@@ -140,70 +143,5 @@ for [{_i=0},{_i<count _convoy},{_i=_i+1}] do {
 
     },0.2,[_convoyID, _thisVeh, _waypoints]] call CBA_fnc_addPerFrameHandler;
 
-    // record history path of each vehicle (experimental)
-    /*
-    [{
-        params ["_args", "_handle"];
-        _args params ["_convoyID", "_thisVeh"];
-        
-        private _vehicleListIdentifier = format ["GRAD_convoy_vehicleList_%1", _convoyID];
-        private _convoyVehicles = missionNamespace getVariable [_vehicleListIdentifier, []];
-
-
-        if (count _convoyVehicles < 1) exitWith {
-            [_handle] call CBA_fnc_removePerFramehandler;
-        };
-
-        {   
-            private _vehicleBehind = _thisVeh getVariable ["GRAD_convoy_vehicleBehind", objNull];
-            if (!isNull _vehicleBehind) then {
-                private _vehicleInFront = _thisVeh getVariable ["GRAD_convoy_vehicleInFront", objNull];
-                private _pathHistory = _vehicleBehind getVariable ["grad_convoy_pathHistory", []];
-
-                private _distanceToBehind = _thisVeh distance _vehicleBehind;
-                if (count _pathHistory > 0) then {
-                    private _pathBefore = _pathHistory select (count _pathHistory - 1);
-                    if (_pathBefore distance _thisVeh > 1) then {
-                        // here we can tweak curve behaviour a bit
-                        _pathHistory pushBackUnique (_thisVeh getPos [0, _thisVeh getDir _vehicleBehind]);
-                    };
-                }  else {
-                    private _position= (getPos _thisVeh);
-                    _pathHistory pushBackUnique _position;
-                };
-
-                // should be about 20m
-                if (count _pathHistory > _distanceToBehind) then {
-                    _pathHistory deleteAt 0;
-                };
-                _vehicleBehind setVariable ["grad_convoy_pathHistory", _pathHistory];
-
-            };
-        } forEach _convoyVehicles;
-
-    }, 0.2, [_convoyID, _thisVeh]] call CBA_fnc_addPerFrameHandler;
-    */
+    _thisVeh setVariable ["GRAD_convoy_loop", _handle];
 };
-
-
-
-
-// check for stuck vehicle (experimental)
-/*
-[{
-    params ["_args", "_handle"];
-    _args params ["_convoyID"];
-    
-    private _vehicleListIdentifier = format ["GRAD_convoy_vehicleList_%1", _convoyID];
-    private _convoyVehicles = missionNamespace getVariable [_vehicleListIdentifier, []];
-
-    if (count _convoyVehicles < 1) exitWith {
-        [_handle] call CBA_fnc_removePerFramehandler;
-    };
-
-    {   
-        [_x] call GRAD_convoy_fnc_checkForStuckVehicle;
-    } forEach _convoyVehicles;
-
-}, 3, [_convoyID]] call CBA_fnc_addPerFrameHandler;
-*/

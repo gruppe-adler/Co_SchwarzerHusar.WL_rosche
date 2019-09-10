@@ -11,7 +11,7 @@ private _group = [
 {
   _x assignAsCargo _vehicle;
   _x moveInCargo _vehicle;
-  [_x] call MissionControl_fnc_addKilledEH;
+  // [_x] call MissionControl_fnc_addKilledEH;
 } forEach units _group;
 
 (units _group)
