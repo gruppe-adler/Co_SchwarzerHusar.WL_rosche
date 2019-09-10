@@ -30,4 +30,4 @@ enableEnvironment [false, true];
 
 }] call CBA_fnc_addEventHandler;
 
-null = execVM "aidrivingcontrol\init.sqf";
+// null = execVM "aidrivingcontrol\init.sqf";
