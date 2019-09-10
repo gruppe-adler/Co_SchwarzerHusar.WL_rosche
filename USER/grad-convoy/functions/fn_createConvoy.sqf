@@ -39,7 +39,7 @@ private _group = createGroup _side;
 
     _convoy pushBack _veh;
 
-    [_veh] call MissionControl_fnc_addKilledEH;
+    // [_veh] call MissionControl_fnc_addKilledEH;
     
     if (typeOf _veh == "gm_gc_army_ural4320_cargo"
         ) then {
