@@ -29,3 +29,5 @@ enableEnvironment [false, true];
     },time] call CBA_fnc_waitUntilAndExecute;
 
 }] call CBA_fnc_addEventHandler;
+
+null = execVM "aidrivingcontrol\init.sqf";
