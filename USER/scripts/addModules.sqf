@@ -100,7 +100,8 @@ waitUntil {  time > 3 };
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-    [[],"USER\scripts\convoy.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
+    // [[],"USER\scripts\convoy.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
+    [0, east] remoteExec ["GRAD_convoy_fnc_startConvoy", 2, false];
 
     systemChat "ZEUS debug: Convoy spawned";
 

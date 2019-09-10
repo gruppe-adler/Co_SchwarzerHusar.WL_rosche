@@ -22,10 +22,10 @@ private _convoy = [];
 private _group = createGroup _side;
 
 {   
-    _x params ["_classname", "_position", "_dir"];
+    _x params ["_classname", "_waypointObject"];
 
-    private _position = call compile _position;
-    private _dir = call compile _dir;
+    private _position = getPos (call compile _waypointObject);
+    private _dir = getDir (call compile _waypointObject);
 
     private _vehParams = ([_position,_dir,_classname,_group] call BIS_fnc_spawnVehicle);
     _vehParams params ["_veh", "_crew"];
@@ -39,20 +39,9 @@ private _group = createGroup _side;
 
     _convoy pushBack _veh;
 
-
-    [_veh, true] call BC_flagsOnVehicles_fnc_toggleFlag;
-
-    if (typeOf _veh == "rhs_gaz66_ammo_msv") then {
-        _veh addWeaponCargoGlobal ["rhs_weap_rpg7", 5];
-        _veh addMagazineCargoGlobal ["rhs_rpg7_PG7V_mag", 10];
-        _veh addMagazineCargoGlobal ["ATMine_Range_Mag", 10];
-        _veh addMagazineCargoGlobal ["SatchelCharge_Remote_Mag", 6];
-        _veh addMagazineCargoGlobal ["sfp_strvm5_mag", 6];
-    };
-
     [_veh] call MissionControl_fnc_addKilledEH;
     
-    if (typeOf _veh == "rhs_gaz66_msv"
+    if (typeOf _veh == "gm_gc_army_ural4320_cargo"
         ) then {
         [_veh] call GRAD_convoy_fnc_addSquadToCargo;
     };

@@ -13,7 +13,7 @@ _convoyParams params ["_waypointStrings", "_convoy"];
 
 private _waypoints = [];
 {
-  _waypoints pushback (call compile _x);
+  _waypoints pushback (getPos (call compile _x));
 } forEach _waypointStrings;
 
 // store convoy in MNS to be able to remove vehicles out of it later on
