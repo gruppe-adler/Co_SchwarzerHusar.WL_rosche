@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=714;
+		nextID=726;
 	};
 	class Camera
 	{
-		pos[]={13674.396,110.57472,7157.9663};
-		dir[]={0.84062165,-0.49601552,0.21756892};
-		up[]={0.48019528,0.86831331,0.12428365};
-		aside[]={0.25056458,5.5297278e-009,-0.96810669};
+		pos[]={606.79205,155.25179,-2124.2065};
+		dir[]={0.08345297,-0.21948138,0.97204167};
+		up[]={0.018774215,0.97561646,0.21867794};
+		aside[]={0.99633551,2.7939677e-009,-0.085538656};
 	};
 };
 binarizationWanted=0;
@@ -19239,7 +19239,7 @@ class Mission
 					dataType="Waypoint";
 					position[]={621.91998,140.8902,-1970.189};
 					expCond="call{true}";
-					expActiv="call{{private _vehicle = _x; {_vehicle deleteVehicleCrew _x} forEach crew _x; deleteVehicle _vehicle; } forEach thisList;}";
+					expActiv="call{{private _vehicle = _x; {deleteVehicle _x} forEach crew _vehicle + [_vehicle]; } forEach thisList;}";
 					class Effects
 					{
 					};
@@ -65159,7 +65159,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={12689.108,21.750969,7046.4233};
-						angles[]={-0,0,0.029324362};
+						angles[]={0,0,0.029324362};
 					};
 					side="East";
 					flags=6;
@@ -65918,7 +65918,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={13820.414,30.357941,7202.1069};
-				angles[]={-0,4.4505897,-0};
+				angles[]={0,4.4505897,0};
 			};
 			side="Empty";
 			flags=4;
@@ -65945,6 +65945,7 @@ class Mission
 			};
 			id=4943;
 			type="Sign_Arrow_Direction_Pink_F";
+			atlOffset=7.6293945e-006;
 		};
 		class Item510
 		{
@@ -66003,7 +66004,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12707.052,22.188087,6924.1782};
-				angles[]={-0,4.3206081,0};
+				angles[]={0,4.3206081,0};
 			};
 			side="Empty";
 			flags=4;

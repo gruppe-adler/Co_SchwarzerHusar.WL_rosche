@@ -4,10 +4,12 @@ params ["_vehicle"];
 if (_vehicle isKindOf "Man") exitWith {};
 
 private _loop = _vehicle getVariable ["GRAD_convoy_loop", -1];
-if (_loop > -1) then {
-    _vehicle setVariable ["GRAD_convoy_loop", -1];
-    [_loop] call CBA_fnc_removePerFrameHandler;
-};
+
+// when loop was removed this had been running already
+if (_loop < 0) exitWith {};
+_vehicle setVariable ["GRAD_convoy_loop", -1];
+[_loop] call CBA_fnc_removePerFrameHandler;
+
 
 private _goLeft = (_forEachIndex mod 2 == 0);
 private _dir = if (_goLeft) then { getDir _vehicle -10 } else { getDir _vehicle + 10 };

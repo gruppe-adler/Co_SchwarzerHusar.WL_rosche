@@ -20,25 +20,6 @@ private _waypoints = [];
 private _identifier = format ["GRAD_convoy_vehicleList_%1", _convoyID];
 missionNamespace setVariable [_identifier, _convoy];
 
-// debug
-/*
-addMissionEventHandler ["Draw3D", {
-    private _id = missionNamespace getVariable ["GRAD_convoyActive", 0];
-    private _vehicles = missionNamespace getVariable [format ["GRAD_convoy_vehicleList_%1", _id], objNull];
-    
-    {
-        private _iconpositions = _x getVariable ["GRAD_icons", [[0,0,0]]];
-        {
-            drawIcon3D ["\A3\ui_f\data\map\markers\military\dot_CA.paa", [1,1,1,1], _x, 1, 1, 45, "", 1, 0.05, "TahomaB"];
-        } forEach _iconpositions;
-        private _holds = _x getVariable ["GRAD_convoy_vehicleThinks", 0];
-        private _distance = round (_x getVariable ["GRAD_convoy_vehicleDistanceFront", -1]);
-        private _speed = round speed _x;
-        drawIcon3D ["\A3\ui_f\data\map\markers\military\dot_CA.paa", [1,1,1,0.8], getPos _x, 1, 1, 45, (str _speed + " | " + str _holds + " | " + str _distance), 1, 0.05, "TahomaB"];
-    } forEach _vehicles;
-}];
-*/
-
 for [{_i=0},{_i<count _convoy},{_i=_i+1}] do {
 
 	// disable AI as we dont need it
@@ -70,18 +51,6 @@ for [{_i=0},{_i<count _convoy},{_i=_i+1}] do {
     _thisVeh setVariable ["GRAD_convoy_path", _waypoints];
     
 
-    
-
-    /*    
-    {
-        _x setBehaviour "SAFE"; // to force lights off
-        _x setCombatMode "BLUE";  // disable him attacking
-        _x disableAi "autoCombat";
-        _x disableAI "TARGET";
-        _x disableAI "AUTOTARGET";
-        _x setSpeedMode "FULL";
-    } forEach crew _thisVeh;
-    */
     // workaround/possible fix for vehicles stuck at beginning
     // lets them start with a delay
     [{  
@@ -133,11 +102,6 @@ for [{_i=0},{_i<count _convoy},{_i=_i+1}] do {
             [_thisVeh, _distFront, _distBack] call GRAD_convoy_fnc_getSpeedLimit 
         };
 
-
-        // all fine, go rollin on path travelled from veh in front
-        // private _path = _thisVeh getVariable ["grad_convoy_pathHistory", []];
-        // _thisVeh setDriveOnPath _path;
-        // _thisVeh setVariable ["GRAD_icons", _thisVeh getVariable ["grad_convoy_pathHistory", []]];
         _thisVeh limitSpeed _speedLimit;
 
 
