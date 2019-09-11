@@ -11,7 +11,7 @@ missionNamespace setVariable ["GRAD_convoy_convoyCount", (_convoyID + 1)];
 
 private _vehicleDefinitions = [_id] call GRAD_convoy_fnc_getVehicleDefinitions;
 
-_vehicleDefinitions params ["_waypoints", "_vehicles"];
+_vehicleDefinitions params ["_waypointStrings", "_startPositions", "_classnames"];
 
 if (count _vehicleDefinitions < 1) exitWith {
 	systemChat "no convoy of this ID found";
@@ -22,12 +22,12 @@ private _convoy = [];
 private _group = createGroup _side;
 
 {   
-    _x params ["_classname", "_waypointObject"];
+    private _startPosition = _x;
 
-    private _position = getPos (call compile _waypointObject);
-    private _dir = getDir (call compile _waypointObject);
+    private _position = getPos (call compile _startPosition);
+    private _dir = getDir (call compile _startPosition);
 
-    private _vehParams = ([_position,_dir,_classname,_group] call BIS_fnc_spawnVehicle);
+    private _vehParams = ([_position,_dir,(_classnames select _forEachIndex),_group] call BIS_fnc_spawnVehicle);
     _vehParams params ["_veh", "_crew"];
 
     // workaround for stuck tanks / vehicles with turrets / commanders
@@ -38,6 +38,7 @@ private _group = createGroup _side;
     [driver _veh] joinSilent _originalGroup;
 
     _convoy pushBack _veh;
+    _veh setVariable ["GRAD_convoy_vehicleNumber", _forEachIndex];
 
     // [_veh] call MissionControl_fnc_addKilledEH;
     
@@ -54,7 +55,7 @@ private _group = createGroup _side;
         ) then {
                 _veh animateSource ['light_hide',1,true];
         };
-} forEach _vehicles;
+} forEach _startPositions;
 
 
 
@@ -74,4 +75,4 @@ private _group = createGroup _side;
 
 _group setFormation "COLUMN";
 
-[_waypoints, _convoy]
+[_waypointStrings, _convoy]

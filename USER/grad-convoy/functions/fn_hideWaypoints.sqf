@@ -1,12 +1,13 @@
 private _definitions = [] call GRAD_convoy_fnc_userConvoys;
 
 {
-    private _waypoints = _x select 0;
-    private _startpoints = _x select 1 select 1;
+    private _waypointObjects = _x select 0;
 
     {
         private _wp = call compile _x;
-        _wp hideObjectGlobal true;
-    } forEach (_waypoints + _startpoints);
+        if (!isNull _wp) then {
+            _wp hideObjectGlobal true;
+        };
+    } forEach _waypointObjects;
 
 } forEach _definitions;

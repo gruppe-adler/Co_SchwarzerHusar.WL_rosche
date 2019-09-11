@@ -1,8 +1,11 @@
-params ["_thisVeh", "_handle"];
+params ["_thisVeh"];
 
+private _breakConvoy = false;
 // ensure convoy can always move, leading vehicle is first in array
-if (!canMove _thisVeh || !alive _thisVeh || leader (group _thisVeh) getVariable ["GRAD_convoy_formationBroken", false]) exitWith {
-    leader (group _thisVeh) setVariable ["GRAD_convoy_formationBroken", true];
-    [_thisVeh] call GRAD_convoy_fnc_breakFormation;
-    [_thisVeh] joinSilent grpNull;
+if (!canMove _thisVeh || !alive _thisVeh || (count (_thisVeh call BIS_fnc_enemyTargets) > 0)) then {
+    _breakConvoy = true;
+    systemChat "breaking Convoy true";
+    diag_log "breaking Convoy true";
 };
+
+_breakConvoy

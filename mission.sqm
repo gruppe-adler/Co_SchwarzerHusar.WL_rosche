@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={606.79205,155.25179,-2124.2065};
-		dir[]={0.08345297,-0.21948138,0.97204167};
-		up[]={0.018774215,0.97561646,0.21867794};
-		aside[]={0.99633551,2.7939677e-009,-0.085538656};
+		pos[]={765.54584,445.15274,-2836.1433};
+		dir[]={-0.33931598,-0.57612324,0.74360842};
+		up[]={-0.23916751,0.8173613,0.52413374};
+		aside[]={0.90976381,-8.3819032e-009,0.41513473};
 	};
 };
 binarizationWanted=0;
@@ -602,7 +602,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=58;
+									items=60;
 									class Item0
 									{
 										class data
@@ -1415,6 +1415,34 @@ class CustomAttributes
 											value="ace_cookoff_probabilitycoef";
 										};
 									};
+									class Item58
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_cookoff_enableammobox";
+										};
+									};
+									class Item59
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_cookoff_enableammocookoff";
+										};
+									};
 								};
 							};
 						};
@@ -1431,7 +1459,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=58;
+									items=60;
 									class Item0
 									{
 										class data
@@ -4023,6 +4051,96 @@ class CustomAttributes
 															};
 														};
 														value=0.050000001;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item58
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item59
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
 													};
 												};
 												class Item1
@@ -19239,7 +19357,7 @@ class Mission
 					dataType="Waypoint";
 					position[]={621.91998,140.8902,-1970.189};
 					expCond="call{true}";
-					expActiv="call{{private _vehicle = _x; {deleteVehicle _x} forEach crew _vehicle + [_vehicle]; } forEach thisList;}";
+					expActiv="call{{{deleteVehicle _x} forEach crew _x; deleteVehicle _x; } forEach thisList;}";
 					class Effects
 					{
 					};

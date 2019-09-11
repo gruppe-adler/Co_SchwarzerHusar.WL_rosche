@@ -1,4 +1,4 @@
-params ["_vehicle"];
+params ["_vehicle", "_index"];
 
 
 if (_vehicle isKindOf "Man") exitWith {};
@@ -10,17 +10,18 @@ if (_loop < 0) exitWith {};
 _vehicle setVariable ["GRAD_convoy_loop", -1];
 [_loop] call CBA_fnc_removePerFrameHandler;
 
-
-private _goLeft = (_forEachIndex mod 2 == 0);
+private _numberInConvoy = _vehicle getVariable ["GRAD_convoy_vehicleNumber", 0];
+private _goLeft = (_numberInConvoy mod 2 == 0);
 private _dir = if (_goLeft) then { getDir _vehicle -10 } else { getDir _vehicle + 10 };
-_vehicle limitSpeed 50;
+_vehicle limitSpeed 10;
 private _ownPosition = getPos _vehicle;
 private _targetPosition = _vehicle getPos [100, _dir];
 // set speed
 _vehicle move _targetPosition;
 // systemChat "move";
 
-systemChat format ["Defend %1 triggered", _vehicle];
+
+systemChat format ["Defend %1 triggered", _index];
 
 [{
     params ["_vehicle"];
@@ -38,7 +39,7 @@ systemChat format ["Defend %1 triggered", _vehicle];
 
     _vehicle setVariable ["GRAD_convoy_formationBroken", true, true];
 
-    private _cargo = assignedCargo _x;
+    private _cargo = assignedCargo _vehicle;
     _cargo allowGetIn false;
     _cargo joinSilent _group;
     {
@@ -70,4 +71,4 @@ systemChat format ["Defend %1 triggered", _vehicle];
             _x setSpeedMode "FULL";
         } forEach crew _vehicle;
     };
-}, [_vehicle], (random 3) + 2] call CBA_fnc_waitAndExecute;
+}, [_vehicle], (random 3) + (0.1 * _index)] call CBA_fnc_waitAndExecute;

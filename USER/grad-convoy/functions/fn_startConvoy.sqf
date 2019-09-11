@@ -75,11 +75,19 @@ for [{_i=0},{_i<count _convoy},{_i=_i+1}] do {
         params ["_vehicles","_handle"];
         _vehicles params ["_convoyID", "_thisVeh", "_waypoints"];
 
-        // private _vehicleListIdentifier = format ["GRAD_convoy_vehicleList_%1", _convoyID];
-		private _convoyVehicles = units (group _thisVeh);
+        private _vehicleListIdentifier = format ["GRAD_convoy_vehicleList_%1", _convoyID];
+        private _convoyVehicles = missionNamespace getVariable [_vehicleListIdentifier, []];
 
         // remove vehicle from convoy if necessary
-        [_thisVeh, _handle] call GRAD_convoy_fnc_healthCheck;
+        private _breakConvoy = [_thisVeh] call GRAD_convoy_fnc_healthCheck;
+        if (_breakConvoy) exitWith {
+            systemChat format ["breaking formation init %1", _convoyVehicles];
+            diag_log format ["breaking formation init %1", _convoyVehicles];
+            {
+                systemChat format ["breaking formation init2 %1", _forEachIndex];
+                [_x, _forEachIndex] call GRAD_convoy_fnc_breakFormation;
+            } forEach _convoyVehicles;
+        };
 
         private _firstVehicle = _convoyVehicles select 0;
         private _vehicleInFront = _thisVeh getVariable ["GRAD_convoy_vehicleInFront", objNull];
