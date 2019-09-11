@@ -60,6 +60,7 @@ systemChat format ["Defend %1 triggered", _index];
         _x setSpeedMode "FULL";
     } forEach _cargo; // (crew _x); // cargo
 
+    // cargo exits completely, combat makes own groups
     if (_vehicle isKindOf "Truck_F" || _vehicle isKindOf "gm_wheeled_truck_base") then {
         {
             _x action ["Eject", _vehicle];
@@ -73,8 +74,10 @@ systemChat format ["Defend %1 triggered", _index];
             _x enableAI "AUTOTARGET";
             _x setSpeedMode "FULL";
         } forEach crew _vehicle;
-    };
-
-    [_group, _group, 150, 2, 0.1, 0.6] call CBA_fnc_taskDefend;
+        [_group, _group, 150, 1, 0.1, true] call CBA_fnc_taskDefend;
+    } else {
+        [_vehicle] joinSilent (createGroup east);
+        [_group, _group, 350, 20, true, false] call CBA_fnc_taskDefend;
+    };  
 
 }, [_vehicle], (random 3) + (0.1 * _index)] call CBA_fnc_waitAndExecute;
