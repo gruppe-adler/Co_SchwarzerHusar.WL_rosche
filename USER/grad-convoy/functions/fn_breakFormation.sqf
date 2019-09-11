@@ -31,6 +31,10 @@ systemChat format ["Defend %1 triggered", _index];
     (driver _vehicle) enableAI "PATH";
     (driver _vehicle) setBehaviour "AWARE"; 
     (driver _vehicle) enableAI "autoCombat";
+    (driver _vehicle) setCombatMode "RED";
+    (driver _vehicle) enableAI "TARGET";
+    (driver _vehicle) enableAI "AUTOTARGET";
+
     (driver _vehicle) setCaptive false;
     private _crew = crew _vehicle;
     _crew joinSilent _group;
@@ -43,7 +47,7 @@ systemChat format ["Defend %1 triggered", _index];
     _cargo allowGetIn false;
     _cargo joinSilent _group;
     {
-        _x action ["Eject", vehicle _x];
+        _x action ["Eject", _vehicle];
         unassignVehicle _x;
         [_x] allowGetIn false;
 
@@ -59,7 +63,7 @@ systemChat format ["Defend %1 triggered", _index];
     if (_vehicle isKindOf "Truck_F") then {
 
         {
-            _x action ["Eject", vehicle _x];
+            _x action ["Eject", _vehicle];
             unassignVehicle _x;
             [_x] allowGetIn false;
             _x setUnitPos "MIDDLE";
@@ -71,4 +75,7 @@ systemChat format ["Defend %1 triggered", _index];
             _x setSpeedMode "FULL";
         } forEach crew _vehicle;
     };
+
+    [_group, _group, 100, 2, 0.1, 0.6] call CBA_fnc_taskDefend;
+
 }, [_vehicle], (random 3) + (0.1 * _index)] call CBA_fnc_waitAndExecute;
