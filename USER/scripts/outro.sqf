@@ -3,6 +3,7 @@ params ["_lastHeli"];
 cutText ["", "BLACK OUT", 4];
 sleep 4;
 
+
 playMusic "LeadTrack04_F_Tacops";
 STHud_UIMode = 0;
 cutText ["", "BLACK IN", 8];
@@ -14,14 +15,20 @@ _filmgrain ppEffectEnable true;
 _filmgrain ppEffectAdjust [0.3,0.3,0.12,0.12,0.12,true];  
 _filmgrain ppEffectCommit 0;
 
+
 private _camera = "camera" camCreate (position camOutroPos0);
-_camera camSetPos (position camOutroPos0);
+
 _camera camCommand "inertia on";
-_camera camSetTarget camOutroTarget0;
 _camera cameraEffect ["internal","back"];
-_camera camSetFov 0.6;
-_camera camPreload 5;
-sleep 5;
+_camera camPrepareFov 0.6;
+_camera camPreparePos (position camOutroPos0);
+_camera camPrepareTarget camOutroTarget0;
+ preloadCamera (position camOutroPos0);
+ waitUntil {
+   camPreloaded _camera
+ };
+_camera camCommit 0;
+sleep 3;
 _camera camSetPos (position camOutroPos1);
 _camera camSetTarget camOutroTarget1;
 _camera camCommit 60;

@@ -3,21 +3,23 @@ private _startPos1 = getMarkerPos "mrk_outro_spawn1";
 private _endPos1 = getMarkerPos "mrk_outro_target1";
 private _endPos2 = getMarkerPos "mrk_outro_target2";
 
-private _group = createGroup west;
-private _type = "gm_ge_army_crew_mp2a1_80_oli";
 
-_group setCombatMode "BLUE";
-_group setBehaviour "CARELESS";
-_group setSpeedMode "FULL";
 
 
 
 
 for "_i" from 0 to 30 do {
 
+    private _group = createGroup west;
+    private _type = selectRandom ["gm_ge_army_crew_mp2a1_80_oli", "gm_ge_army_crew_mp2a1_80_oli", "gm_ge_army_crew_mp2a1_80_oli", "gm_ge_army_crew_mp2a1_80_oli", "gm_ge_army_officer_p1_80_oli"];
+
+    _group setCombatMode "BLUE";
+    _group setBehaviour "CARELESS";
+    _group setSpeedMode "FULL";
+
     private _unit = _group createUnit [_type, _startPos1, [], 3, "NONE"];
     
-    _unit setAnimSpeedCoef 1; // todo change to slowmo later
+    _unit setAnimSpeedCoef 0.1; // todo change to slowmo later
     _unit setUnitPos "UP";
     _unit disableAI "AUTOCOMBAT";
     _unit disableAI "TARGET";
@@ -26,6 +28,7 @@ for "_i" from 0 to 30 do {
     _unit disableAI "COVER";
     _unit setBehaviour "AWARE";
     _unit setSpeedMode "FULL";
+    removeAllWeapons _unit;
 
     _unit addEventHandler ["AnimChanged", 
     {
@@ -35,11 +38,12 @@ for "_i" from 0 to 30 do {
         if (_anim == "AmovPercMrunSnonWnonDfr") then {_unit playmove "AmovPercMevaSnonWnonDfr"};
     }];
 
+    _unit doMove _endPos1;
+
     sleep 0.5;
 };
 
-private _wp = _group addWaypoint [_endPos1, 0];
-_group setCurrentWaypoint [_group, 0];
+
 
 outro_alarm = true;
 publicVariable "outro_alarm";
