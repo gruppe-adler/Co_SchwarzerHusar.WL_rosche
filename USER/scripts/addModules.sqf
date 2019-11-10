@@ -125,7 +125,7 @@ waitUntil {  time > 3 };
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-    [] execVM "USER\scripts\convoyOutro.sqf";
+    ["USER\scripts\outroServer.sqf"] remoteExec ["BIS_fnc_execVM", 2];
 
     systemChat "ZEUS debug: Outro started";
 

@@ -8,3 +8,5 @@ enableSaving [false, false];
 
 // SCRIPTS =====================================================================
 [] execVM "USER\userInit.sqf";
+
+outro_alarm = false;
