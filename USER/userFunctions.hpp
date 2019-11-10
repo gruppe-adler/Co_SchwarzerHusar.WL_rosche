@@ -4,4 +4,3 @@
 */
 
 #include "grad-convoy\CfgFunctions.hpp"
-#include "..\aidrivingcontrol\cfgfunctions.hpp"
