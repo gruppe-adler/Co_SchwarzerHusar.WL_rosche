@@ -27,10 +27,12 @@ _camera camPrepareTarget camOutroTarget0;
  waitUntil {
    camPreloaded _camera
  };
-_camera camCommit 0;
+ _camera camSetTarget camOutroTarget0;
+_camera camCommitPrepared 0;
 sleep 3;
 _camera camSetPos (position camOutroPos1);
 _camera camSetTarget camOutroTarget1;
+_camera camSetFov 0.3;
 _camera camCommit 60;
 sleep 30;
 
