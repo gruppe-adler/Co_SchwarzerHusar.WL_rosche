@@ -8,6 +8,8 @@ waitUntil {  time > 3 };
     _x addEventHandler ["CuratorGroupPlaced", {
         params ["", "_group"];
 
+        ["GRAD_missionControl_setServerAsOwner", [_group]] call CBA_fnc_serverEvent;
+
         { 
             _x setSkill ["aimingShake", 0.2]; 
             _x setSkill ["aimingSpeed", 0.9]; 
@@ -22,19 +24,17 @@ waitUntil {  time > 3 };
         } forEach units _group;
     }];
 
-    _x addEventHandler ["CuratorObjectPlaced", {
-        params ["", "_object"];
+    _x addEventHandler ["CuratorWaypointPlaced", {
+        params ["_curator", "_group", "_waypointID"];
         
+        _group enableDynamicSimulation false;
 
-        _object setSkill ["aimingShake", 0.2]; 
-        _object setSkill ["aimingSpeed", 0.9]; 
-        _object setSkill ["endurance", 0.6]; 
-        _object setSkill ["spotDistance", 1]; 
-        _object setSkill ["spotTime", 0.9]; 
-        _object setSkill ["courage", 1]; 
-        _object setSkill ["reloadSpeed", 1]; 
-        _object setSkill ["commanding", 1];
-        _object setSkill ["general", 1];
+    }];
+
+    _x addEventHandler ["CuratorGroupDoubleClicked", {
+        params ["_curator", "_group"];
+        
+        _group enableDynamicSimulation true;
 
     }];
 
@@ -95,13 +95,25 @@ waitUntil {  time > 3 };
   }] call zen_custom_modules_fnc_register;
 
 
-  ["SCHWARZER HUSAR", "Spawn Convoy",
+  ["SCHWARZER HUSAR", "Spawn Convoy EAST",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
     // [[],"USER\scripts\convoy.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
     [0, east] remoteExec ["GRAD_convoy_fnc_startConvoy", 2, false];
+
+    systemChat "ZEUS debug: Convoy spawned";
+
+  }] call zen_custom_modules_fnc_register;
+
+  ["SCHWARZER HUSAR", "Spawn Convoy NORTH",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    // [[],"USER\scripts\convoy.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
+    [1, east] remoteExec ["GRAD_convoy_fnc_startConvoy", 2, false];
 
     systemChat "ZEUS debug: Convoy spawned";
 
