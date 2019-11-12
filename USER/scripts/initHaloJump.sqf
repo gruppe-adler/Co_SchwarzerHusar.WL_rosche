@@ -12,7 +12,7 @@ if (isServer) then {
 
                 private _pos = getMarkerPos _marker;
                 private _dir = markerDir _marker;
-                private _height = 160;
+                private _height = 200;
 
                 [_units, _pos, _dir, _height, 120, false, {
                     3 fadeSound 1;

@@ -57,6 +57,6 @@ _ctrlTWO ctrlCommit 3;
 sleep 30;
 ["BlackAndWhite", 25, false] call BIS_fnc_setPPeffectTemplate;
 cutText ["", "BLACK OUT", 14];
-sleep 14;
+sleep 16;
 
-// ["DefaultMissionEnd", true, 0, false, true] spawn BIS_fnc_endMission;
+["DefaultMissionEnd", true, 0, false, true] spawn BIS_fnc_endMission;

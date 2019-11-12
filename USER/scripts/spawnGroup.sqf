@@ -12,7 +12,7 @@ private _unitsToSpawn = [
 ];
 
 
-private _group = (createGroup independent);
+private _group = (createGroup east);
 
 {
   _group createUnit [_x, _position, [], 10, "NONE"];

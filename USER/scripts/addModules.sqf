@@ -107,17 +107,7 @@ waitUntil {  time > 3 };
 
   }] call zen_custom_modules_fnc_register;
 
-  ["HUSAR - Spawn", "Spawn Smoke Column",
-  {
-    // Get all the passed parameters
-    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-    // [[],"USER\scripts\convoy.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
-    createVehicle ["test_EmptyObjectForSmoke", _position, [], 0, "CAN_COLLIDE"];
-
-    systemChat "ZEUS debug: Smoke spawned";
-
-  }] call zen_custom_modules_fnc_register;
 
   ["HUSAR - Spawn", "Spawn Convoy EAST",
   {
