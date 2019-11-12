@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=817;
+		nextID=831;
 	};
 	class Camera
 	{
@@ -116,7 +116,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=70;
+		items=69;
 		class Item0
 		{
 			className="A3_Modules_F_Heli";
@@ -392,182 +392,175 @@ class AddonsMetaData
 		};
 		class Item43
 		{
-			className="acre_main";
-			name="ACRE2 - Main";
-			author="ACRE2Team";
-			url="https://github.com/IDI-Systems/acre2";
-		};
-		class Item44
-		{
 			className="rhs_c_troops";
 			name="AFRF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item45
+		class Item44
 		{
 			className="rhsgref_c_troops";
 			name="GREF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item46
+		class Item45
 		{
 			className="A3_Weapons_F_Exp";
 			name="Arma 3 Apex - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item47
+		class Item46
 		{
 			className="ace_ballistics";
 			name="ACE3 - Ballistics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item48
+		class Item47
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item49
+		class Item48
 		{
 			className="acex_sitting";
 			name="ACEX - Sitting";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item50
+		class Item49
 		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item51
+		class Item50
 		{
 			className="rhs_sounds";
 			name="AFRF Sounds";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item52
+		class Item51
 		{
 			className="ace_compat_rhs_afrf3";
 			name="ACE3 - RHS AFRF Compatibility";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item53
+		class Item52
 		{
 			className="grad_beret";
 			name="grad_beret";
 			author="Simmax [A] & DerZade [A]";
 		};
-		class Item54
+		class Item53
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item55
+		class Item54
 		{
 			className="ace_chemlights";
 			name="ace_chemlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item56
+		class Item55
 		{
 			className="gm_vehicles_land_wheeled_p601_gc_army_p601";
 			name="gm_vehicles_land_wheeled_p601_gc_army_p601";
 			author="Global Mobilization";
 			url="global-mobilization.com";
 		};
-		class Item57
+		class Item56
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Enoch - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item58
+		class Item57
 		{
 			className="ace_sandbag";
 			name="ACE3 - Sand Bag";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item59
+		class Item58
 		{
 			className="gm_vehicles_land_wheeled_brdm2_gc_army_brdm2";
 			name="gm_vehicles_land_wheeled_brdm2_gc_army_brdm2";
 			author="Global Mobilization";
 			url="global-mobilization.com";
 		};
-		class Item60
+		class Item59
 		{
 			className="gm_vehicles_land_wheeled_ural375d_gc_army_ural375d";
 			name="gm_vehicles_land_wheeled_ural375d_gc_army_ural375d";
 			author="Global Mobilization";
 			url="global-mobilization.com";
 		};
-		class Item61
+		class Item60
 		{
 			className="gm_vehicles_land_wheeled_ural4320_gc_army_ural4320";
 			name="gm_vehicles_land_wheeled_ural4320_gc_army_ural4320";
 			author="Global Mobilization";
 			url="global-mobilization.com";
 		};
-		class Item62
+		class Item61
 		{
 			className="gm_structures_euro_80";
 			name="gm_structures_euro_80";
 			author="Global Mobilization";
 			url="global-mobilization.com";
 		};
-		class Item63
+		class Item62
 		{
 			className="A3_Structures_F_Enoch_Industrial";
 			name="Arma 3 Enoch - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item64
+		class Item63
 		{
 			className="gm_structures_euro_80_winter";
 			name="gm_structures_euro_80_winter";
 			author="Global Mobilization";
 			url="global-mobilization.com";
 		};
-		class Item65
+		class Item64
 		{
 			className="A3_Structures_F_Enoch";
 			name="Arma 3 Enoch - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item66
+		class Item65
 		{
 			className="gm_vehicles_land_tracked_leopard1_dk_army_leopard1";
 			name="gm_vehicles_land_tracked_leopard1_dk_army_leopard1";
 			author="Global Mobilization";
 			url="global-mobilization.com";
 		};
-		class Item67
+		class Item66
 		{
 			className="Redd_Tank_Fuchs_1A4";
 			name="Redd_Tank_Fuchs_1A4";
 		};
-		class Item68
+		class Item67
 		{
 			className="rnt_sppz_2a2_luchs";
 			name="rnt_sppz_2a2_luchs";
 		};
-		class Item69
+		class Item68
 		{
 			className="gm_vehicles_land_tracked_bpz2_dk_army_bpz2";
 			name="gm_vehicles_land_tracked_bpz2_dk_army_bpz2";
@@ -4569,6 +4562,46 @@ class Mission
 					id=29;
 					type="VirtualCurator_F";
 					atlOffset=-11.184465;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if !(_value isEqualTo []) then {_value=[str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput;_this setVariable ['TFAR_freq_lr',_value,true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if !(_value isEqualTo []) then {_value=[str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput;_this setVariable ['TFAR_freq_sr',_value,true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
@@ -4582,6 +4615,46 @@ class Mission
 					id=30;
 					type="VirtualCurator_F";
 					atlOffset=-11.763226;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if !(_value isEqualTo []) then {_value=[str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput;_this setVariable ['TFAR_freq_lr',_value,true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if !(_value isEqualTo []) then {_value=[str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput;_this setVariable ['TFAR_freq_sr',_value,true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
@@ -4595,6 +4668,46 @@ class Mission
 					id=31;
 					type="VirtualCurator_F";
 					atlOffset=-13.794758;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TFAR_freq_lr";
+							expression="if !(_value isEqualTo []) then {_value=[str _value,9,87,30,10] call tfar_fnc_parseFrequenciesInput;_this setVariable ['TFAR_freq_lr',_value,true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TFAR_freq_sr";
+							expression="if !(_value isEqualTo []) then {_value=[str _value,8,512,30,10] call tfar_fnc_parseFrequenciesInput;_this setVariable ['TFAR_freq_sr',_value,true];}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
@@ -67380,7 +67493,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={13406.718,26.058088,13677.688};
-				angles[]={-0,0.12906262,0};
+				angles[]={0,0.12906262,0};
 			};
 			side="Empty";
 			flags=4;
@@ -67420,7 +67533,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={13505.569,25.408094,14332.92};
-				angles[]={-0,0.12906262,0};
+				angles[]={0,0.12906262,0};
 			};
 			side="Empty";
 			flags=4;
@@ -67461,7 +67574,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={13500.445,25.408089,14297.886};
-				angles[]={-0,0.12906262,0};
+				angles[]={0,0.12906262,0};
 			};
 			side="Empty";
 			flags=4;
@@ -67501,7 +67614,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={13547.416,25.408089,14593.99};
-				angles[]={-0,0.12906262,0};
+				angles[]={0,0.12906262,0};
 			};
 			side="Empty";
 			flags=4;
@@ -68541,7 +68654,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={13297.522,34.975834,9545.1514};
-				angles[]={0.0010918301,3.1988571,-0};
+				angles[]={0.0010918301,3.1988571,0};
 			};
 			side="Empty";
 			flags=4;
@@ -69751,6 +69864,7 @@ class Mission
 			};
 			id=5467;
 			type="Sign_Arrow_Direction_Pink_F";
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -70341,7 +70455,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12932.17,31.020208,6925.0493};
-				angles[]={6.2810569,3.1988571,-0};
+				angles[]={6.2810569,3.1988571,0};
 			};
 			side="Empty";
 			flags=4;
@@ -70381,7 +70495,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12936.433,27.650381,6721.3081};
-				angles[]={6.2788453,3.1988571,-0};
+				angles[]={6.2788453,3.1988571,0};
 			};
 			side="Empty";
 			flags=4;
