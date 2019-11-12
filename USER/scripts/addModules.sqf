@@ -24,19 +24,32 @@ waitUntil {  time > 3 };
         } forEach units _group;
     }];
 
+    /*
     _x addEventHandler ["CuratorWaypointPlaced", {
         params ["_curator", "_group", "_waypointID"];
         
-        _group enableDynamicSimulation false;
+        if (_group getVariable ["Husar_frozenGroup", true]) then {
 
+          private _units = curatorSelected select 0;
+          private _newGroup = createGroup east;
+
+          _units joinSilent _newGroup;
+          _newGroup enableDynamicSimulation false;
+          {
+            _x forceSpeed -1;
+          } forEach units _newGroup;
+
+        };
     }];
 
+    
     _x addEventHandler ["CuratorGroupDoubleClicked", {
         params ["_curator", "_group"];
         
         _group enableDynamicSimulation true;
-
+        _group forceSpeed 0;
     }];
+    */
 
 } forEach allCurators;
 
@@ -151,6 +164,31 @@ waitUntil {  time > 3 };
     ["USER\scripts\outroServer.sqf"] remoteExec ["BIS_fnc_execVM", 2];
 
     systemChat "ZEUS debug: Outro started";
+
+  }] call zen_custom_modules_fnc_register;
+
+  ["HUSAR - Stellungen", "Freeze Unit",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    _objectUnderCursor forceSpeed 0;
+
+    systemChat "ZEUS debug: Forcespeed unit set to 0";
+
+  }] call zen_custom_modules_fnc_register;
+
+  ["HUSAR - Stellungen", "UnFreeze Unit and take from Group",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+  
+    private _newGroup = createGroup east;
+    _objectUnderCursor forceSpeed -1;
+    [_objectUnderCursor] joinSilent _newGroup;
+    _newGroup enableDynamicSimulation false;
+
+    systemChat "ZEUS debug: Forcespeed unit reset and taken from group";
 
   }] call zen_custom_modules_fnc_register;
 
