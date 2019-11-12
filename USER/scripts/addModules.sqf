@@ -167,7 +167,7 @@ waitUntil {  time > 3 };
 
   }] call zen_custom_modules_fnc_register;
 
-  ["HUSAR - Stellungen", "Freeze Unit",
+  ["HUSAR - Stellungen", "Freeze Unit to Speed 0",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -178,7 +178,7 @@ waitUntil {  time > 3 };
 
   }] call zen_custom_modules_fnc_register;
 
-  ["HUSAR - Stellungen", "UnFreeze Unit and take from Group",
+  ["HUSAR - Stellungen", "Un-Freeze / Un-Group Unit",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -187,6 +187,7 @@ waitUntil {  time > 3 };
     _objectUnderCursor forceSpeed -1;
     [_objectUnderCursor] joinSilent _newGroup;
     _newGroup enableDynamicSimulation false;
+    _objectUnderCursor enableSimulationGlobal true;
 
     systemChat "ZEUS debug: Forcespeed unit reset and taken from group";
 

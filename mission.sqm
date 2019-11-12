@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12651.487,46.779999,7068.9683};
-		dir[]={-0.13867798,-0.60645252,-0.78293663};
-		up[]={-0.10577191,0.79511791,-0.59715915};
-		aside[]={-0.98467422,-5.075708e-008,0.17441143};
+		pos[]={2110.9656,31.452208,5063.5317};
+		dir[]={-0.2087284,-0.46690309,0.85932362};
+		up[]={-0.11020577,0.88430715,0.453711};
+		aside[]={0.97174555,-8.9057721e-009,0.23603565};
 	};
 };
 binarizationWanted=0;
@@ -625,7 +625,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=60;
+									items=61;
 									class Item0
 									{
 										class data
@@ -1466,6 +1466,20 @@ class CustomAttributes
 											value="ace_cookoff_enableammocookoff";
 										};
 									};
+									class Item60
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_zeus_autoaddobjects";
+										};
+									};
 								};
 							};
 						};
@@ -1482,7 +1496,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=60;
+									items=61;
 									class Item0
 									{
 										class data
@@ -4164,6 +4178,51 @@ class CustomAttributes
 															};
 														};
 														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item60
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
 													};
 												};
 												class Item1
@@ -29310,8 +29369,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={686.65265,13.734881,4932.4526};
-				angles[]={0.040280748,4.1006246,6.2756367};
+				position[]={890.26227,15.13,3988.7329};
+				angles[]={-0,4.100616,0};
 			};
 			id=1980;
 			type="ModuleCurator_F";
@@ -29389,7 +29448,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=2;
+							value=3;
 						};
 					};
 				};
