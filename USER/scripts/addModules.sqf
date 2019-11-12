@@ -41,7 +41,7 @@ waitUntil {  time > 3 };
 } forEach allCurators;
 
 
-  ["SCHWARZER HUSAR", "Show Unit Count",
+  ["HUSAR - Debug", "Show Unit Count",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -70,7 +70,7 @@ waitUntil {  time > 3 };
   }] call zen_custom_modules_fnc_register;
 
 
-  ["SCHWARZER HUSAR", "Init Halo Jump",
+  ["HUSAR - Missionsablauf", "Init Halo Jump",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -82,7 +82,7 @@ waitUntil {  time > 3 };
   }] call zen_custom_modules_fnc_register; 
 
 
-  ["SCHWARZER HUSAR", "Time Jump to Morning",
+  ["HUSAR - Missionsablauf", "Time Jump to Morning",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -94,8 +94,19 @@ waitUntil {  time > 3 };
 
   }] call zen_custom_modules_fnc_register;
 
+  ["HUSAR - Spawn", "Spawn Smoke Column",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-  ["SCHWARZER HUSAR", "Spawn Convoy EAST",
+    // [[],"USER\scripts\convoy.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
+    createVehicle ["test_EmptyObjectForSmoke", _position, [], 0, "CAN_COLLIDE"];
+
+    systemChat "ZEUS debug: Smoke spawned";
+
+  }] call zen_custom_modules_fnc_register;
+
+  ["HUSAR - Spawn", "Spawn Convoy EAST",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -103,11 +114,11 @@ waitUntil {  time > 3 };
     // [[],"USER\scripts\convoy.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
     [0, east] remoteExec ["GRAD_convoy_fnc_startConvoy", 2, false];
 
-    systemChat "ZEUS debug: Convoy spawned";
+    systemChat "ZEUS debug: Convoy EAST spawned";
 
   }] call zen_custom_modules_fnc_register;
 
-  ["SCHWARZER HUSAR", "Spawn Convoy NORTH",
+  ["HUSAR - Spawn", "Spawn Convoy NORTH",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -115,12 +126,12 @@ waitUntil {  time > 3 };
     // [[],"USER\scripts\convoy.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
     [1, east] remoteExec ["GRAD_convoy_fnc_startConvoy", 2, false];
 
-    systemChat "ZEUS debug: Convoy spawned";
+    systemChat "ZEUS debug: Convoy NORTH spawned";
 
   }] call zen_custom_modules_fnc_register;
 
 
-   ["SCHWARZER HUSAR", "Spawn Enemy Group",
+   ["HUSAR - Spawn", "Spawn Enemy Group",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -132,7 +143,7 @@ waitUntil {  time > 3 };
   }] call zen_custom_modules_fnc_register;
 
 
-  ["SCHWARZER HUSAR - END MISSION", "END MISSION W OUTRO",
+  ["HUSAR - Mission End", "END MISSION W OUTRO",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -144,7 +155,7 @@ waitUntil {  time > 3 };
   }] call zen_custom_modules_fnc_register;
 
 
-  ["SCHWARZER HUSAR - TRACERS", "Add Custom Tracers",
+  ["HUSAR - Tracers", "Add Custom Tracers",
   {
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     // systemChat str _position;
