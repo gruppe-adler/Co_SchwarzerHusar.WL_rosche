@@ -4,7 +4,7 @@ if (!isServer) exitWith {};
 
 private _position = getPos _logic;
 
-private _fire = createVehicle ["test_EmptyObjectForFireBig﻿", _position, [], 0, "CAN_COLLIDE"];
+private _fire = "test_EmptyObjectForFireBig" createVehicle _position;
 _fire attachTo [_logic, [0,0,0]];
 
 {
