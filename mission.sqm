@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5533;
+		nextID=5534;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11521.989,51.436958,4733.9097};
-		dir[]={-0.73586214,-0.67325646,-0.072372466};
-		up[]={-0.67002428,0.73940879,-0.065897152};
-		aside[]={-0.097878218,3.8649887e-008,0.99520022};
+		pos[]={2075.3701,20.312727,5125.3965};
+		dir[]={-0.75845683,-0.51554763,0.39870191};
+		up[]={-0.4563441,0.85685647,0.23988847};
+		aside[]={0.46530405,1.1408702e-008,0.88515526};
 	};
 };
 binarizationWanted=0;
@@ -11928,7 +11928,7 @@ class Mission
 				};
 			};
 			id=729;
-			atlOffset=-6.6919637;
+			atlOffset=-0.00030994415;
 		};
 		class Item2
 		{
@@ -64911,18 +64911,19 @@ class Mission
 		class Item450
 		{
 			dataType="Trigger";
-			position[]={2060.6638,13.243538,5132.7192};
-			angle=4.8419657;
+			position[]={2060.6641,13.243544,5132.7192};
+			angle=4.8419623;
 			class Attributes
 			{
 				condition="call{outro_alarm}";
+				onActivation="call{[{outro_alarm = false;},[],10] call CBA_fnc_waitAndExecute;}";
 				sizeA=0;
 				sizeB=0;
-				effectSoundTrigger="gm_e57_test_near";
+				effectSoundTrigger="gm_e57_airraid_near";
 			};
 			id=5354;
 			type="EmptyDetector";
-			atlOffset=6.4179983;
+			atlOffset=6.4180002;
 		};
 		class Item451
 		{
