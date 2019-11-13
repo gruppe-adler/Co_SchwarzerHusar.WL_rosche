@@ -39,18 +39,18 @@ _ctrlTWO ctrlSetPosition [
     safeZoneX + safeZoneW/2 - safeZoneW/2, 
     (safezoneY + safeZoneH)/1.5, 
     safezoneWAbs, 
-    safeZoneH/10
+    safeZoneH/20
 ];
 
-_ctrlTWO ctrlSetStructuredText parseText "<t size='1' shadow='0' font='EtelkaMonospaceProBold' align='center' color='#ffffffff'>Celebrating 5 years of friendship.</t>";
+_ctrlTWO ctrlSetStructuredText parseText "<t size='1.5' shadow='0' font='EtelkaMonospaceProBold' align='center' color='#ffffffff'><br/>Celebrating 5 years of friendship.</t>";
 _ctrlTWO ctrlSetBackgroundColor [0, 0, 0, 0.7]; 
-_ctrlTWO ctrlSetFade 1;
+_ctrlTWO ctrlSetFade 0;
 _ctrlTWO ctrlCommit 0;
 
 sleep 15;
 ["BlackAndWhite", 25, false] call BIS_fnc_setPPeffectTemplate;
 
-_ctrlTWO ctrlSetStructuredText parseText "<t size='1' shadow='0' font='EtelkaMonospaceProBold' align='center' color='#ffffffff'>Gruppe Adler invites to you the second part coming Summer 2020.</t>";
+_ctrlTWO ctrlSetStructuredText parseText "<t size='1.5' shadow='0' font='EtelkaMonospaceProBold' align='center' color='#ffffffff'><br/>Gruppe Adler invites to you the second part coming Summer 2020.</t>";
 _ctrlTWO ctrlSetBackgroundColor [0, 0, 0, 0.7]; 
 _ctrlTWO ctrlCommit 0;
 
