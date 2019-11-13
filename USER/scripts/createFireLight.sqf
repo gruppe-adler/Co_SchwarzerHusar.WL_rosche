@@ -16,3 +16,11 @@ _light setLightAmbient _ambient;
 _light setLightIntensity _intensity;
 _light setLightAttenuation _attenuation;
 _light setLightDayLight false;
+
+[{
+    params ["_fire", "_light"];
+    isNull _fire
+},{
+    params ["_fire","_light"];
+    deleteVehicle _light;
+}, [_fire, _light]] call CBA_fnc_waitUntilAndExecute;
