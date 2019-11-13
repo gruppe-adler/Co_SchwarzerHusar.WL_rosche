@@ -22,3 +22,16 @@ sleep 2;
 sleep 4;
 cutText ["", "BLACK IN", 4];
 4 fadeSound 1;
+
+
+// make night a bit brighter
+[{
+    params ["_args", "_handle"];
+
+    if (sunOrMoon < 0.2) then {
+        setAperture 2;
+    } else {
+        [_handle] call CBA_fnc_removePerFramehandler;
+    };
+    
+}, 1, []] call CBA_fnc_addPerFrameHandler;
