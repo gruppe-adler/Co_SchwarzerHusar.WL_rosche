@@ -138,7 +138,7 @@ waitUntil {  time > 3 };
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
-
+    _position = ASLToAGL _position;
     [[_position],"USER\scripts\spawnGroup.sqf"] remoteExec ["BIS_fnc_execVM",2,false];
 
     systemChat "ZEUS debug: Group spawned";
@@ -188,6 +188,7 @@ waitUntil {  time > 3 };
   {
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
     // systemChat str _position;
+    _position = ASLToAGL _position;
     [[_position], "USER\scripts\customTracers2.sqf"] remoteExec ["BIS_fnc_execVM", [0,2] select isDedicated, true];
     
     // systemChat "ZEUS debug: tracers spawned";
@@ -195,4 +196,3 @@ waitUntil {  time > 3 };
   }] call zen_custom_modules_fnc_register;
 
 ["Custom Modules", "Cool Hint", {hint str _this}] call zen_custom_modules_fnc_register;
-
