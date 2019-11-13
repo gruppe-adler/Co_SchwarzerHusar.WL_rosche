@@ -26,6 +26,19 @@ if (isServer) then {
                         if (player getVariable ["GRAD_drop_dropped", false]) exitWith {
                             [_handle] call CBA_fnc_removePerFrameHandler;
                             10 setfog [0,0,0];
+
+                            // make night a bit brighter
+                            [{
+                                params ["_args", "_handle"];
+
+                                if (sunOrMoon < 0.2) then {
+                                    setAperture 2.5;
+                                } else {
+                                    setAperture -1;
+                                    [_handle] call CBA_fnc_removePerFramehandler;
+                                };
+                                
+                            }, 1, []] call CBA_fnc_addPerFrameHandler;
                         };
                         0 setfog [0.9,0,0];
                     }, 0, []] call CBA_fnc_addPerFrameHandler;
