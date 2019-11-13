@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14249.617,47.271412,9096.3633};
-		dir[]={0.56962174,-0.69836533,-0.43339136};
-		up[]={0.55579066,0.7157349,-0.42286733};
-		aside[]={-0.60550845,-8.8490197e-008,-0.79584342};
+		pos[]={11450.834,30.77137,4716.7334};
+		dir[]={0.66619802,-0.2932882,-0.68569809};
+		up[]={0.20437668,0.95602214,-0.21035911};
+		aside[]={-0.71723884,5.4133125e-008,-0.69683969};
 	};
 };
 binarizationWanted=0;
@@ -18446,17 +18446,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14308.466,38.69397,9138.21};
-				angles[]={0,4.0775781,0};
+				position[]={14308.466,37.341915,9138.21};
+				angles[]={6.2800398,4.0775781,6.2574558};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="call{if (isServer) then { this disableTIEquipment true;};}";
 			};
 			id=2607;
 			type="Redd_Tank_Wiesel_1A2_TOW_Flecktarn";
-			atlOffset=1.3520546;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18638,10 +18638,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14284.933,39.072182,9134.2285};
-				angles[]={0,4.024642,0};
+				position[]={14284.933,37.720619,9134.2285};
+				angles[]={6.2789712,4.024642,6.2512808};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
@@ -18649,7 +18650,6 @@ class Mission
 			};
 			id=2611;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
-			atlOffset=1.3515625;
 			class CustomAttributes
 			{
 				class Attribute0
