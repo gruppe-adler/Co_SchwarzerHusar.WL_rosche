@@ -32,7 +32,7 @@ if (isServer) then {
                                 params ["_args", "_handle"];
 
                                 if (sunOrMoon < 0.2) then {
-                                    setAperture 2.5;
+                                    setAperture 4;
                                 } else {
                                     setAperture -1;
                                     [_handle] call CBA_fnc_removePerFramehandler;
