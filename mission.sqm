@@ -20,7 +20,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2091.7622,48.964077,5088.4033};
+		pos[]={2165.0354,113.72128,4976.2378};
 		dir[]={-0.3693324,-0.35055885,0.86064351};
 		up[]={-0.13824695,0.93654054,0.32215104};
 		aside[]={0.91895932,2.4074689e-007,0.39435825};
@@ -16615,7 +16615,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-3036.28,84.866364,16805.16};
+						position[]={-549.51733,77.125885,9691.7354};
 						angles[]={0,2.9457843,0};
 					};
 					side="West";
@@ -16625,14 +16625,14 @@ class Mission
 					};
 					id=2273;
 					type="rhsusf_airforce_jetpilot";
-					atlOffset=68.624931;
+					atlOffset=68.622704;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-2966.1921,84.211273,16857.91};
+						position[]={-479.39026,75.76268,9744.5127};
 						angles[]={0,2.9457843,0};
 					};
 					side="West";
@@ -16641,14 +16641,14 @@ class Mission
 					};
 					id=2274;
 					type="rhsusf_airforce_jetpilot";
-					atlOffset=68.621475;
+					atlOffset=68.617699;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-3124.9897,88.925644,16857.496};
+						position[]={-638.17493,79.469803,9744.0557};
 						angles[]={0,2.9457843,0};
 					};
 					side="West";
@@ -16657,12 +16657,12 @@ class Mission
 					};
 					id=2275;
 					type="rhsusf_airforce_jetpilot";
-					atlOffset=68.629929;
+					atlOffset=68.628891;
 				};
 				class Item3
 				{
 					dataType="Waypoint";
-					position[]={621.91998,140.8902,-1970.189};
+					position[]={3415.7407,145.80908,1256.7837};
 					expCond="call{true}";
 					expActiv="call{{{deleteVehicle _x} forEach crew _x; deleteVehicle _x; } forEach thisList;}";
 					class Effects
@@ -16671,7 +16671,7 @@ class Mission
 					showWP="NEVER";
 					id=2276;
 					type="Move";
-					atlOffset=124.019;
+					atlOffset=124.01908;
 				};
 			};
 			class Attributes
@@ -16719,7 +16719,7 @@ class Mission
 				};
 			};
 			id=2272;
-			atlOffset=68.622917;
+			atlOffset=68.622704;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16749,7 +16749,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={-3036.3079,85.745132,16805.145};
+				position[]={-549.47852,78.004578,9691.708};
 				angles[]={0,2.9457843,0};
 			};
 			side="West";
@@ -16759,7 +16759,7 @@ class Mission
 			};
 			id=2277;
 			type="RHS_A10";
-			atlOffset=68.622917;
+			atlOffset=68.622704;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16789,7 +16789,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={-2966.2004,85.089577,16857.91};
+				position[]={-479.37109,76.642242,9744.4736};
 				angles[]={0,2.9457843,0};
 			};
 			side="West";
@@ -16798,7 +16798,7 @@ class Mission
 			};
 			id=2278;
 			type="RHS_A10";
-			atlOffset=68.617531;
+			atlOffset=68.617699;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16828,7 +16828,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={-3124.9983,89.805222,16857.465};
+				position[]={-638.16895,80.349327,9744.0283};
 				angles[]={0,2.9457843,0};
 			};
 			side="West";
@@ -16837,7 +16837,7 @@ class Mission
 			};
 			id=2279;
 			type="RHS_A10";
-			atlOffset=68.629684;
+			atlOffset=68.628891;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -62866,6 +62866,7 @@ class Mission
 			};
 			id=5313;
 			type="gm_dk_army_Leopard1a3";
+			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -63192,6 +63193,7 @@ class Mission
 			};
 			id=5314;
 			type="Redd_Tank_Fuchs_1A4_Jg_Flecktarn";
+			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -63290,6 +63292,7 @@ class Mission
 			};
 			id=5315;
 			type="Redd_Tank_Fuchs_1A4_Jg_Flecktarn";
+			atlOffset=4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -63389,6 +63392,7 @@ class Mission
 			};
 			id=5316;
 			type="Redd_Tank_Wiesel_1A2_TOW_Flecktarn";
+			atlOffset=4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0

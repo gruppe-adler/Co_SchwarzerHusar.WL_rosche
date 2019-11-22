@@ -2,6 +2,7 @@ params ["_lastHeli"];
 
 cutText ["", "BLACK OUT", 4];
 sleep 4;
+diwako_dui_main_toggled_off = true;
 
 
 playMusic "LeadTrack04_F_Tacops";
