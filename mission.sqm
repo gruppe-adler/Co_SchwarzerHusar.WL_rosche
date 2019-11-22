@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=957;
+		nextID=971;
 	};
 	class Camera
 	{
-		pos[]={970.88196,25.307093,4517.0386};
-		dir[]={-0.68072629,-0.36242887,0.63671559};
-		up[]={-0.26471475,0.93199897,0.24759945};
-		aside[]={0.68315923,1.1122902e-006,0.73038447};
+		pos[]={14315.709,52.338856,9100.377};
+		dir[]={-0.34400842,-0.67764717,0.64997041};
+		up[]={-0.31699762,0.73538357,0.59893644};
+		aside[]={0.88384545,-1.0454096e-007,0.46779102};
 	};
 };
 binarizationWanted=0;
@@ -14730,7 +14730,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 				disableSimulation=1;
 			};
@@ -14957,6 +14957,7 @@ class Mission
 			{
 				health=0.23737724;
 				lock="LOCKED";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 			};
 			id=1966;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
@@ -15076,6 +15077,7 @@ class Mission
 			{
 				health=0.23737724;
 				lock="LOCKED";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 			};
 			id=1975;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
@@ -15135,6 +15137,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				disableSimulation=1;
 			};
 			id=1978;
@@ -15313,7 +15316,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 				dynamicSimulation=1;
 			};
@@ -15450,7 +15453,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 				dynamicSimulation=1;
 			};
@@ -16400,7 +16403,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={847.48853,17.441339,4591.1079};
-				angles[]={-0,3.8434768,0};
+				angles[]={0,3.8434768,0};
 			};
 			side="Empty";
 			flags=4;
@@ -16413,6 +16416,7 @@ class Mission
 			};
 			id=2220;
 			type="Redd_Tank_Gepard_1A2_Flecktarn";
+			atlOffset=-1.8119812e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16870,6 +16874,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				disableSimulation=1;
 			};
 			id=2289;
@@ -16986,6 +16991,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				disableSimulation=1;
 			};
 			id=2290;
@@ -17101,6 +17107,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				disableSimulation=1;
 			};
 			id=2292;
@@ -17964,13 +17971,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14314.858,37.002579,9107.1436};
-				angles[]={6.2704759,4.0936522,6.2485328};
+				angles[]={6.2704792,4.0936522,6.2485409};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { this disableTIEquipment true;};}";
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 			};
 			id=2606;
 			type="Redd_Tank_Wiesel_1A4_MK20_Flecktarn";
@@ -18086,7 +18093,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { this disableTIEquipment true;};}";
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 			};
 			id=2607;
 			type="Redd_Tank_Wiesel_1A2_TOW_Flecktarn";
@@ -18241,7 +18248,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 			};
 			id=2611;
@@ -18282,7 +18289,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 			};
 			id=2661;
@@ -18843,7 +18850,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 				dynamicSimulation=1;
 			};
@@ -18885,7 +18892,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { this disableTIEquipment true;};}";
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 			};
 			id=3126;
 			type="Redd_Tank_Wiesel_1A4_MK20_Flecktarn";
@@ -19001,7 +19008,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { this disableTIEquipment true;};}";
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 			};
 			id=3127;
 			type="Redd_Tank_Wiesel_1A2_TOW_Flecktarn";
@@ -26608,18 +26615,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={761.8446,17.998257,4620.2852};
-				angles[]={0.10529222,0.99186945,6.1184134};
+				position[]={761.84497,17.998436,4620.2852};
+				angles[]={0.10529571,0.99187064,6.1184087};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				disableSimulation=1;
 			};
 			id=3903;
 			type="Redd_Tank_Wiesel_1A4_MK20_Flecktarn";
-			atlOffset=0.0071563721;
+			atlOffset=0.0073986053;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -26707,11 +26715,12 @@ class Mission
 			class PositionInfo
 			{
 				position[]={673.16498,18.150436,4568.4429};
-				angles[]={0,1.1015439,0};
+				angles[]={0,1.1015471,0};
 			};
 			side="Empty";
 			class Attributes
 			{
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				disableSimulation=1;
 			};
 			id=3905;
@@ -26909,7 +26918,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 			};
 			id=3925;
@@ -28289,7 +28298,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 				disableSimulation=1;
 			};
@@ -28594,7 +28603,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="data\intro2.paa";
+							value="data\intro3.paa";
 						};
 					};
 				};
@@ -30181,6 +30190,7 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 			};
 			id=4518;
 			type="Redd_Tank_Wiesel_1A2_TOW_Flecktarn";
@@ -30278,6 +30288,7 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 			};
 			id=4523;
 			type="Redd_Tank_Wiesel_1A4_MK20_Flecktarn";
@@ -30375,7 +30386,7 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 			};
 			id=4527;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
@@ -30416,7 +30427,7 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 			};
 			id=4529;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
@@ -31348,7 +31359,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 				dynamicSimulation=1;
 			};
@@ -63352,6 +63363,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				disableSimulation=1;
 			};
 			id=5316;
@@ -63450,6 +63462,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{if (isServer) then { [this, true] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				disableSimulation=1;
 			};
 			id=5317;
@@ -70060,11 +70073,12 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 			};
 			id=5562;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -70095,7 +70109,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12676.573,22.258726,6844.3003};
-				angles[]={-0,5.9532123,0};
+				angles[]={0,5.9532123,0};
 			};
 			side="Empty";
 			flags=4;
@@ -70135,7 +70149,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12676.083,22.258726,6845.2729};
-				angles[]={-0,5.9532123,0};
+				angles[]={0,5.9532123,0};
 			};
 			side="Empty";
 			flags=4;
@@ -70175,7 +70189,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12677.63,22.258726,6844.6929};
-				angles[]={-0,5.9532123,0};
+				angles[]={0,5.9532123,0};
 			};
 			side="Empty";
 			flags=4;
@@ -70215,7 +70229,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12677.17,22.258726,6845.6895};
-				angles[]={-0,5.9532123,0};
+				angles[]={0,5.9532123,0};
 			};
 			side="Empty";
 			flags=4;
@@ -70255,7 +70269,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12678.819,22.258726,6845.0801};
-				angles[]={-0,5.9532123,0};
+				angles[]={0,5.9532123,0};
 			};
 			side="Empty";
 			flags=4;
@@ -70295,7 +70309,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12678.426,22.258726,6846.2085};
-				angles[]={-0,5.9532123,0};
+				angles[]={0,5.9532123,0};
 			};
 			side="Empty";
 			flags=4;
@@ -70335,7 +70349,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12676.515,22.258726,6843.0669};
-				angles[]={-0,5.9532123,0};
+				angles[]={0,5.9532123,0};
 			};
 			side="Empty";
 			flags=4;
@@ -70375,7 +70389,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12677.81,22.258726,6843.3877};
-				angles[]={-0,5.9532123,0};
+				angles[]={0,5.9532123,0};
 			};
 			side="Empty";
 			flags=4;
@@ -70415,7 +70429,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12678.959,22.258726,6843.7959};
-				angles[]={-0,5.9532123,0};
+				angles[]={0,5.9532123,0};
 			};
 			side="Empty";
 			flags=4;
@@ -70461,12 +70475,13 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 				dynamicSimulation=1;
 			};
 			id=5588;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=-0.00011062622;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -70503,7 +70518,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 				dynamicSimulation=1;
 			};
@@ -70641,12 +70656,13 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 				dynamicSimulation=1;
 			};
 			id=5590;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -71163,11 +71179,12 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 			};
 			id=5605;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=-3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -71204,11 +71221,12 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 			};
 			id=5606;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -71245,11 +71263,12 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 			};
 			id=5607;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=-0.0070171356;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -71286,11 +71305,12 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 			};
 			id=5608;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=-0.0050039291;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -71327,11 +71347,12 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 			};
 			id=5609;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
+			atlOffset=-0.0019578934;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -71368,7 +71389,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 			};
 			id=5610;
@@ -71409,7 +71430,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 			};
 			id=5611;
@@ -71443,14 +71464,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14305.103,37.074936,9118.6582};
-				angles[]={6.2769418,4.0463471,6.2590361};
+				position[]={14305.104,37.074913,9118.6582};
+				angles[]={6.276937,4.0463538,6.2590299};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{if (isServer) then { " \n "    this animateSource [""tarnnetz_fzg_hide_Source"",0]; };}";
+				init="call{if (isServer) then { [this, false] execVM ""USER\scripts\configureVehicle.sqf""; };}";
 				textures="Fleck";
 			};
 			id=5612;
@@ -71725,7 +71746,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={969.17194,15.278726,4563.333};
-				angles[]={-0,5.38832,0};
+				angles[]={0,5.38832,0};
 			};
 			side="Empty";
 			flags=4;
@@ -71765,7 +71786,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={970.02594,15.278726,4564.2905};
-				angles[]={-0,5.38832,0};
+				angles[]={0,5.38832,0};
 			};
 			side="Empty";
 			flags=4;
@@ -71805,7 +71826,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={970.74872,15.278726,4565.2944};
-				angles[]={-0,5.38832,0};
+				angles[]={0,5.38832,0};
 			};
 			side="Empty";
 			flags=4;
@@ -71845,7 +71866,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={974.54004,15.13,4568.4912};
-				angles[]={-0,2.4019568,0};
+				angles[]={0,2.4019568,0};
 			};
 			side="Empty";
 			flags=4;
@@ -71884,7 +71905,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={971.35352,15.207,4567.1772};
-				angles[]={-0,2.4019568,0};
+				angles[]={0,2.4019568,0};
 			};
 			side="Empty";
 			flags=4;
@@ -71924,7 +71945,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={972.56995,15.207,4568.4858};
-				angles[]={-0,2.4019568,0};
+				angles[]={0,2.4019568,0};
 			};
 			side="Empty";
 			flags=4;
@@ -71964,7 +71985,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={973.79065,15.207,4569.7559};
-				angles[]={-0,2.4019568,0};
+				angles[]={0,2.4019568,0};
 			};
 			side="Empty";
 			flags=4;
