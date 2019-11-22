@@ -31,15 +31,15 @@ sleep 3;
 _camera camSetPos (position camOutroPos1);
 _camera camSetTarget camOutroTarget1;
 _camera camSetFov 0.3;
-_camera camCommit 60;
-sleep 30;
+_camera camCommit 30;
+sleep 10;
 
 private _ctrlTWO = findDisplay 46 ctrlCreate ["RscStructuredText", -1];
 _ctrlTWO ctrlSetPosition [ 
     safeZoneX + safeZoneW/2 - safeZoneW/2, 
     (safezoneY + safeZoneH)/1.5, 
     safezoneWAbs, 
-    safeZoneH/20
+    safeZoneH/15
 ];
 
 _ctrlTWO ctrlSetStructuredText parseText "<t size='1.5' shadow='0' font='EtelkaMonospaceProBold' align='center' color='#ffffffff'><br/>Celebrating 5 years of friendship.</t>";
