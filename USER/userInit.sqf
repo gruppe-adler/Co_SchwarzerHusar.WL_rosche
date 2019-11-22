@@ -24,7 +24,7 @@ enableEnvironment [false, true];
     [_waitCondition,{
         STHud_UIMode = 0;
         diwako_dui_main_toggled_off = true;
-        // [] execVM "USER\scripts\intro.sqf";
+        [] execVM "USER\scripts\intro.sqf";
         cutText ["", "BLACK IN", 8];
     },time] call CBA_fnc_waitUntilAndExecute;
 

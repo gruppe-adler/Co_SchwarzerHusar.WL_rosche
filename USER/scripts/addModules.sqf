@@ -176,10 +176,13 @@ waitUntil {  time > 3 };
     private _newGroup = createGroup east;
     _objectUnderCursor forceSpeed -1;
     [_objectUnderCursor] joinSilent _newGroup;
-    _newGroup enableDynamicSimulation false;
-    _objectUnderCursor enableSimulationGlobal true;
 
-    systemChat "ZEUS debug: Forcespeed unit reset and taken from group";
+    [{
+      params ["_newGroup", "_objectUnderCursor"];
+      _newGroup enableDynamicSimulation false;
+      [_objectUnderCursor, true] remoteExecCall ["enableSimulationGlobal", 2];
+      systemChat "ZEUS debug: Forcespeed unit reset and taken from group";
+    }, [_newGroup, _objectUnderCursor], 2] call CBA_fnc_waitAndExecute;  
 
   }] call zen_custom_modules_fnc_register;
 
